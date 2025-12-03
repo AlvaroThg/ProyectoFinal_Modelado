@@ -1,0 +1,23 @@
+# Dependencias para el Backend Flask
+# Restaurante Sabor Chapaco - Sistema Predictivo v2.0
+
+# Framework Web
+Flask==2.3.3
+Flask-CORS==4.0.0
+
+# Machine Learning y Data Science
+scikit-learn==1.3.0
+pandas==2.0.3
+numpy==1.24.3
+joblib==1.3.2
+
+# Servidor de producción (opcional)
+gunicorn==21.2.0
+
+# Utilidades y formateadores
+python-dateutil==2.8.2
+black==23.9.1          # Formateo de código
+pylint==3.0.1          # Análisis estático
+
+# Nota: Para instalar, ejecutar:
+#   pip install -r requerimientos.txt

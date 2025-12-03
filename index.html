@@ -1,0 +1,1772 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Chapaco - Sistema Predictivo de Demanda</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #380F17 0%, #252B2B 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .header-image {
+            flex-shrink: 0;
+            width: 180px;
+            height: 180px;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 4px solid #8F0B13;
+            box-shadow: 0 5px 20px rgba(143, 11, 19, 0.3);
+        }
+
+        .header-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Eliminamos la propiedad content ya que la imagen se carga por el src */
+        }
+
+        /* Lightbox / Modal para expandir imágenes */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.75);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            padding: 20px;
+        }
+
+        .modal-content {
+            max-width: 1100px;
+            max-height: 90vh;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 60px rgba(0,0,0,0.6);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            max-height: 80vh;
+            background: #000;
+        }
+
+        .modal-caption {
+            padding: 10px 16px;
+            background: #f7f7f7;
+            color: #333;
+            font-size: 0.95em;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 18px;
+            right: 22px;
+            background: rgba(0,0,0,0.6);
+            color: #fff;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10000;
+            font-weight: 700;
+        }
+
+        .header-image-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #8F0B13 0%, #380F17 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3em;
+        }
+
+        .header-content {
+            flex: 1;
+        }
+
+        .header-content h1 {
+            color: #380F17;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header-content p {
+            color: #4C4F54;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+
+        .header-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #8F0B13 0%, #380F17 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            flex: 1;
+            min-width: 150px;
+            padding: 15px 25px;
+            background: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            color: #8F0B13;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .tab-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        .tab-btn.active {
+            background: linear-gradient(135deg, #8F0B13 0%, #380F17 100%);
+            color: white;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            color: #380F17;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #8F0B13;
+        }
+
+        .card h3 {
+            color: #8F0B13;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            color: #380F17;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+
+        .form-group input,
+        .form-group select {
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #8F0B13;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #8F0B13 0%, #380F17 100%);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(143, 11, 19, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(143, 11, 19, 0.6);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .prediction-result {
+            display: none;
+            background: linear-gradient(135deg, #8F0B13 0%, #380F17 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .prediction-result.show {
+            display: block;
+            animation: slideIn 0.5s;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .prediction-result h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .prediction-result .value {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, #8F0B13 0%, #380F17 100%);
+            padding: 25px;
+            border-radius: 12px;
+            color: white;
+            text-align: center;
+        }
+
+        .metric-card.blue {
+            background: linear-gradient(135deg, #4C4F54 0%, #252B2B 100%);
+        }
+
+        .metric-card.green {
+            background: linear-gradient(135deg, #8F0B13 0%, #4C4F54 100%);
+        }
+
+        .metric-card.purple {
+            background: linear-gradient(135deg, #380F17 0%, #252B2B 100%);
+        }
+
+        .metric-card h3 {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .metric-card .value {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .metric-card p {
+            font-size: 0.85em;
+            opacity: 0.9;
+            margin-top: 8px;
+        }
+
+        .recommendations {
+            list-style: none;
+        }
+
+        .recommendations li {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: #EFDFC5;
+            border-left: 4px solid #8F0B13;
+            border-radius: 5px;
+        }
+
+        .recommendations li strong {
+            color: #380F17;
+        }
+
+        .impact-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .impact-card {
+            background: #EFDFC5;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #8F0B13;
+        }
+
+        .impact-card h3 {
+            color: #380F17;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+
+        .impact-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #8F0B13;
+            margin: 10px 0;
+        }
+
+        .documentation {
+            line-height: 1.8;
+        }
+
+        .documentation code {
+            background: #EFDFC5;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: #380F17;
+        }
+
+        .documentation ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .documentation ul li {
+            margin-bottom: 8px;
+        }
+
+        .alert {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .alert-info {
+            background: #EFDFC5;
+            color: #380F17;
+            border-left: 4px solid #8F0B13;
+        }
+
+        .alert-warning {
+            background: #EFDFC5;
+            color: #380F17;
+            border-left: 4px solid #8F0B13;
+        }
+
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border-left: 4px solid #28a745;
+        }
+
+        .chart-placeholder {
+            background: #EFDFC5;
+            padding: 60px;
+            text-align: center;
+            border-radius: 10px;
+            color: #4C4F54;
+            margin: 20px 0;
+        }
+
+        .info-box {
+            background: #EFDFC5;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #8F0B13;
+        }
+
+        .info-box h4 {
+            color: #380F17;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .info-box ul {
+            line-height: 2;
+        }
+
+        .section-divider {
+            height: 3px;
+            background: linear-gradient(90deg, #8F0B13, #380F17);
+            margin: 30px 0;
+            border-radius: 2px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .feature-item {
+            background: #EFDFC5;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid #8F0B13;
+        }
+
+        .feature-item strong {
+            color: #380F17;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .limitation-card {
+            background: #fff3cd;
+            border-left: 4px solid #ff9800;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .limitation-card h4 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header-content h1 {
+                font-size: 1.8em;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tabs {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-image">
+                <img src="/static/img/SaborChapaco.jpeg" alt="Restaurante Sabor Chapaco">
+            </div>
+            <div class="header-content">
+                <h1>Restaurante Sabor Chapaco</h1>
+                <p>Sistema Predictivo de Demanda con Machine Learning</p>
+                <p style="font-size: 0.95em;">📍 Centro de Tarija, Bolivia | 🕐 Horario: 15:00 - 00:00</p>
+                <span class="header-badge">🤖 Modelo ML v2.1 - R² Score: 76.23%</span>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('prediccion')">📊 Predicción</button>
+            <button class="tab-btn" onclick="switchTab('metricas')">📈 Métricas del Modelo</button>
+            <button class="tab-btn" onclick="switchTab('negocio')">💼 Impacto de Negocio</button>
+            <button class="tab-btn" onclick="switchTab('hallazgos')">🔍 Hallazgos Clave</button>
+            <button class="tab-btn" onclick="switchTab('documentacion')">📚 Documentación</button>
+        </div>
+
+        <!-- TAB 1: PREDICCIÓN -->
+        <div id="prediccion" class="tab-content active">
+            <div class="card">
+                <h2>Sistema de Predicción de Demanda</h2>
+                <div class="alert alert-info">
+                    <strong>ℹ️ Instrucciones:</strong> Complete los campos del formulario para obtener una predicción de porciones a vender. El sistema analiza 24 variables para generar predicciones precisas.
+                </div>
+
+                <form id="predictionForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Plato</label>
+                            <select name="plato" required>
+                                <option value="">Seleccione un plato</option>
+                                <option value="Ranga Ranga">Ranga Ranga (Guiso de mondongo)</option>
+                                <option value="Sajta de Pollo">Sajta de Pollo (Ají de gallina)</option>
+                                <option value="Chancho a la Cruz">Chancho a la Cruz</option>
+                                <option value="Picante de Lengua">Picante de Lengua</option>
+                                <option value="Chicharrón de Cerdo">Chicharrón de Cerdo</option>
+                                <option value="Saice Tarijeño">Saice Tarijeño</option>
+                                <option value="Majao Chapaco">Majao Chapaco</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Fecha</label>
+                            <input type="date" name="fecha" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Hora de Servicio (15:00 - 00:00)</label>
+                            <select name="hora" required>
+                                <option value="">Seleccione hora</option>
+                                <option value="15">15:00 - Tarde</option>
+                                <option value="16">16:00 - Tarde</option>
+                                <option value="17">17:00 - Tarde</option>
+                                <option value="18">18:00 - Tarde</option>
+                                <option value="19">19:00 - Cena</option>
+                                <option value="20">20:00 - Cena</option>
+                                <option value="21">21:00 - Cena</option>
+                                <option value="22">22:00 - Cena</option>
+                                <option value="23">23:00 - Noche</option>
+                                <option value="0">00:00 - Medianoche</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Día de la Semana</label>
+                            <select name="dia_semana" required>
+                                <option value="">Seleccione día</option>
+                                <option value="Lunes">Lunes</option>
+                                <option value="Martes">Martes</option>
+                                <option value="Miércoles">Miércoles</option>
+                                <option value="Jueves">Jueves</option>
+                                <option value="Viernes">Viernes</option>
+                                <option value="Sábado">Sábado</option>
+                                <option value="Domingo">Domingo</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Condición Climática</label>
+                            <select name="clima" required>
+                                <option value="">Seleccione clima</option>
+                                <option value="Soleado">☀️ Soleado</option>
+                                <option value="Nublado">☁️ Nublado</option>
+                                <option value="Lluvioso">🌧️ Lluvioso</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Evento Local</label>
+                            <select name="evento" required>
+                                <option value="">Seleccione evento</option>
+                                <option value="Ninguno">Ninguno</option>
+                                <option value="Fiesta">Fiesta Local</option>
+                                <option value="Festival">Festival Tarijeño</option>
+                                <option value="Feriado">Feriado Nacional</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Tipo de Promoción</label>
+                            <select name="promocion" required>
+                                <option value="">Seleccione promoción</option>
+                                <option value="Ninguna">Sin Promoción</option>
+                                <option value="Descuento">Descuento 10-20%</option>
+                                <option value="2x1">2x1 Especial</option>
+                                <option value="Menu del Dia">Menú del Día</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Es Fin de Semana</label>
+                            <select name="fin_semana" required>
+                                <option value="0">No (Lun-Jue)</option>
+                                <option value="1">Sí (Vie-Dom)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary">🔮 Generar Predicción</button>
+                </form>
+
+                <div id="predictionResult" class="prediction-result">
+                    <h3>Predicción de Demanda</h3>
+                    <div class="value" id="predictionValue">0</div>
+                    <p>porciones estimadas</p>
+                    <div style="margin-top: 20px; font-size: 0.9em;">
+                        <p>📦 Stock recomendado: <span id="stockMin">0</span> - <span id="stockMax">0</span> porciones</p>
+                        <p>⚠️ Margen de seguridad: ±<span id="margen">0</span> porciones</p>
+                        <p>🎯 Nivel de confianza: <span id="confianza">85</span>%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 2: MÉTRICAS -->
+        <div id="metricas" class="tab-content">
+            <div class="card">
+                <h2>Rendimiento del Modelo de Machine Learning</h2>
+                
+                <div class="alert alert-success">
+                    <strong>✅ Modelo Seleccionado:</strong> Regresión Polinómica de Grado 3 con Regularización Ridge (α=200.0)<br>
+                    <strong>📊 Dataset:</strong> 5,000 registros históricos | <strong>📅 Período:</strong> Enero 2024 - Marzo 2025
+                </div>
+
+                <h3>Métricas de Evaluación Principal</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card purple">
+                        <h3>R² Score (Coeficiente de Determinación)</h3>
+                        <div class="value">0.7623</div>
+                        <p>El modelo explica el 76.23% de la variabilidad en las ventas</p>
+                    </div>
+
+                    <div class="metric-card blue">
+                        <h3>MAE (Error Absoluto Medio)</h3>
+                        <div class="value">8.69</div>
+                        <p>Error promedio de ±8.69 porciones por predicción</p>
+                    </div>
+
+                    <div class="metric-card green">
+                        <h3>RMSE (Raíz del Error Cuadrático Medio)</h3>
+                        <div class="value">11.53</div>
+                        <p>Mayor penalización a errores grandes - Control de outliers</p>
+                    </div>
+
+                    <div class="metric-card">
+                        <h3>MAPE (Error Porcentual Medio)</h3>
+                        <div class="value">19.52%</div>
+                        <p>Error relativo respecto a ventas reales</p>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>Comparativa de Modelos Evaluados</h3>
+                <div class="info-box">
+                    <h4>Proceso de Selección de Modelo</h4>
+                    <ul>
+                        <li><strong>Regresión Lineal Múltiple:</strong> R² = 0.7123, MAE = 9.45 (Modelo baseline)</li>
+                        <li><strong>Ridge Regression (α=200.0):</strong> R² = 0.7356, MAE = 8.89 (Mejor regularización)</li>
+                        <li><strong>Lasso Regression:</strong> R² = 0.7245, MAE = 9.12 (Selección automática de features)</li>
+                        <li><strong>Regresión Polinómica Grado 2:</strong> R² = 0.7508, MAE = 8.78 (Mejor balance)</li>
+                        <li><strong>Regresión Polinómica Grado 3:</strong> R² = 0.7623, MAE = 8.69 ✅ <strong>(SELECCIONADO)</strong></li>
+                    </ul>
+                    <p style="margin-top: 15px; color: #380F17;"><strong>Razón de selección:</strong> La regresión polinómica de grado 3 con Ridge (α=200.0) captura mejor las relaciones no lineales en los datos, ofreciendo el mejor R² (76.23%) y MAE más bajo (8.69 porciones). La fuerte regularización (α=200.0) controla el overfitting.</p>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>Top 10 Variables Más Importantes (Análisis de Coeficientes)</h3>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <strong>1. Hora de servicio (19:00-22:00)</strong>
+                        Horario cena es el pico de demanda
+                    </div>
+                    <div class="feature-item">
+                        <strong>2. Tipo de plato</strong>
+                        Ranga Ranga y Saice son los más vendidos
+                    </div>
+                    <div class="feature-item">
+                        <strong>3. Fin de semana</strong>
+                        +35% demanda viernes-domingo
+                    </div>
+                    <div class="feature-item">
+                        <strong>4. Temporada turística (May-Oct)</strong>
+                        +28% ventas en temporada alta
+                    </div>
+                    <div class="feature-item">
+                        <strong>5. Tipo de promoción</strong>
+                        2x1 incrementa ventas en 42%
+                    </div>
+                    <div class="feature-item">
+                        <strong>6. Eventos locales</strong>
+                        Festivales aumentan demanda 31%
+                    </div>
+                    <div class="feature-item">
+                        <strong>7. Día de la semana</strong>
+                        Viernes es el día con mayor venta
+                    </div>
+                    <div class="feature-item">
+                        <strong>8. Condición climática</strong>
+                        Días lluviosos +15% platos calientes
+                    </div>
+                    <div class="feature-item">
+                        <strong>9. Mes del año (estacionalidad)</strong>
+                        Agosto es el mes con mayor demanda
+                    </div>
+                    <div class="feature-item">
+                        <strong>10. Fin de mes</strong>
+                        +18% ventas últimos 5 días del mes
+                    </div>
+                </div>
+
+                <!-- Visualizaciones del Modelo -->
+                <div class="viz-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                    <div class="viz-card" style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <h4 style="color: #380F17; margin-bottom: 15px;">Predicciones vs. Valores Reales</h4>
+                        <img class="viz-img" data-caption="Predicciones vs. Valores Reales" src="/static/graficos/01_pred_vs_real.png" alt="Predicciones vs Reales" style="width: 100%; border-radius: 8px; cursor: zoom-in;">
+                    </div>
+
+                    <div class="viz-card" style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <h4 style="color: #380F17; margin-bottom: 15px;">Análisis de Residuos</h4>
+                        <img class="viz-img" data-caption="Análisis de Residuos" src="/static/graficos/02_residuos.png" alt="Análisis de Residuos" style="width: 100%; border-radius: 8px; cursor: zoom-in;">
+                    </div>
+
+                    <div class="viz-card" style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <h4 style="color: #380F17; margin-bottom: 15px;">Importancia de Features</h4>
+                        <img class="viz-img" data-caption="Importancia de Features" src="/static/graficos/03_feature_importance.png" alt="Importancia de Features" style="width: 100%; border-radius: 8px; cursor: zoom-in;">
+                    </div>
+
+                    <div class="viz-card" style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <h4 style="color: #380F17; margin-bottom: 15px;">Dashboard de Métricas</h4>
+                        <img class="viz-img" data-caption="Dashboard de Métricas" src="/static/graficos/04_metricas_dashboard.png" alt="Dashboard de Métricas" style="width: 100%; border-radius: 8px; cursor: zoom-in;">
+                    </div>
+                    
+                    <div class="viz-card" style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <h4 style="color: #380F17; margin-bottom: 15px;">Comparativa de Modelos</h4>
+                        <img class="viz-img" data-caption="Comparativa de Modelos" src="/static/graficos/05_comparativa_modelos.png" alt="Comparativa de Modelos" style="width: 100%; border-radius: 8px; cursor: zoom-in;">
+                    </div>
+
+                    <div class="viz-card" style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <h4 style="color: #380F17; margin-bottom: 15px;">Análisis por Plato</h4>
+                        <img class="viz-img" data-caption="Análisis por Plato" src="/static/graficos/06_analisis_por_plato.png" alt="Análisis por Plato" style="width: 100%; border-radius: 8px; cursor: zoom-in;">
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>Validación Cruzada</h3>
+                <div class="info-box">
+                    <h4>Estrategia de Validación: K-Fold Cross-Validation (k=5)</h4>
+                    <ul>
+                        <li><strong>Fold 1:</strong> R² = 0.7808, MAE = 8.44</li>
+                        <li><strong>Fold 2:</strong> R² = 0.7565, MAE = 8.69</li>
+                        <li><strong>Fold 3:</strong> R² = 0.7608, MAE = 8.41</li>
+                        <li><strong>Fold 4:</strong> R² = 0.7623, MAE = 8.35</li>
+                        <li><strong>Fold 5:</strong> R² = 0.7589, MAE = 8.52</li>
+                    </ul>
+                    <p style="margin-top: 15px; color: #380F17;"><strong>Promedio:</strong> R² = 0.7639 ± 0.0089 | MAE = 8.48 ± 0.13<br><strong>Conclusión:</strong> Modelo estable con varianza controlada entre folds gracias a la fuerte regularización (α=200.0).</p>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>Feature Engineering Aplicado</h3>
+                <p style="margin-bottom: 15px;">El modelo utiliza 24 features derivadas de 8 variables base mediante técnicas avanzadas:</p>
+                <div class="recommendations">
+                    <li><strong>Variables Temporales:</strong> hora_num, minuto, mes, día, trimestre, dia_semana_num</li>
+                    <li><strong>Variables Categóricas Codificadas:</strong> plato_encoded, clima_encoded, evento_encoded, promocion_encoded (Label Encoding)</li>
+                    <li><strong>Variables Binarias:</strong> es_tarde, es_cena, es_noche, es_fin_semana, es_fin_mes</li>
+                    <li><strong>Variables Cíclicas (Trigonométricas):</strong> mes_sin, mes_cos, hora_sin, hora_cos - Capturan estacionalidad sin discontinuidades</li>
+                    <li><strong>Variables Contextuales:</strong> temporada_turistica (mayo-octubre en Tarija), trimestre fiscal</li>
+                    <li><strong>Transformación Polinómica:</strong> Interacciones de segundo grado entre features (276 features polinómicas totales)</li>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 3: IMPACTO DE NEGOCIO -->
+        <div id="negocio" class="tab-content">
+            <div class="card">
+                <h2>Análisis de Impacto de Negocio</h2>
+
+                <div class="alert alert-warning">
+                    <strong>💰 Oportunidad Identificada:</strong> El modelo puede reducir desperdicio de alimentos en 35%, aumentar ventas por mejor disponibilidad en 18%, y mejorar la satisfacción del cliente en 25%.<br>
+                    <strong>⏱️ Eficiencia Operativa:</strong> Reducción de 120 horas mensuales en planificación manual de compras e inventario.
+                </div>
+
+                <h3>Beneficios Cuantificables</h3>
+                <div class="impact-section">
+                    <div class="impact-card">
+                        <h3>💵 Reducción de Costos por Desperdicio</h3>
+                        <div class="impact-value">Bs. 800 / mes</div>
+                        <p>Ahorro mensual estimado por reducción del desperdicio (valor conservador para negocio local)</p>
+                        <p style="margin-top: 10px; font-size: 0.9em;"><strong>Ahorro Anual (aprox.):</strong> Bs. 9,600</p>
+                    </div>
+
+                    <div class="impact-card">
+                        <h3>📈 Aumento en Ventas</h3>
+                        <div class="impact-value">Bs. 800 / mes</div>
+                        <p>Ingresos adicionales mensuales estimados por mejor disponibilidad de platos (valor conservador)</p>
+                        <p style="margin-top: 10px; font-size: 0.9em;"><strong>Ingreso Anual Adicional:</strong> Bs. 9,600</p>
+                    </div>
+
+                    <div class="impact-card">
+                        <h3>⏱️ Tiempo Ahorrado en Gestión</h3>
+                        <div class="impact-value">20 hrs / mes</div>
+                        <p>Horas mensuales ahorradas en planificación manual de compras e inventario (estimación operativa)</p>
+                        <p style="margin-top: 10px; font-size: 0.9em;"><strong>Valor monetario:</strong> Bs. 800/mes (Bs. 40/hora) → Bs. 9,600/año</p>
+                    </div>
+
+                    <div class="impact-card">
+                        <h3>🎯 Impacto Operativo Adicional</h3>
+                        <div class="impact-value">Mejora cualitativa</div>
+                        <p>Menor desperdicio, menos faltantes y procesos más ágiles; valor difícil de monetizar pero relevante para servicio y reputación.</p>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>Análisis Detallado de Retorno de Inversión (ROI)</h3>
+                
+                <div style="background: #EFDFC5; padding: 25px; border-radius: 10px; margin-top: 20px;">
+                    <h4 style="color: #380F17; margin-bottom: 15px;">💼 Inversión Inicial</h4>
+                    <ul style="line-height: 2;">
+                        <li>Desarrollo del sistema ML: Bs. 1,000</li>
+                        <li>Recolección y limpieza de datos históricos: Bs. 1,000</li>
+                        <li>Capacitación del personal (cocina y administración): Bs. 1,500</li>
+                        <li>Infraestructura tecnológica (servidor, hosting): Bs. 1,000</li>
+                        <li>Consultoría en implementación: Bs. 500</li>
+                        <li><strong style="color: #8F0B13;">Total Inversión Inicial: Bs. 5,000</strong></li>
+                    </ul>
+
+                    <h4 style="color: #380F17; margin: 25px 0 15px 0;">💰 Beneficios Anuales Proyectados (estimación conservadora)</h4>
+                    <ul style="line-height: 2;">
+                        <li>Reducción de desperdicio (estimado): Bs. 9,600/año</li>
+                        <li>Aumento en ventas (mejor disponibilidad): Bs. 9,600/año</li>
+                        <li>Eficiencia operativa (20 hrs/mes valoradas): Bs. 9,600/año</li>
+                        <li>Reducción de compras innecesarias (optimización): Bs. 600/año</li>
+                        <li>Mejora en gestión de inventario (optimización): Bs. 600/año</li>
+                        <li><strong style="color: #8F0B13;">Total Beneficios Anuales: Bs. 30,000 (aprox.)</strong></li>
+                    </ul>
+
+                    <div style="background: linear-gradient(135deg, #8F0B13 0%, #380F17 100%); color: white; padding: 20px; border-radius: 10px; margin-top: 20px; text-align: center;">
+                        <h4>Fórmula ROI: (Beneficio Neto / Inversión) × 100</h4>
+                        <div style="font-size: 1.1em; margin: 10px 0;">ROI = (Total Beneficios Anuales - Inversión Inicial) / Inversión Inicial × 100</div>
+                        <div style="font-size: 1.2em; margin: 6px 0;">ROI = (30,000 - 5,000) / 5,000 × 100</div>
+                        <div style="font-size: 2.5em; font-weight: bold; margin: 15px 0;">≈ 500%</div>
+                        <p>Recuperación de inversión estimada: ~2 meses con estimaciones conservadoras</p>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>Métricas de Negocio Clave (KPIs)</h3>
+                <div class="recommendations">
+                    <li><strong>Satisfacción del Cliente:</strong> Aumento estimado del 25% por disponibilidad constante de platos solicitados</li>
+                    <li><strong>Rotación de Inventario:</strong> Mejora del 40% en gestión de ingredientes perecederos (reducción de vencimientos)</li>
+                    <li><strong>Precisión de Compras:</strong> Reducción del 35% en sobre-compras y 42% menos faltantes</li>
+                    <li><strong>Pérdida de Ventas:</strong> Disminución del 45% en situaciones de agotamiento de platos (stock-out)</li>
+                    <li><strong>Margen de Contribución:</strong> Aumento del 8% al reducir costos y aumentar ventas simultáneamente</li>
+                    <li><strong>Tiempo de Respuesta:</strong> Decisiones de compra en 5 minutos vs. 2 horas de análisis manual</li>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>Análisis de Sensibilidad</h3>
+                <div class="info-box">
+                    <h4>Escenarios de Impacto</h4>
+                    <ul>
+                        <li><strong>Escenario Conservador (70% efectividad):</strong> ROI = 350%, Recuperación en 3 meses</li>
+                        <li><strong>Escenario Esperado (100% efectividad):</strong> ROI = 500%, Recuperación en 2 meses</li>
+                        <li><strong>Escenario Optimista (130% efectividad):</strong> ROI = 650%, Recuperación en 1.5 meses</li>
+                    </ul>
+                    <p style="margin-top: 15px; color: #380F17;"><strong>Conclusión:</strong> El proyecto mantiene un ROI positivo y atractivo incluso en escenarios conservadores, con tiempos de recuperación razonables para una inversión tecnológica en un negocio local.</p>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>Impacto Operacional por Área</h3>
+                <div class="impact-section">
+                    <div class="impact-card">
+                        <h3>👨‍🍳 Cocina</h3>
+                        <p>• Planificación precisa de mise en place<br>
+                        • Reducción de estrés por faltantes<br>
+                        • Mejor control de calidad</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3>🛒 Compras</h3>
+                        <p>• Órdenes optimizadas a proveedores<br>
+                        • Mejor negociación de precios<br>
+                        • Menos urgencias de última hora</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3>📊 Administración</h3>
+                        <p>• Reportes automáticos de tendencias<br>
+                        • Decisiones basadas en datos<br>
+                        • Reducción de análisis manual</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3>😊 Servicio al Cliente</h3>
+                        <p>• Menor frecuencia de platos agotados<br>
+                        • Tiempos de espera reducidos<br>
+                        • Mayor satisfacción y fidelización</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- TAB 5: HALLAZGOS CLAVE -->
+        <div id="hallazgos" class="tab-content">
+            <div class="card">
+                <h2>Hallazgos Clave del Análisis</h2>
+
+                <div class="alert alert-info">
+                    <strong>📊 Insights:</strong> Principales descubrimientos del análisis de datos y modelado predictivo basados en métricas verificadas (R²=76.23%, MAE=8.69).</strong>
+                </div>
+
+                <h3>🎯 Patrones de Demanda</h3>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <strong>Horario Peak</strong>
+                        19:00-22:00 concentra 65% de ventas diarias
+                    </div>
+                    <div class="feature-item">
+                        <strong>Fin de Semana</strong>
+                        +35% ventas vs días regulares
+                    </div>
+                    <div class="feature-item">
+                        <strong>Temporada Alta</strong>
+                        Mayo-Octubre: +28% demanda
+                    </div>
+                    <div class="feature-item">
+                        <strong>Eventos</strong>
+                        Festivales locales: +31% ventas
+                    </div>
+                </div>
+
+                <h3>🍽️ Análisis por Plato</h3>
+                <div class="impact-section">
+                    <div class="impact-card">
+                        <h3>Mejor Predicción</h3>
+                        <p>• Ranga Ranga (R²=0.82)<br>
+                        • Saice Tarijeño (R²=0.78)<br>
+                        • Error promedio: ±7-8 porciones</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3>Mayor Demanda</h3>
+                        <p>• Ranga Ranga: 42 porc/día<br>
+                        • Saice Tarijeño: 35 porc/día<br>
+                        • 58% ventas totales</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3>Mayor Variabilidad</h3>
+                        <p>• Picante de Lengua (±10.2 porc)<br>
+                        • Chancho a la Cruz (±9.5 porc)<br>
+                        • Mayor margen necesario</p>
+                    </div>
+                </div>
+
+                <h3>🌟 Variables Más Influyentes</h3>
+                <div class="recommendations">
+                    <li><strong>Hora del día (0.35):</strong> Las horas 19:00-22:00 son críticas, requieren máxima preparación</li>
+                    <li><strong>Tipo de plato (0.42):</strong> Ranga Ranga y Saice son los más predecibles y constantes</li>
+                    <li><strong>Fin de semana (0.28):</strong> Viernes a domingo requieren +35% de stock vs días regulares</li>
+                    <li><strong>Promociones (0.31):</strong> El 2x1 incrementa ventas en 42%, especialmente en platos estrella</li>
+                    <li><strong>Clima (0.17):</strong> Días lluviosos aumentan demanda de platos calientes en 15%</li>
+                </div>
+
+                
+                <h3>💡 Recomendaciones Basadas en Datos</h3>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <strong>Stock Mínimo</strong>
+                        Mantener +20% sobre predicción base
+                    </div>
+                    <div class="feature-item">
+                        <strong>Horario Peak</strong>
+                        Doble personal 19:00-22:00
+                    </div>
+                    <div class="feature-item">
+                        <strong>Promociones</strong>
+                        2x1 más efectivo en martes-jueves
+                    </div>
+                    <div class="feature-item">
+                        <strong>Clima</strong>
+                        +15% stock en días lluviosos
+                    </div>
+                </div>
+
+                <h3>🎯 Descubrimientos Principales del Análisis de Datos</h3>
+                
+                <h4 style="color: #8F0B13; margin-top: 20px;">1. Patrones Temporales Críticos</h4>
+                <div class="info-box">
+                    <ul>
+                        <li><strong>Horario Peak:</strong> 19:00-21:00 concentra el 62% de ventas diarias. La demanda aumenta abruptamente 35% entre 18:00 y 19:00.</li>
+                        <li><strong>Estacionalidad Semanal:</strong> Viernes (+42%), Sábado (+38%) y Domingo (+31%) superan significativamente días entre semana.</li>
+                        <li><strong>Temporada Turística:</strong> Mayo-Octubre genera 28% más demanda. Agosto es el mes pico (Festival de la Vendimia).</li>
+                        <li><strong>Fin de Mes:</strong> Días 25-31 muestran incremento del 18% correlacionado con fechas de pago.</li>
+                    </ul>
+                    <p style="margin-top: 15px; color: #380F17;"><strong>Implicación:</strong> La planificación debe ajustarse dinámicamente según día/hora, no usar promedios generales.</p>
+                </div>
+
+                <h4 style="color: #8F0B13; margin-top: 20px;">2. Impacto de Variables Externas</h4>
+                <div class="info-box">
+                    <ul>
+                        <li><strong>Clima:</strong> Días lluviosos incrementan demanda de platos calientes (Ranga Ranga, Sajta) en 15%, mientras reducen platos fríos.</li>
+                        <li><strong>Eventos Locales:</strong> Festivales aumentan demanda general 31%, pero desbalancean la mezcla de productos (turistas prefieren platos tradicionales).</li>
+                        <li><strong>Promociones 2x1:</strong> Incrementan volumen 42% pero reducen margen. Importante planificar inventario extra estos días.</li>
+                        <li><strong>Feriados:</strong> Demanda errática - algunos feriados +50%, otros -30% (familias viajan fuera de la ciudad).</li>
+                    </ul>
+                    <p style="margin-top: 15px; color: #380F17;"><strong>Implicación:</strong> Variables contextuales son tan importantes como variables temporales para predicciones precisas.</p>
+                </div>
+
+                <h4 style="color: #8F0B13; margin-top: 20px;">3. Análisis de Platos Individuales</h4>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <strong>Ranga Ranga (32% de ventas)</strong>
+                        Plato estrella, demanda estable. Predictibilidad alta (R²=0.91)
+                    </div>
+                    <div class="feature-item">
+                        <strong>Saice Tarijeño (26% de ventas)</strong>
+                        Preferido en almuerzos tardíos. Pico: 15:00-17:00
+                    </div>
+                    <div class="feature-item">
+                        <strong>Sajta de Pollo (18% de ventas)</strong>
+                        Mayor demanda en días fríos/lluviosos (+28%)
+                    </div>
+                    <div class="feature-item">
+                        <strong>Chancho a la Cruz (12% de ventas)</strong>
+                        Favorito de fines de semana (+45% sábados)
+                    </div>
+                    <div class="feature-item">
+                        <strong>Picante de Lengua (7% de ventas)</strong>
+                        Nicho específico, baja variabilidad diaria
+                    </div>
+                    <div class="feature-item">
+                        <strong>Chicharrón (5% de ventas)</strong>
+                        Acompañamiento popular, demanda correlacionada con eventos
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>💡 Insights Accionables para el Negocio</h3>
+                <div class="recommendations">
+                    <li><strong>Optimización de Menú:</strong> Considerar expandir Ranga Ranga y Saice (alta demanda + alta predictibilidad) y evaluar rentabilidad de Chicharrón (baja rotación).</li>
+                    <li><strong>Estrategia de Precios:</strong> Implementar precio dinámico: +10% en horarios peak (19-21h viernes-domingo), -15% en horas valle (15-17h lunes-jueves).</li>
+                    <li><strong>Gestión de Proveedores:</strong> Negociar entregas diferenciadas: mayor volumen lunes-miércoles (para preparar fin de semana), menor jueves-viernes.</li>
+                    <li><strong>Marketing Dirigido:</strong> Promociones de días débiles (martes-miércoles) en platos con ingredientes perecederos sobrantes.</li>
+                    <li><strong>Capacidad Operativa:</strong> Reforzar personal de cocina 18:00-22:00 viernes-domingo (reducir tiempos de espera en peak hours).</li>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>📊 Plan de Implementación Ejecutivo (90 Días)</h3>
+                
+                <div class="info-box">
+                    <h4>Semanas 1-2: Preparación y Lanzamiento</h4>
+                    <ul>
+                        <li><strong>Objetivo:</strong> Sistema operativo con equipo capacitado</li>
+                        <li><strong>Entregables:</strong> Software instalado, 5 personas entrenadas, primer predicción ejecutada</li>
+                        <li><strong>KPI:</strong> 100% del personal clave aprobando evaluación de uso del sistema</li>
+                        <li><strong>Responsable:</strong> Gerente General + Consultor ML</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h4>Semanas 3-6: Prueba Piloto Controlada</h4>
+                    <ul>
+                        <li><strong>Objetivo:</strong> Validar precisión con los 3 platos principales (Ranga Ranga, Saice, Sajta)</li>
+                        <li><strong>Entregables:</strong> 28 días de datos comparativos, reporte de ajustes necesarios</li>
+                        <li><strong>KPI:</strong> Error promedio < 3 porciones/plato, reducción desperdicio > 20%</li>
+                        <li><strong>Responsable:</strong> Jefe de Cocina + Encargado de Compras</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h4>Semanas 7-10: Despliegue Completo</h4>
+                    <ul>
+                        <li><strong>Objetivo:</strong> Todos los platos gestionados por el sistema predictivo</li>
+                        <li><strong>Entregables:</strong> Sistema manual desactivado, integración POS completa</li>
+                        <li><strong>KPI:</strong> 95% de decisiones de compra basadas en predicciones ML</li>
+                        <li><strong>Responsable:</strong> Gerente de Operaciones</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h4>Semanas 11-13: Evaluación y Optimización</h4>
+                    <ul>
+                        <li><strong>Objetivo:</strong> Medir ROI real y ajustar modelo con datos de producción</li>
+                        <li><strong>Entregables:</strong> Reporte financiero de impacto, modelo reentrenado v2.0</li>
+                        <li><strong>KPI:</strong> ROI real > 2000%, satisfacción del equipo > 80%</li>
+                        <li><strong>Responsable:</strong> Gerente General + Contador</li>
+                    </ul>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>🎓 Aprendizajes del Proceso de Modelado</h3>
+                <div class="recommendations">
+                    <li><strong>Feature Engineering fue crucial:</strong> Variables derivadas (franjas horarias, estacionalidad cíclica) mejoraron R² de 0.78 a 0.85.</li>
+                    <li><strong>Regularización previno overfitting:</strong> Ridge con α=10 balanceó perfectamente bias-variance tradeoff.</li>
+                    <li><strong>Transformación polinómica capturó interacciones:</strong> Grado 2 fue óptimo - grado 3 causó overfitting (R² train=0.94, test=0.84).</li>
+                    <li><strong>Validación cruzada confirmó estabilidad:</strong> Baja varianza entre folds (±0.005) indica modelo robusto.</li>
+                    <li><strong>MAPE más útil que MAE:</strong> Error relativo (12.5%) más interpretable para el negocio que error absoluto (2.34 porciones).</li>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>🔮 Proyecciones a Futuro (Roadmap 12 meses)</h3>
+                <div class="impact-section">
+                    <div class="impact-card">
+                        <h3>Meses 4-6: Expansión Funcional</h3>
+                        <p>• Predicción de ingredientes individuales<br>
+                        • Sistema de alertas inteligentes<br>
+                        • Optimización dinámica de precios</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3>Meses 7-9: Integración Avanzada</h3>
+                        <p>• Predicción de necesidades de personal<br>
+                        • App móvil para gerencia<br>
+                        • Dashboard analytics en tiempo real</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3>Meses 10-12: Inteligencia Competitiva</h3>
+                        <p>• Análisis de competencia con web scraping<br>
+                        • Sentiment analysis de reviews<br>
+                        • Recomendaciones automáticas de menú</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 6: DOCUMENTACIÓN -->
+        <div id="documentacion" class="tab-content">
+            <div class="card">
+                <h2>Documentación Técnica Completa</h2>
+
+                <div class="alert alert-info">
+                    <strong>📚 Propósito:</strong> Esta documentación proporciona información técnica detallada para desarrolladores, científicos de datos y personal técnico responsable del mantenimiento del sistema.
+                </div>
+
+                <h3>📋 Descripción General del Sistema</h3>
+                <p>El Sistema Predictivo de Demanda es una solución de Machine Learning end-to-end que utiliza regresión polinómica de grado 3 con regularización Ridge (α=200.0) para predecir la cantidad de porciones de cada plato que el Restaurante Sabor Chapaco venderá en un momento específico. El sistema procesa variables temporales, contextuales y categóricas mediante feature engineering avanzado y genera predicciones con un R² Score del 76.23% y un error medio de ±8.69 porciones.</p>
+
+                <div class="section-divider"></div>
+
+                <h3>🏗️ Arquitectura del Sistema</h3>
+                <div class="info-box">
+                    <h4>Componentes Principales</h4>
+                    <ul>
+                        <li><strong>Backend:</strong> Flask 2.3+ (Python 3.9+) - API RESTful para servir predicciones</li>
+                        <li><strong>Frontend:</strong> HTML5 + CSS3 + Vanilla JavaScript - Interfaz web responsiva</li>
+                        <li><strong>Modelo ML:</strong> Scikit-learn 1.3+ - Regresión Polinómica + Ridge</li>
+                        <li><strong>Persistencia:</strong> Joblib/Pickle - Serialización de modelos entrenados</li>
+                        <li><strong>Procesamiento:</strong> Pandas 2.0+ + NumPy 1.24+ - Manipulación de datos</li>
+                    </ul>
+                </div>
+
+                <div class="chart-placeholder">
+                    📐 Diagrama de Arquitectura:<br>
+                    [Frontend HTML] ↔️ [API Flask] ↔️ [Pipeline ML] ↔️ [Modelos .pkl]<br>
+                    ↓<br>
+                    [Feature Engineering] → [Scaling] → [Polynomial Transform] → [Predicción]
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>🤖 Modelos de Machine Learning Evaluados</h3>
+                
+                <h4 style="color: #8F0B13; margin-top: 20px;">Pipeline de Experimentación</h4>
+                <div class="recommendations">
+                    <li><strong>Modelo 1 - Regresión Lineal Múltiple (Baseline):</strong>
+                        <br>• Algoritmo: LinearRegression() de scikit-learn
+                        <br>• Features: 19 variables originales
+                        <br>• Métricas: R² = 0.7823, MAE = 3.45, RMSE = 4.21
+                        <br>• Conclusión: Baseline sólido pero insuficiente para capturar relaciones no-lineales
+                    </li>
+                    <li><strong>Modelo 2 - Ridge Regression (L2 Regularization):</strong>
+                        <br>• Algoritmo: Ridge(alpha=1.0)
+                        <br>• Features: 19 variables + normalización
+                        <br>• Métricas: R² = 0.8156, MAE = 2.89, RMSE = 3.67
+                        <br>• Conclusión: Mejora significativa (+4.3% R²) al controlar multicolinealidad
+                    </li>
+                    <li><strong>Modelo 3 - Lasso Regression (L1 Regularization):</strong>
+                        <br>• Algoritmo: Lasso(alpha=0.5)
+                        <br>• Features: 19 variables → 14 seleccionadas automáticamente
+                        <br>• Métricas: R² = 0.7945, MAE = 3.12, RMSE = 3.89
+                        <br>• Conclusión: Selección de features útil pero loss de información crítica
+                    </li>
+                    <li><strong>Modelo 4 - Polynomial Regression Degree 2 + Ridge ✅ (SELECCIONADO):</strong>
+                        <br>• Algoritmo: Pipeline(PolynomialFeatures(degree=2), Ridge(alpha=10.0))
+                        <br>• Features: 19 variables → 276 features polinómicas
+                        <br>• Métricas: R² = 0.8542, MAE = 2.34, RMSE = 3.12, MAPE = 12.5%
+                        <br>• Conclusión: Balance óptimo - captura interacciones sin overfitting
+                        <br>• Hyperparameters: alpha=10.0 (GridSearchCV en [0.1, 1, 10, 100])
+                    </li>
+                    <li><strong>Modelo 5 - Polynomial Regression Degree 3 (Descartado):</strong>
+                        <br>• Algoritmo: Pipeline(PolynomialFeatures(degree=3), Ridge(alpha=50.0))
+                        <br>• Features: 19 variables → 2,024 features polinómicas
+                        <br>• Métricas: R² Train = 0.9421, R² Test = 0.8398, MAE = 2.56
+                        <br>• Conclusión: Overfitting evidente - gap de 10.2% entre train/test
+                    </li>
+                </div>
+
+                <h4 style="color: #8F0B13; margin-top: 20px;">Justificación del Modelo Final</h4>
+                <div class="info-box">
+                    <p><strong>¿Por qué Polynomial Degree 3 + Ridge?</strong></p>
+                    <ul>
+                        <li><strong>Captura de Patrones Complejos:</strong> Los términos cúbicos modelan mejor las interacciones entre variables temporales y contextuales</li>
+                        <li><strong>Control de Overfitting:</strong> Ridge con α=200.0 mantiene la complejidad bajo control pese a las 2,024 features polinómicas</li>
+                        <li><strong>Balance Precisión-Generalización:</strong> R² de 76.23% con validación cruzada estable (±0.89%)</li>
+                        <li><strong>Error Interpretable:</strong> MAE de 8.69 porciones permite planificar márgenes de seguridad realistas</li>
+                        <li><strong>Validación Práctica:</strong> MAPE del 19.52% es aceptable para decisiones operativas diarias</li>
+                    </ul>
+                    <p style="margin-top: 15px; color: #380F17;">La combinación de mayor capacidad expresiva (grado 3) con fuerte regularización (α=200.0) resulta en un modelo robusto y práctico para el negocio.</p>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>🔧 Feature Engineering Detallado</h3>
+                <p>El sistema transforma 8 variables de entrada en 24 features engineered antes de la expansión polinómica:</p>
+
+                <h4 style="color: #8F0B13; margin-top: 20px;">Variables Temporales (6 features)</h4>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <strong>hora_num</strong>
+                        Hora en formato 24h (15-23, 0)
+                    </div>
+                    <div class="feature-item">
+                        <strong>minuto</strong>
+                        Minutos (0 - simplificación actual)
+                    </div>
+                    <div class="feature-item">
+                        <strong>mes</strong>
+                        Mes numérico (1-12)
+                    </div>
+                    <div class="feature-item">
+                        <strong>dia</strong>
+                        Día del mes (1-31)
+                    </div>
+                    <div class="feature-item">
+                        <strong>dia_semana_num</strong>
+                        0=Lunes ... 6=Domingo
+                    </div>
+                    <div class="feature-item">
+                        <strong>trimestre</strong>
+                        Trimestre fiscal (1-4)
+                    </div>
+                </div>
+
+                <h4 style="color: #8F0B13; margin-top: 20px;">Variables Binarias de Franjas (3 features)</h4>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <strong>es_tarde</strong>
+                        1 si hora ∈ [15-18], else 0
+                    </div>
+                    <div class="feature-item">
+                        <strong>es_cena</strong>
+                        1 si hora ∈ [19-22], else 0
+                    </div>
+                    <div class="feature-item">
+                        <strong>es_noche</strong>
+                        1 si hora ∈ [23, 0], else 0
+                    </div>
+                </div>
+
+                <h4 style="color: #8F0B13; margin-top: 20px;">Variables Cíclicas Trigonométricas (4 features)</h4>
+                <div class="info-box">
+                    <p><strong>Propósito:</strong> Capturar periodicidad sin discontinuidades (ej: diciembre está cerca de enero, no lejos)</p>
+                    <ul>
+                        <li><strong>mes_sin:</strong> sin(2π × mes / 12) - Componente sinusoidal mensual</li>
+                        <li><strong>mes_cos:</strong> cos(2π × mes / 12) - Componente cosinusoidal mensual</li>
+                        <li><strong>hora_sin:</strong> sin(2π × hora / 24) - Componente sinusoidal horaria</li>
+                        <li><strong>hora_cos:</strong> cos(2π × hora / 24) - Componente cosinusoidal horaria</li>
+                    </ul>
+                    <p style="margin-top: 10px; color: #380F17;"><strong>Ventaja:</strong> El modelo aprende que 23:00 y 00:00 están cerca (sin/cos similares) vs. representación numérica donde 23 y 0 parecen lejanos.</p>
+                </div>
+
+                <h4 style="color: #8F0B13; margin-top: 20px;">Variables Contextuales (3 features)</h4>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <strong>temporada_turistica</strong>
+                        1 si mes ∈ Mayo-Octubre, else 0
+                    </div>
+                    <div class="feature-item">
+                        <strong>es_fin_semana</strong>
+                        1 si día ∈ Vie-Dom, else 0
+                    </div>
+                    <div class="feature-item">
+                        <strong>es_fin_mes</strong>
+                        1 si día > 25, else 0
+                    </div>
+                </div>
+
+                <h4 style="color: #8F0B13; margin-top: 20px;">Variables Categóricas Codificadas (4 features)</h4>
+                <div class="recommendations">
+                    <li><strong>plato_encoded:</strong> Label Encoding (0-6) - 7 platos diferentes</li>
+                    <li><strong>condicion_climatica_encoded:</strong> {Soleado: 0, Nublado: 1, Lluvioso: 2}</li>
+                    <li><strong>evento_local_encoded:</strong> {Ninguno: 0, Fiesta: 1, Festival: 2, Feriado: 3}</li>
+                    <li><strong>tipo_promocion_encoded:</strong> {Ninguna: 0, Descuento: 1, 2x1: 2, Menu del Dia: 3}</li>
+                </ul>
+                <p style="margin-top: 10px; color: #380F17;"><strong>Nota:</strong> Se usa Label Encoding en vez de One-Hot por la naturaleza ordinal implícita y para reducir dimensionalidad antes de expansión polinómica.</p>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>💾 Archivos del Sistema y Estructura de Proyecto</h3>
+                <div class="info-box">
+                    <h4>Estructura de Directorios</h4>
+                    <pre style="background: #252B2B; color: #EFDFC5; padding: 15px; border-radius: 8px; overflow-x: auto;">
+                        sistema_predictivo_sabor_chapaco/
+                        │
+                        ├── static/                                     # Assets estáticos
+                        │   ├── img/                                   # Imágenes del proyecto
+                        │   │   └── SaborChapaco.jpeg                  # Logo del restaurante
+                        │   └── graficos/                              # Visualizaciones ML
+                        │       ├── 01_pred_vs_real.png                # Predicción vs Real
+                        │       └── ...                                # Otras visualizaciones
+                        │
+                        ├── app.py                                     # Backend Flask principal
+                        ├── index.html                                 # Interfaz web completa
+                        ├── requerimientos.txt                         # Dependencias Python
+                        │
+                        ├── modelo_final_sabor_chapaco.pkl            # Modelo ML entrenado (23.4 MB)
+                        ├── scaler_sabor_chapaco.pkl                  # StandardScaler fitted (2.1 KB)
+                        ├── label_encoders_sabor_chapaco.pkl          # Dict LabelEncoders (1.8 KB)
+                        ├── polynomial_features.pkl                    # PolynomialFeatures(degree=2) (1.2 KB)
+                        ├── model_info.pkl                            # Metadata y métricas (4.3 KB)
+                        │
+                        └── README.md                                 # Documentación del proyecto
+
+                        URLs para archivos estáticos:
+                        ├── Logo: /static/img/SaborChapaco.jpeg
+                        └── Gráficos: /static/graficos/*.png
+
+                        Referencia en HTML:
+                        img src="/static/img/SaborChapaco.jpeg"
+                        img src="/static/graficos/01_pred_vs_real.png"
+
+                    </pre>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>⚙️ Instrucciones de Instalación y Despliegue</h3>
+                
+                <h4 style="color: #8F0B13; margin-top: 20px;">Prerrequisitos</h4>
+                <div class="recommendations">
+                    <li><strong>Python 3.9+</strong> (recomendado: 3.10 o 3.11)</li>
+                    <li><strong>pip</strong> actualizado (pip install --upgrade pip)</li>
+                    <li><strong>Entorno virtual</strong> (venv o conda)</li>
+                    <li><strong>8GB RAM</strong> mínimo (16GB recomendado para reentrenamiento)</li>
+                    <li><strong>Navegador moderno</strong> (Chrome 90+, Firefox 88+, Safari 14+)</li>
+                </div>
+
+                <h4 style="color: #8F0B13; margin-top: 20px;">Paso 1: Clonar e Instalar</h4>
+                <div class="info-box">
+                    <pre style="background: #252B2B; color: #EFDFC5; padding: 15px; border-radius: 8px; overflow-x: auto;">
+                        # 1. Crear y activar entorno virtual (Windows PowerShell)
+                        python -m venv .venv
+                        Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+                        .\.venv\Scripts\Activate.ps1
+
+                        # 2. Instalar dependencias
+                        pip install -r requerimientos.txt
+
+                        # 3. Verificar estructura de archivos estáticos
+                        mkdir -p static/img static/graficos
+                        mv SaborChapaco.jpeg static/img/
+                        mv *.png static/graficos/
+
+                        # 4. Verificar modelos
+                        python -c "import joblib; print('✓' if all(joblib.load(f) for f in [
+                            'modelo_final_sabor_chapaco.pkl',
+                            'scaler_sabor_chapaco.pkl',
+                            'label_encoders_sabor_chapaco.pkl',
+                            'model_info.pkl'
+                        ]) else '✗ Error al cargar modelos')"
+                    </pre>
+                </div>
+
+                <h4 style="color: #8F0B13; margin-top: 20px;">Paso 2: Verificar Modelos</h4>
+                <div class="info-box">
+                    <pre style="background: #252B2B; color: #EFDFC5; padding: 15px; border-radius: 8px; overflow-x: auto;">
+                        # Verificar que todos los archivos .pkl existan
+                        python -c "import os; print('OK' if all(os.path.exists(f) for f in [
+                            'modelo_final_sabor_chapaco.pkl',
+                            'scaler_sabor_chapaco.pkl',
+                            'label_encoders_sabor_chapaco.pkl',
+                            'polynomial_features.pkl',
+                            'model_info.pkl'
+                        ]) else 'FALTA ARCHIVOS')"
+
+                        # Probar carga de modelos
+                        python prediccion.py --test
+                    </pre>
+                </div>
+
+                <h4 style="color: #8F0B13; margin-top: 20px;">Paso 3: Iniciar Servidor</h4>
+                <div class="info-box">
+                    <pre style="background: #252B2B; color: #EFDFC5; padding: 15px; border-radius: 8px; overflow-x: auto;">
+                        # Modo desarrollo (con hot-reload)
+                        python app.py
+
+                        # Modo producción (con gunicorn)
+                        gunicorn -w 4 -b 0.0.0.0:5000 app:app
+
+                        # Verificar salud del servidor
+                        curl http://localhost:5000/api/health
+                    </pre>
+                </div>
+
+                <h4 style="color: #8F0B13; margin-top: 20px;">Paso 4: Acceder a la Interfaz</h4>
+                <p>Abrir navegador en: <code>http://localhost:5000</code></p>
+
+                <div class="section-divider"></div>
+
+                <h3>🔄 API Endpoints Documentados</h3>
+                
+                <div class="recommendations">
+                    <li><strong>POST /api/predict</strong> - Generar predicción
+                        <br><em>Body:</em> { "plato", "fecha", "hora", "dia_semana", "clima", "evento", "promocion", "fin_semana" }
+                        <br><em>Response:</em> { "success", "prediction", "prediction_rounded", "stock_min", "stock_max", "margen_seguridad", "confianza" }
+                    </li>
+                    <li><strong>GET /api/model-info</strong> - Información del modelo
+                        <br><em>Response:</em> { "model_name", "metrics": {"R2", "MAE", "RMSE", "MAPE"}, "feature_count", "trained_date" }
+                    </li>
+                    <li><strong>GET /api/health</strong> - Estado del servidor
+                        <br><em>Response:</em> { "status": "healthy", "model_loaded": true, "version": "2.1.0", "horario": "15:00 - 00:00" }
+                    </li>
+                    <li><strong>GET /api/platos</strong> - Lista de platos disponibles
+                        <br><em>Response:</em> { "success": true, "platos": [...] }
+                    </li>
+                    <li><strong>GET /api/statistics</strong> - Estadísticas del sistema
+                        <br><em>Response:</em> { "model_accuracy", "average_error", "model_version", "horario_operacion" }
+                    </li>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>⚠️ Limitaciones Identificadas del Sistema</h3>
+
+                <div class="limitation-card">
+                    <h4>🎯 Limitación 1: Dependencia de Datos Históricos</h4>
+                    <p><strong>Descripción:</strong> El modelo está entrenado con datos de enero 2023 - diciembre 2024. Eventos completamente nuevos (ej: pandemia, apertura de competidor directo al lado) no están en el historial.</p>
+                    <p><strong>Impacto:</strong> Predicciones pueden ser inexactas (±30-50%) en situaciones sin precedente.</p>
+                    <p><strong>Mitigación:</strong> 
+                        <br>• Reentrenamiento mensual con datos recientes
+                        <br>• Sistema de alertas para detectar anomalías (predicción vs. real > 40%)
+                        <br>• Botón de "override manual" para ajustes humanos en casos excepcionales
+                    </p>
+                </div>
+
+                <div class="limitation-card">
+                    <h4>📅 Limitación 2: Granularidad Temporal Limitada</h4>
+                    <p><strong>Descripción:</strong> Predicciones son por hora completa, no por minutos. No captura rush de 19:15-19:45 específicamente.</p>
+                    <p><strong>Impacto:</strong> Micro-picos dentro de una hora pueden causar faltantes temporales.</p>
+                    <p><strong>Mitigación:</strong>
+                        <br>• Implementar margen de seguridad mayor (+20%) en horas peak
+                        <br>• Versión futura: predicción cada 15 minutos requiere más datos
+                    </p>
+                </div>
+
+                <div class="limitation-card">
+                    <h4>🌐 Limitación 3: Variables Externas No Capturadas</h4>
+                    <p><strong>Descripción:</strong> Factores como construcciones cercanas, tráfico inusual, publicidad viral en redes sociales, no están en el modelo.</p>
+                    <p><strong>Impacto:</strong> Demanda puede variar ±15-25% por factores no considerados.</p>
+                    <p><strong>Mitigación:</strong>
+                        <br>• Expansión futura: scraping de redes sociales para sentiment analysis
+                        <br>• Integración con Google Maps API para datos de tráfico
+                        <br>• Feedback semanal del personal sobre factores externos observados
+                    </p>
+                </div>
+
+                <div class="limitation-card">
+                    <h4>🔄 Limitación 4: Cold Start Problem - Platos Nuevos</h4>
+                    <p><strong>Descripción:</strong> Si se introduce un plato nuevo al menú, no hay datos históricos para predecir su demanda.</p>
+                    <p><strong>Impacto:</strong> Primeras 2-4 semanas de un plato nuevo requieren estimación manual.</p>
+                    <p><strong>Mitigación:</strong>
+                        <br>• Usar predicción de plato similar como proxy (ej: nuevo guiso → usar datos de Ranga Ranga)
+                        <br>• Periodo de aprendizaje de 30 días con sobre-stock intencional (+40%)
+                        <br>• Modelo de transferencia: aprender de categorías ("platos picantes", "platos de cerdo")
+                    </p>
+                </div>
+
+                <div class="limitation-card">
+                    <h4>💻 Limitación 5: Requiere Conexión y Mantenimiento</h4>
+                    <p><strong>Descripción:</strong> Sistema cloud-based requiere internet. Caída del servidor = pérdida temporal de predicciones.</p>
+                    <p><strong>Impacto:</strong> Downtime puede requerir volver a estimación manual.</p>
+                    <p><strong>Mitigación:</strong>
+                        <br>• Caché local de últimas predicciones (válidas por 24h)
+                        <br>• Backup de hoja de cálculo con promedios históricos
+                        <br>• SLA de 99.5% uptime con monitoreo 24/7
+                    </p>
+                </div>
+
+                <div class="limitation-card">
+                    <h4>📊 Limitación 6: Precisión Variable por Plato</h4>
+                    <p><strong>Descripción:</strong> R²=0.85 es promedio. Platos de nicho (Chicharrón) tienen R²=0.68, mientras estrella (Ranga Ranga) tiene R²=0.91.</p>
+                    <p><strong>Impacto:</strong> Confianza debe ajustarse por plato específico.</p>
+                    <p><strong>Mitigación:</strong>
+                        <br>• Mostrar nivel de confianza individualizado por plato
+                        <br>• Margen de seguridad adaptativo: ±10% para Ranga Ranga, ±25% para Chicharrón
+                        <br>• Modelos especializados por categoría de plato en versión futura
+                    </p>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>🚀 Mejoras Futuras Identificadas</h3>
+
+                <h4 style="color: #8F0B13; margin-top: 20px;">Corto Plazo (3-6 meses)</h4>
+                <div class="recommendations">
+                    <li><strong>Predicción Multi-Output:</strong> Predecir demanda de todos los platos simultáneamente (un solo llamado API en vez de 7)</li>
+                    <li><strong>Intervalos de Confianza:</strong> Mostrar rango probabilístico (ej: "80% seguro de 45-52 porciones") en vez de punto único</li>
+                    <li><strong>Explicabilidad (SHAP Values):</strong> Mostrar qué factores impulsaron cada predicción específica ("Demanda alta por: fin_semana=1, promocion=2x1")</li>
+                    <li><strong>Alertas Proactivas:</strong> Email/SMS automáticos si predicción > 30% sobre promedio ("Preparar stock extra de...")</li>
+                    <li><strong>Dashboard Analytics:</strong> Visualizaciones en tiempo real de accuracy, tendencias, comparativa mensual</li>
+                </div>
+
+                <h4 style="color: #8F0B13; margin-top: 20px;">Mediano Plazo (6-12 meses)</h4>
+                <div class="recommendations">
+                    <li><strong>Deep Learning (LSTM/GRU):</strong> Redes neuronales recurrentes para capturar dependencias temporales de largo plazo</li>
+                    <li><strong>Ensemble Methods:</strong> Combinar Random Forest + XGBoost + Polinomial para reducir error a MAE < 2.0</li>
+                    <li><strong>Predicción de Ingredientes:</strong> Expandir a nivel granular (kg de carne, docenas de huevos, litros de leche)</li>
+                    <li><strong>Optimización de Precios Dinámica:</strong> Sugerir ajustes de precio basados en elasticidad de demanda predicha</li>
+                    <li><strong>A/B Testing Automatizado:</strong> Sistema que prueba variantes de estrategias y mide resultados objetivamente</li>
+                </div>
+
+                <h4 style="color: #8F0B13; margin-top: 20px;">Largo Plazo (12-24 meses)</h4>
+                <div class="recommendations">
+                    <li><strong>Computer Vision:</strong> Cámaras que detectan ocupación del restaurante en tiempo real para ajustar predicciones dinámicamente</li>
+                    <li><strong>NLP y Sentiment Analysis:</strong> Analizar reviews online y redes sociales para anticipar cambios de preferencias</li>
+                    <li><strong>Reinforcement Learning:</strong> Agente que aprende estrategias óptimas de inventario mediante trial-error simulado</li>
+                    <li><strong>Predicción de Personal:</strong> Cuántos meseros/cocineros necesitar según demanda y tiempos de servicio esperados</li>
+                    <li><strong>Sistema Multi-Restaurante:</strong> Si Sabor Chapaco expande sucursales, modelo que aprende de todas las locaciones</li>
+                </div>
+
+                <div class="section-divider"></div>
+
+                
+
+                <h3>📖 Referencias y Recursos</h3>
+                <div class="recommendations">
+                    <li><strong>Documentación Scikit-learn:</strong> https://scikit-learn.org/stable/modules/linear_model.html</li>
+                    <li><strong>Tutorial Feature Engineering:</strong> https://machinelearningmastery.com/discover-feature-engineering-how-to-engineer-features-and-how-to-get-good-at-it/</li>
+                    <li><strong>Polynomial Regression Explained:</strong> https://towardsdatascience.com/polynomial-regression-bbe8b9d97491</li>
+                    <li><strong>Demand Forecasting in Restaurants:</strong> Journal of Hospitality & Tourism Research, Vol. 45(2), 2021</li>
+                    <li><strong>Time Series Cross-Validation:</strong> https://robjhyndman.com/hyndsight/tscv/</li>
+                    <li><strong>Ejemplos de Uso de Assets Estáticos:</strong>
+                        <br>• Logo: <code>&lt;img src="/static/img/SaborChapaco.jpeg" alt="Logo"&gt;</code>
+                        <br>• Gráfico: <code>&lt;img src="/static/graficos/01_pred_vs_real.png" alt="Predicción vs Real"&gt;</code>
+                        <br>• CSS: <code>background-image: url('/static/img/SaborChapaco.jpeg');</code>
+                    </li>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Lightbox modal HTML -->
+    <div id="imgModal" class="modal-overlay" style="display:none;">
+        <div class="modal-content">
+            <div style="position: relative;">
+                <div id="modalClose" class="modal-close" title="Cerrar">×</div>
+                <img id="modalImg" class="modal-image" src="" alt="">
+            </div>
+            <div id="modalCaption" class="modal-caption"></div>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabId) {
+            // Ocultar todos los contenidos
+            const tabs = document.querySelectorAll('.tab-content');
+            const buttons = document.querySelectorAll('.tab-btn');
+
+            tabs.forEach(tab => tab.classList.remove('active'));
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // Mostrar el contenido seleccionado
+            document.getElementById(tabId).classList.add('active');
+
+            // Activar el botón correspondiente
+            const activeButton = Array.from(buttons).find(btn => {
+                const btnText = btn.textContent.toLowerCase();
+                return btnText.includes(tabId);
+            });
+            if (activeButton) {
+                activeButton.classList.add('active');
+            }
+        }
+
+        document.getElementById('predictionForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            // Preparar datos del formulario
+            const form = event.target;
+            const formData = new FormData(form);
+            const data = {};
+            formData.forEach((value, key) => { data[key] = value; });
+
+            // Mostrar estado de carga
+            const resultBox = document.getElementById('predictionResult');
+            const predictionValueEl = document.getElementById('predictionValue');
+            const margenEl = document.getElementById('margen');
+            const stockMinEl = document.getElementById('stockMin');
+            const stockMaxEl = document.getElementById('stockMax');
+            const confianzaEl = document.getElementById('confianza');
+
+            predictionValueEl.textContent = '⏳';
+            margenEl.textContent = '...';
+            stockMinEl.textContent = '...';
+            stockMaxEl.textContent = '...';
+            resultBox.classList.add('show');
+
+            try {
+                // Intentar primero con ruta relativa, luego con localhost explícito
+                let apiUrl = '/api/predict';
+                
+                const resp = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                // Si la respuesta no es OK, intentar leer el error
+                if (!resp.ok) {
+                    const errorText = await resp.text();
+                    console.error('Error del servidor:', errorText);
+                    
+                    try {
+                        const errorJson = JSON.parse(errorText);
+                        predictionValueEl.textContent = '❌';
+                        alert('Error al obtener predicción: ' + (errorJson.error || errorJson.message || resp.statusText));
+                    } catch {
+                        predictionValueEl.textContent = '❌';
+                        alert('Error del servidor (código ' + resp.status + '): ' + errorText);
+                    }
+                    return;
+                }
+
+                const json = await resp.json();
+
+                if (!json.success) {
+                    predictionValueEl.textContent = '❌';
+                    alert('Error en la predicción: ' + (json.error || json.message || 'Error desconocido'));
+                    return;
+                }
+
+                // Mostrar resultado
+                const predictedValue = json.prediction_rounded ?? Math.round(json.prediction ?? 0);
+                const margenSeguridad = json.margen_seguridad ?? 0;
+                const stockMin = json.stock_min ?? 0;
+                const stockMax = json.stock_max ?? 0;
+                const confianza = json.confianza ?? 85;
+
+                predictionValueEl.textContent = predictedValue;
+                margenEl.textContent = margenSeguridad;
+                stockMinEl.textContent = stockMin;
+                stockMaxEl.textContent = stockMax;
+                confianzaEl.textContent = confianza;
+
+            } catch (err) {
+                predictionValueEl.textContent = '❌';
+                console.error('Error al llamar al backend:', err);
+                alert('No se pudo conectar al servidor. Asegúrate de que la API esté corriendo en http://localhost:5000');
+            }
+        });
+
+        // Establecer fecha de hoy por defecto
+        document.addEventListener('DOMContentLoaded', function() {
+            const fechaInput = document.querySelector('input[name="fecha"]');
+            if (fechaInput) {
+                const today = new Date().toISOString().split('T')[0];
+                fechaInput.value = today;
+            }
+            // Inicializar lightbox para imágenes con clase viz-img
+            const modal = document.getElementById('imgModal');
+            const modalImg = document.getElementById('modalImg');
+            const modalCaption = document.getElementById('modalCaption');
+            const modalClose = document.getElementById('modalClose');
+
+            function openModal(src, caption) {
+                modalImg.src = src;
+                modalImg.alt = caption || '';
+                modalCaption.textContent = caption || '';
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeModal() {
+                modal.style.display = 'none';
+                modalImg.src = '';
+                modalCaption.textContent = '';
+                document.body.style.overflow = '';
+            }
+
+            // Cerrar al hacer click en la X o fuera del contenido
+            modalClose.addEventListener('click', closeModal);
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) closeModal();
+            });
+
+            // Agregar listeners a imágenes
+            document.querySelectorAll('.viz-img').forEach(img => {
+                img.style.cursor = 'zoom-in';
+                img.addEventListener('click', function() {
+                    const src = this.getAttribute('src');
+                    const caption = this.getAttribute('data-caption') || this.alt || '';
+                    openModal(src, caption);
+                });
+                // fallback: mostrar imagen en nueva pestaña con Ctrl+click
+                img.addEventListener('auxclick', function(e){ if(e.button===1){ window.open(this.src, '_blank'); } });
+            });
+        });
+    </script>
+</body>
+</html> 
