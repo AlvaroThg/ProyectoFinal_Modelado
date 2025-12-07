@@ -1,0 +1,1826 @@
+fecha,plato,porciones_vendidas,hora_servicio,dia_semana,es_fin_semana,condicion_climatica,evento_local,tipo_promocion,mes,trimestre
+2024-01-01,Ranga Ranga,26,17,Lunes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-02,Ranga Ranga,32,20,Martes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-03,Ranga Ranga,29,17,Miércoles,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-04,Ranga Ranga,29,18,Jueves,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-05,Ranga Ranga,47,20,Viernes,1,Nublado,Ninguno,Ninguna,1,1
+2024-01-06,Ranga Ranga,41,15,Sábado,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-07,Ranga Ranga,60,20,Domingo,1,Nublado,Ninguno,2x1,1,1
+2024-01-08,Ranga Ranga,30,15,Lunes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-09,Ranga Ranga,38,19,Martes,0,Lluvioso,Ninguno,Ninguna,1,1
+2024-01-10,Ranga Ranga,23,22,Miércoles,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-11,Ranga Ranga,31,19,Jueves,0,Nublado,Ninguno,Ninguna,1,1
+2024-01-12,Ranga Ranga,49,18,Viernes,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-13,Ranga Ranga,47,15,Sábado,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-14,Ranga Ranga,53,20,Domingo,1,Nublado,Ninguno,Ninguna,1,1
+2024-01-15,Ranga Ranga,43,16,Lunes,0,Soleado,Ninguno,Menu del Dia,1,1
+2024-01-16,Ranga Ranga,36,19,Martes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-17,Ranga Ranga,27,18,Miércoles,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-18,Ranga Ranga,47,18,Jueves,0,Soleado,Ninguno,2x1,1,1
+2024-01-19,Ranga Ranga,47,20,Viernes,1,Nublado,Ninguno,Ninguna,1,1
+2024-01-20,Ranga Ranga,52,19,Sábado,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-21,Ranga Ranga,48,19,Domingo,1,Nublado,Ninguno,Ninguna,1,1
+2024-01-22,Ranga Ranga,30,18,Lunes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-23,Ranga Ranga,35,15,Martes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-24,Ranga Ranga,26,19,Miércoles,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-25,Ranga Ranga,28,18,Jueves,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-26,Ranga Ranga,61,23,Viernes,1,Soleado,Ninguno,Descuento,1,1
+2024-01-27,Ranga Ranga,50,16,Sábado,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-28,Ranga Ranga,61,17,Domingo,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-29,Ranga Ranga,36,18,Lunes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-30,Ranga Ranga,34,20,Martes,0,Nublado,Ninguno,Ninguna,1,1
+2024-01-31,Ranga Ranga,50,21,Miércoles,0,Soleado,Festival,Ninguna,1,1
+2024-02-01,Ranga Ranga,32,21,Jueves,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-02,Ranga Ranga,63,17,Viernes,1,Soleado,Festival,Ninguna,2,1
+2024-02-03,Ranga Ranga,50,21,Sábado,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-04,Ranga Ranga,56,18,Domingo,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-05,Ranga Ranga,42,20,Lunes,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-06,Ranga Ranga,34,16,Martes,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-07,Ranga Ranga,36,15,Miércoles,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-08,Ranga Ranga,52,20,Jueves,0,Soleado,Ninguno,Descuento,2,1
+2024-02-09,Ranga Ranga,52,18,Viernes,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-10,Ranga Ranga,54,16,Sábado,1,Nublado,Ninguno,Ninguna,2,1
+2024-02-11,Ranga Ranga,58,23,Domingo,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-12,Ranga Ranga,31,19,Lunes,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-13,Ranga Ranga,38,18,Martes,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-14,Ranga Ranga,31,15,Miércoles,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-15,Ranga Ranga,41,23,Jueves,0,Lluvioso,Ninguno,Ninguna,2,1
+2024-02-16,Ranga Ranga,48,17,Viernes,1,Nublado,Ninguno,Ninguna,2,1
+2024-02-17,Ranga Ranga,54,19,Sábado,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-18,Ranga Ranga,51,21,Domingo,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-19,Ranga Ranga,27,19,Lunes,0,Nublado,Ninguno,Ninguna,2,1
+2024-02-20,Ranga Ranga,34,20,Martes,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-21,Ranga Ranga,48,21,Miércoles,0,Nublado,Ninguno,Ninguna,2,1
+2024-02-22,Ranga Ranga,39,17,Jueves,0,Soleado,Ninguno,Menu del Dia,2,1
+2024-02-23,Ranga Ranga,62,18,Viernes,1,Lluvioso,Ninguno,Ninguna,2,1
+2024-02-24,Ranga Ranga,54,18,Sábado,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-25,Ranga Ranga,55,17,Domingo,1,Lluvioso,Ninguno,Ninguna,2,1
+2024-02-26,Ranga Ranga,44,19,Lunes,0,Soleado,Ninguno,2x1,2,1
+2024-02-27,Ranga Ranga,30,16,Martes,0,Nublado,Ninguno,Ninguna,2,1
+2024-02-28,Ranga Ranga,42,19,Miércoles,0,Soleado,Ninguno,Descuento,2,1
+2024-02-29,Ranga Ranga,29,23,Jueves,0,Nublado,Ninguno,Ninguna,2,1
+2024-03-01,Ranga Ranga,44,19,Viernes,1,Nublado,Ninguno,Ninguna,3,1
+2024-03-02,Ranga Ranga,72,15,Sábado,1,Nublado,Fiesta,Menu del Dia,3,1
+2024-03-03,Ranga Ranga,50,19,Domingo,1,Nublado,Ninguno,Ninguna,3,1
+2024-03-04,Ranga Ranga,28,20,Lunes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-05,Ranga Ranga,60,20,Martes,0,Nublado,Feriado,Menu del Dia,3,1
+2024-03-06,Ranga Ranga,42,21,Miércoles,0,Soleado,Feriado,Ninguna,3,1
+2024-03-07,Ranga Ranga,27,21,Jueves,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-08,Ranga Ranga,51,20,Viernes,1,Nublado,Ninguno,Ninguna,3,1
+2024-03-09,Ranga Ranga,49,20,Sábado,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-10,Ranga Ranga,50,20,Domingo,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-11,Ranga Ranga,27,22,Lunes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-12,Ranga Ranga,37,19,Martes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-13,Ranga Ranga,29,18,Miércoles,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-14,Ranga Ranga,33,18,Jueves,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-15,Ranga Ranga,53,19,Viernes,1,Nublado,Ninguno,Ninguna,3,1
+2024-03-16,Ranga Ranga,54,22,Sábado,1,Soleado,Ninguno,2x1,3,1
+2024-03-17,Ranga Ranga,51,20,Domingo,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-18,Ranga Ranga,34,20,Lunes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-19,Ranga Ranga,32,16,Martes,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-20,Ranga Ranga,28,19,Miércoles,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-21,Ranga Ranga,28,16,Jueves,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-22,Ranga Ranga,62,17,Viernes,1,Nublado,Fiesta,Ninguna,3,1
+2024-03-23,Ranga Ranga,52,19,Sábado,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-24,Ranga Ranga,50,19,Domingo,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-25,Ranga Ranga,25,19,Lunes,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-26,Ranga Ranga,30,21,Martes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-27,Ranga Ranga,30,16,Miércoles,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-28,Ranga Ranga,22,23,Jueves,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-29,Ranga Ranga,65,19,Viernes,1,Soleado,Ninguno,2x1,3,1
+2024-03-30,Ranga Ranga,51,20,Sábado,1,Nublado,Ninguno,Ninguna,3,1
+2024-03-31,Ranga Ranga,73,18,Domingo,1,Soleado,Ninguno,Descuento,3,1
+2024-04-01,Ranga Ranga,29,19,Lunes,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-02,Ranga Ranga,33,18,Martes,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-03,Ranga Ranga,40,22,Miércoles,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-04,Ranga Ranga,26,22,Jueves,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-05,Ranga Ranga,69,20,Viernes,1,Nublado,Feriado,Ninguna,4,2
+2024-04-06,Ranga Ranga,48,21,Sábado,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-07,Ranga Ranga,67,18,Domingo,1,Soleado,Festival,Ninguna,4,2
+2024-04-08,Ranga Ranga,38,22,Lunes,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-09,Ranga Ranga,33,17,Martes,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-10,Ranga Ranga,43,19,Miércoles,0,Lluvioso,Ninguno,Ninguna,4,2
+2024-04-11,Ranga Ranga,38,20,Jueves,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-12,Ranga Ranga,55,19,Viernes,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-13,Ranga Ranga,62,20,Sábado,1,Soleado,Feriado,Ninguna,4,2
+2024-04-14,Ranga Ranga,51,20,Domingo,1,Nublado,Ninguno,Ninguna,4,2
+2024-04-15,Ranga Ranga,44,19,Lunes,0,Soleado,Fiesta,Ninguna,4,2
+2024-04-16,Ranga Ranga,25,19,Martes,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-17,Ranga Ranga,38,20,Miércoles,0,Lluvioso,Ninguno,Ninguna,4,2
+2024-04-18,Ranga Ranga,35,20,Jueves,0,Soleado,Festival,Ninguna,4,2
+2024-04-19,Ranga Ranga,57,21,Viernes,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-20,Ranga Ranga,54,18,Sábado,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-21,Ranga Ranga,72,19,Domingo,1,Soleado,Fiesta,2x1,4,2
+2024-04-22,Ranga Ranga,29,19,Lunes,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-23,Ranga Ranga,31,19,Martes,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-24,Ranga Ranga,43,19,Miércoles,0,Soleado,Ninguno,Menu del Dia,4,2
+2024-04-25,Ranga Ranga,30,19,Jueves,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-26,Ranga Ranga,62,19,Viernes,1,Nublado,Feriado,Ninguna,4,2
+2024-04-27,Ranga Ranga,55,18,Sábado,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-28,Ranga Ranga,57,18,Domingo,1,Soleado,Ninguno,2x1,4,2
+2024-04-29,Ranga Ranga,33,19,Lunes,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-30,Ranga Ranga,38,19,Martes,0,Soleado,Ninguno,Ninguna,4,2
+2024-05-01,Ranga Ranga,59,18,Miércoles,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-02,Ranga Ranga,49,21,Jueves,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-03,Ranga Ranga,72,16,Viernes,1,Soleado,Ninguno,2x1,5,2
+2024-05-04,Ranga Ranga,68,23,Sábado,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-05,Ranga Ranga,65,17,Domingo,1,Nublado,Ninguno,Ninguna,5,2
+2024-05-06,Ranga Ranga,43,20,Lunes,0,Nublado,Ninguno,Ninguna,5,2
+2024-05-07,Ranga Ranga,53,19,Martes,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-08,Ranga Ranga,53,17,Miércoles,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-09,Ranga Ranga,56,19,Jueves,0,Soleado,Ninguno,Descuento,5,2
+2024-05-10,Ranga Ranga,67,17,Viernes,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-11,Ranga Ranga,70,20,Sábado,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-12,Ranga Ranga,67,22,Domingo,1,Nublado,Ninguno,Ninguna,5,2
+2024-05-13,Ranga Ranga,63,22,Lunes,0,Lluvioso,Ninguno,Ninguna,5,2
+2024-05-14,Ranga Ranga,77,21,Martes,0,Nublado,Festival,2x1,5,2
+2024-05-15,Ranga Ranga,53,22,Miércoles,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-16,Ranga Ranga,58,21,Jueves,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-17,Ranga Ranga,68,19,Viernes,1,Nublado,Ninguno,Ninguna,5,2
+2024-05-18,Ranga Ranga,60,18,Sábado,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-19,Ranga Ranga,75,21,Domingo,1,Nublado,Ninguno,Ninguna,5,2
+2024-05-20,Ranga Ranga,55,17,Lunes,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-21,Ranga Ranga,53,20,Martes,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-22,Ranga Ranga,60,19,Miércoles,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-23,Ranga Ranga,47,20,Jueves,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-24,Ranga Ranga,72,21,Viernes,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-25,Ranga Ranga,82,19,Sábado,1,Lluvioso,Ninguno,Ninguna,5,2
+2024-05-26,Ranga Ranga,73,19,Domingo,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-27,Ranga Ranga,47,15,Lunes,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-28,Ranga Ranga,48,17,Martes,0,Nublado,Ninguno,Ninguna,5,2
+2024-05-29,Ranga Ranga,48,18,Miércoles,0,Nublado,Ninguno,Ninguna,5,2
+2024-05-30,Ranga Ranga,53,20,Jueves,0,Nublado,Ninguno,Ninguna,5,2
+2024-05-31,Ranga Ranga,67,22,Viernes,1,Soleado,Ninguno,Ninguna,5,2
+2024-06-01,Ranga Ranga,68,22,Sábado,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-02,Ranga Ranga,70,15,Domingo,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-03,Ranga Ranga,48,19,Lunes,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-04,Ranga Ranga,54,21,Martes,0,Lluvioso,Ninguno,Ninguna,6,2
+2024-06-05,Ranga Ranga,47,19,Miércoles,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-06,Ranga Ranga,44,20,Jueves,0,Nublado,Ninguno,Ninguna,6,2
+2024-06-07,Ranga Ranga,74,19,Viernes,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-08,Ranga Ranga,65,20,Sábado,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-09,Ranga Ranga,76,20,Domingo,1,Soleado,Ninguno,Menu del Dia,6,2
+2024-06-10,Ranga Ranga,58,19,Lunes,0,Soleado,Fiesta,Ninguna,6,2
+2024-06-11,Ranga Ranga,61,18,Martes,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-12,Ranga Ranga,51,20,Miércoles,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-13,Ranga Ranga,44,16,Jueves,0,Nublado,Ninguno,Ninguna,6,2
+2024-06-14,Ranga Ranga,66,17,Viernes,1,Nublado,Ninguno,Ninguna,6,2
+2024-06-15,Ranga Ranga,71,18,Sábado,1,Nublado,Ninguno,Ninguna,6,2
+2024-06-16,Ranga Ranga,85,18,Domingo,1,Nublado,Ninguno,2x1,6,2
+2024-06-17,Ranga Ranga,49,19,Lunes,0,Nublado,Ninguno,Ninguna,6,2
+2024-06-18,Ranga Ranga,58,19,Martes,0,Lluvioso,Ninguno,Ninguna,6,2
+2024-06-19,Ranga Ranga,45,20,Miércoles,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-20,Ranga Ranga,49,20,Jueves,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-21,Ranga Ranga,70,16,Viernes,1,Nublado,Ninguno,Ninguna,6,2
+2024-06-22,Ranga Ranga,75,17,Sábado,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-23,Ranga Ranga,66,20,Domingo,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-24,Ranga Ranga,54,19,Lunes,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-25,Ranga Ranga,51,16,Martes,0,Nublado,Ninguno,Ninguna,6,2
+2024-06-26,Ranga Ranga,50,20,Miércoles,0,Nublado,Ninguno,Ninguna,6,2
+2024-06-27,Ranga Ranga,43,19,Jueves,0,Nublado,Ninguno,Ninguna,6,2
+2024-06-28,Ranga Ranga,69,23,Viernes,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-29,Ranga Ranga,64,19,Sábado,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-30,Ranga Ranga,64,16,Domingo,1,Nublado,Ninguno,Ninguna,6,2
+2024-07-01,Ranga Ranga,54,16,Lunes,0,Soleado,Feriado,Ninguna,7,3
+2024-07-02,Ranga Ranga,62,19,Martes,0,Lluvioso,Ninguno,Ninguna,7,3
+2024-07-03,Ranga Ranga,54,20,Miércoles,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-04,Ranga Ranga,54,19,Jueves,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-05,Ranga Ranga,73,15,Viernes,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-06,Ranga Ranga,70,23,Sábado,1,Nublado,Ninguno,Ninguna,7,3
+2024-07-07,Ranga Ranga,74,21,Domingo,1,Lluvioso,Ninguno,Ninguna,7,3
+2024-07-08,Ranga Ranga,55,17,Lunes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-09,Ranga Ranga,50,18,Martes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-10,Ranga Ranga,52,20,Miércoles,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-11,Ranga Ranga,54,20,Jueves,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-12,Ranga Ranga,76,19,Viernes,1,Lluvioso,Ninguno,Ninguna,7,3
+2024-07-13,Ranga Ranga,63,20,Sábado,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-14,Ranga Ranga,63,18,Domingo,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-15,Ranga Ranga,63,17,Lunes,0,Soleado,Ninguno,2x1,7,3
+2024-07-16,Ranga Ranga,54,19,Martes,0,Lluvioso,Ninguno,Ninguna,7,3
+2024-07-17,Ranga Ranga,57,19,Miércoles,0,Lluvioso,Ninguno,Ninguna,7,3
+2024-07-18,Ranga Ranga,51,17,Jueves,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-19,Ranga Ranga,80,16,Viernes,1,Soleado,Ninguno,Descuento,7,3
+2024-07-20,Ranga Ranga,81,0,Sábado,1,Lluvioso,Ninguno,Ninguna,7,3
+2024-07-21,Ranga Ranga,66,21,Domingo,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-22,Ranga Ranga,53,19,Lunes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-23,Ranga Ranga,61,15,Martes,0,Soleado,Festival,Ninguna,7,3
+2024-07-24,Ranga Ranga,54,19,Miércoles,0,Nublado,Feriado,Ninguna,7,3
+2024-07-25,Ranga Ranga,55,19,Jueves,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-26,Ranga Ranga,66,16,Viernes,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-27,Ranga Ranga,75,18,Sábado,1,Nublado,Ninguno,Ninguna,7,3
+2024-07-28,Ranga Ranga,71,21,Domingo,1,Nublado,Ninguno,Ninguna,7,3
+2024-07-29,Ranga Ranga,53,21,Lunes,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-30,Ranga Ranga,54,20,Martes,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-31,Ranga Ranga,50,20,Miércoles,0,Soleado,Ninguno,Ninguna,7,3
+2024-08-01,Ranga Ranga,48,19,Jueves,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-02,Ranga Ranga,70,18,Viernes,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-03,Ranga Ranga,70,17,Sábado,1,Nublado,Ninguno,Ninguna,8,3
+2024-08-04,Ranga Ranga,75,22,Domingo,1,Nublado,Ninguno,Ninguna,8,3
+2024-08-05,Ranga Ranga,45,16,Lunes,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-06,Ranga Ranga,61,16,Martes,0,Soleado,Ninguno,Descuento,8,3
+2024-08-07,Ranga Ranga,51,19,Miércoles,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-08,Ranga Ranga,56,18,Jueves,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-09,Ranga Ranga,68,22,Viernes,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-10,Ranga Ranga,68,21,Sábado,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-11,Ranga Ranga,86,23,Domingo,1,Nublado,Ninguno,Menu del Dia,8,3
+2024-08-12,Ranga Ranga,59,19,Lunes,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-13,Ranga Ranga,47,21,Martes,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-14,Ranga Ranga,66,19,Miércoles,0,Soleado,Ninguno,2x1,8,3
+2024-08-15,Ranga Ranga,59,16,Jueves,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-16,Ranga Ranga,72,23,Viernes,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-17,Ranga Ranga,82,17,Sábado,1,Soleado,Ninguno,Menu del Dia,8,3
+2024-08-18,Ranga Ranga,67,19,Domingo,1,Nublado,Ninguno,Ninguna,8,3
+2024-08-19,Ranga Ranga,51,19,Lunes,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-20,Ranga Ranga,55,20,Martes,0,Soleado,Fiesta,Ninguna,8,3
+2024-08-21,Ranga Ranga,67,20,Miércoles,0,Nublado,Ninguno,Descuento,8,3
+2024-08-22,Ranga Ranga,51,18,Jueves,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-23,Ranga Ranga,69,16,Viernes,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-24,Ranga Ranga,82,17,Sábado,1,Soleado,Ninguno,2x1,8,3
+2024-08-25,Ranga Ranga,67,18,Domingo,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-26,Ranga Ranga,59,21,Lunes,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-27,Ranga Ranga,53,21,Martes,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-28,Ranga Ranga,51,20,Miércoles,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-29,Ranga Ranga,70,19,Jueves,0,Soleado,Ninguno,Descuento,8,3
+2024-08-30,Ranga Ranga,69,20,Viernes,1,Nublado,Ninguno,Ninguna,8,3
+2024-08-31,Ranga Ranga,74,15,Sábado,1,Nublado,Ninguno,Descuento,8,3
+2024-09-01,Ranga Ranga,67,19,Domingo,1,Nublado,Ninguno,Ninguna,9,3
+2024-09-02,Ranga Ranga,51,21,Lunes,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-03,Ranga Ranga,53,20,Martes,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-04,Ranga Ranga,56,19,Miércoles,0,Nublado,Ninguno,Ninguna,9,3
+2024-09-05,Ranga Ranga,55,19,Jueves,0,Soleado,Fiesta,Ninguna,9,3
+2024-09-06,Ranga Ranga,74,20,Viernes,1,Lluvioso,Ninguno,Ninguna,9,3
+2024-09-07,Ranga Ranga,72,19,Sábado,1,Nublado,Ninguno,Ninguna,9,3
+2024-09-08,Ranga Ranga,69,19,Domingo,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-09,Ranga Ranga,53,18,Lunes,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-10,Ranga Ranga,51,17,Martes,0,Nublado,Ninguno,Ninguna,9,3
+2024-09-11,Ranga Ranga,49,21,Miércoles,0,Lluvioso,Ninguno,Ninguna,9,3
+2024-09-12,Ranga Ranga,53,20,Jueves,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-13,Ranga Ranga,85,20,Viernes,1,Soleado,Ninguno,2x1,9,3
+2024-09-14,Ranga Ranga,61,19,Sábado,1,Nublado,Ninguno,Ninguna,9,3
+2024-09-15,Ranga Ranga,88,17,Domingo,1,Soleado,Fiesta,Menu del Dia,9,3
+2024-09-16,Ranga Ranga,54,20,Lunes,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-17,Ranga Ranga,52,18,Martes,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-18,Ranga Ranga,53,17,Miércoles,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-19,Ranga Ranga,49,17,Jueves,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-20,Ranga Ranga,73,23,Viernes,1,Nublado,Ninguno,Ninguna,9,3
+2024-09-21,Ranga Ranga,70,18,Sábado,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-22,Ranga Ranga,70,17,Domingo,1,Nublado,Ninguno,Ninguna,9,3
+2024-09-23,Ranga Ranga,55,18,Lunes,0,Nublado,Ninguno,Ninguna,9,3
+2024-09-24,Ranga Ranga,59,21,Martes,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-25,Ranga Ranga,73,19,Miércoles,0,Lluvioso,Ninguno,Menu del Dia,9,3
+2024-09-26,Ranga Ranga,53,20,Jueves,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-27,Ranga Ranga,71,15,Viernes,1,Nublado,Ninguno,Ninguna,9,3
+2024-09-28,Ranga Ranga,66,20,Sábado,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-29,Ranga Ranga,65,16,Domingo,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-30,Ranga Ranga,49,19,Lunes,0,Nublado,Ninguno,Ninguna,9,3
+2024-10-01,Ranga Ranga,50,18,Martes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-02,Ranga Ranga,52,19,Miércoles,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-03,Ranga Ranga,51,22,Jueves,0,Nublado,Ninguno,Ninguna,10,4
+2024-10-04,Ranga Ranga,72,17,Viernes,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-05,Ranga Ranga,75,19,Sábado,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-06,Ranga Ranga,68,18,Domingo,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-07,Ranga Ranga,48,19,Lunes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-08,Ranga Ranga,54,18,Martes,0,Nublado,Ninguno,Ninguna,10,4
+2024-10-09,Ranga Ranga,56,20,Miércoles,0,Lluvioso,Ninguno,Ninguna,10,4
+2024-10-10,Ranga Ranga,58,21,Jueves,0,Lluvioso,Ninguno,Ninguna,10,4
+2024-10-11,Ranga Ranga,76,22,Viernes,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-12,Ranga Ranga,70,18,Sábado,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-13,Ranga Ranga,72,19,Domingo,1,Nublado,Ninguno,Ninguna,10,4
+2024-10-14,Ranga Ranga,49,21,Lunes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-15,Ranga Ranga,66,18,Martes,0,Soleado,Festival,Ninguna,10,4
+2024-10-16,Ranga Ranga,61,0,Miércoles,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-17,Ranga Ranga,59,20,Jueves,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-18,Ranga Ranga,87,18,Viernes,1,Lluvioso,Ninguno,Descuento,10,4
+2024-10-19,Ranga Ranga,82,19,Sábado,1,Lluvioso,Ninguno,Ninguna,10,4
+2024-10-20,Ranga Ranga,78,19,Domingo,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-21,Ranga Ranga,67,20,Lunes,0,Nublado,Ninguno,2x1,10,4
+2024-10-22,Ranga Ranga,45,16,Martes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-23,Ranga Ranga,44,19,Miércoles,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-24,Ranga Ranga,49,20,Jueves,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-25,Ranga Ranga,61,17,Viernes,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-26,Ranga Ranga,86,19,Sábado,1,Lluvioso,Festival,Ninguna,10,4
+2024-10-27,Ranga Ranga,82,17,Domingo,1,Nublado,Feriado,Ninguna,10,4
+2024-10-28,Ranga Ranga,62,18,Lunes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-29,Ranga Ranga,58,18,Martes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-30,Ranga Ranga,59,20,Miércoles,0,Lluvioso,Ninguno,Ninguna,10,4
+2024-10-31,Ranga Ranga,42,19,Jueves,0,Soleado,Ninguno,Ninguna,10,4
+2024-11-01,Ranga Ranga,53,20,Viernes,1,Nublado,Ninguno,Ninguna,11,4
+2024-11-02,Ranga Ranga,51,23,Sábado,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-03,Ranga Ranga,51,19,Domingo,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-04,Ranga Ranga,45,23,Lunes,0,Soleado,Ninguno,Descuento,11,4
+2024-11-05,Ranga Ranga,51,15,Martes,0,Nublado,Ninguno,2x1,11,4
+2024-11-06,Ranga Ranga,34,18,Miércoles,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-07,Ranga Ranga,49,15,Jueves,0,Soleado,Ninguno,Descuento,11,4
+2024-11-08,Ranga Ranga,58,17,Viernes,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-09,Ranga Ranga,45,20,Sábado,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-10,Ranga Ranga,50,20,Domingo,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-11,Ranga Ranga,32,18,Lunes,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-12,Ranga Ranga,36,20,Martes,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-13,Ranga Ranga,37,19,Miércoles,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-14,Ranga Ranga,33,20,Jueves,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-15,Ranga Ranga,49,20,Viernes,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-16,Ranga Ranga,53,18,Sábado,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-17,Ranga Ranga,51,17,Domingo,1,Nublado,Ninguno,Ninguna,11,4
+2024-11-18,Ranga Ranga,39,20,Lunes,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-19,Ranga Ranga,36,17,Martes,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-20,Ranga Ranga,36,18,Miércoles,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-21,Ranga Ranga,34,19,Jueves,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-22,Ranga Ranga,57,17,Viernes,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-23,Ranga Ranga,72,20,Sábado,1,Lluvioso,Ninguno,2x1,11,4
+2024-11-24,Ranga Ranga,60,18,Domingo,1,Nublado,Ninguno,2x1,11,4
+2024-11-25,Ranga Ranga,30,17,Lunes,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-26,Ranga Ranga,38,20,Martes,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-27,Ranga Ranga,44,18,Miércoles,0,Soleado,Ninguno,Descuento,11,4
+2024-11-28,Ranga Ranga,33,17,Jueves,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-29,Ranga Ranga,56,22,Viernes,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-30,Ranga Ranga,50,19,Sábado,1,Soleado,Ninguno,Ninguna,11,4
+2024-12-01,Ranga Ranga,54,18,Domingo,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-02,Ranga Ranga,36,21,Lunes,0,Lluvioso,Ninguno,Ninguna,12,4
+2024-12-03,Ranga Ranga,39,18,Martes,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-04,Ranga Ranga,45,18,Miércoles,0,Lluvioso,Ninguno,Ninguna,12,4
+2024-12-05,Ranga Ranga,44,20,Jueves,0,Soleado,Ninguno,2x1,12,4
+2024-12-06,Ranga Ranga,55,19,Viernes,1,Nublado,Ninguno,Ninguna,12,4
+2024-12-07,Ranga Ranga,56,19,Sábado,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-08,Ranga Ranga,51,19,Domingo,1,Nublado,Ninguno,Ninguna,12,4
+2024-12-09,Ranga Ranga,36,0,Lunes,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-10,Ranga Ranga,36,20,Martes,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-11,Ranga Ranga,29,20,Miércoles,0,Nublado,Ninguno,Ninguna,12,4
+2024-12-12,Ranga Ranga,48,20,Jueves,0,Soleado,Fiesta,Ninguna,12,4
+2024-12-13,Ranga Ranga,57,19,Viernes,1,Nublado,Ninguno,Ninguna,12,4
+2024-12-14,Ranga Ranga,51,17,Sábado,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-15,Ranga Ranga,79,17,Domingo,1,Nublado,Feriado,Descuento,12,4
+2024-12-16,Ranga Ranga,35,20,Lunes,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-17,Ranga Ranga,39,16,Martes,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-18,Ranga Ranga,30,20,Miércoles,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-19,Ranga Ranga,36,21,Jueves,0,Nublado,Ninguno,Ninguna,12,4
+2024-12-20,Ranga Ranga,62,18,Viernes,1,Soleado,Ninguno,2x1,12,4
+2024-12-21,Ranga Ranga,53,22,Sábado,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-22,Ranga Ranga,52,19,Domingo,1,Nublado,Ninguno,Ninguna,12,4
+2024-12-23,Ranga Ranga,36,19,Lunes,0,Nublado,Ninguno,Ninguna,12,4
+2024-12-24,Ranga Ranga,32,19,Martes,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-25,Ranga Ranga,38,19,Miércoles,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-26,Ranga Ranga,34,19,Jueves,0,Nublado,Ninguno,Ninguna,12,4
+2024-12-27,Ranga Ranga,70,22,Viernes,1,Soleado,Feriado,Ninguna,12,4
+2024-12-28,Ranga Ranga,60,20,Sábado,1,Nublado,Festival,Ninguna,12,4
+2024-12-29,Ranga Ranga,67,18,Domingo,1,Nublado,Ninguno,Descuento,12,4
+2024-12-30,Ranga Ranga,31,20,Lunes,0,Soleado,Ninguno,Ninguna,12,4
+2024-01-01,Sajta de Pollo,33,21,Lunes,0,Soleado,Ninguno,2x1,1,1
+2024-01-02,Sajta de Pollo,21,20,Martes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-03,Sajta de Pollo,22,19,Miércoles,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-04,Sajta de Pollo,27,20,Jueves,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-05,Sajta de Pollo,54,17,Viernes,1,Soleado,Ninguno,Menu del Dia,1,1
+2024-01-06,Sajta de Pollo,36,17,Sábado,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-07,Sajta de Pollo,46,21,Domingo,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-08,Sajta de Pollo,40,20,Lunes,0,Soleado,Ninguno,Descuento,1,1
+2024-01-09,Sajta de Pollo,18,21,Martes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-10,Sajta de Pollo,25,21,Miércoles,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-11,Sajta de Pollo,25,20,Jueves,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-12,Sajta de Pollo,42,18,Viernes,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-13,Sajta de Pollo,47,20,Sábado,1,Nublado,Ninguno,Ninguna,1,1
+2024-01-14,Sajta de Pollo,40,22,Domingo,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-15,Sajta de Pollo,23,19,Lunes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-16,Sajta de Pollo,30,19,Martes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-17,Sajta de Pollo,35,23,Miércoles,0,Soleado,Ninguno,2x1,1,1
+2024-01-18,Sajta de Pollo,27,20,Jueves,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-19,Sajta de Pollo,46,19,Viernes,1,Nublado,Ninguno,Ninguna,1,1
+2024-01-20,Sajta de Pollo,45,22,Sábado,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-21,Sajta de Pollo,51,15,Domingo,1,Soleado,Ninguno,2x1,1,1
+2024-01-22,Sajta de Pollo,29,23,Lunes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-23,Sajta de Pollo,24,18,Martes,0,Nublado,Ninguno,Ninguna,1,1
+2024-01-24,Sajta de Pollo,38,21,Miércoles,0,Lluvioso,Ninguno,Descuento,1,1
+2024-01-25,Sajta de Pollo,38,16,Jueves,0,Soleado,Ninguno,2x1,1,1
+2024-01-26,Sajta de Pollo,43,18,Viernes,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-27,Sajta de Pollo,52,19,Sábado,1,Soleado,Ninguno,2x1,1,1
+2024-01-28,Sajta de Pollo,46,18,Domingo,1,Nublado,Ninguno,Ninguna,1,1
+2024-01-29,Sajta de Pollo,26,17,Lunes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-30,Sajta de Pollo,32,20,Martes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-31,Sajta de Pollo,25,19,Miércoles,0,Nublado,Ninguno,Ninguna,1,1
+2024-02-01,Sajta de Pollo,46,16,Jueves,0,Lluvioso,Ninguno,Descuento,2,1
+2024-02-02,Sajta de Pollo,38,21,Viernes,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-03,Sajta de Pollo,35,18,Sábado,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-04,Sajta de Pollo,42,22,Domingo,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-05,Sajta de Pollo,22,22,Lunes,0,Nublado,Ninguno,Ninguna,2,1
+2024-02-06,Sajta de Pollo,40,19,Martes,0,Nublado,Ninguno,Descuento,2,1
+2024-02-07,Sajta de Pollo,24,20,Miércoles,0,Nublado,Ninguno,Ninguna,2,1
+2024-02-08,Sajta de Pollo,31,18,Jueves,0,Lluvioso,Ninguno,Ninguna,2,1
+2024-02-09,Sajta de Pollo,44,21,Viernes,1,Lluvioso,Ninguno,Ninguna,2,1
+2024-02-10,Sajta de Pollo,56,17,Sábado,1,Soleado,Ninguno,Descuento,2,1
+2024-02-11,Sajta de Pollo,46,19,Domingo,1,Soleado,Ninguno,2x1,2,1
+2024-02-12,Sajta de Pollo,25,15,Lunes,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-13,Sajta de Pollo,35,17,Martes,0,Lluvioso,Ninguno,Ninguna,2,1
+2024-02-14,Sajta de Pollo,27,15,Miércoles,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-15,Sajta de Pollo,24,21,Jueves,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-16,Sajta de Pollo,53,15,Viernes,1,Soleado,Ninguno,2x1,2,1
+2024-02-17,Sajta de Pollo,55,19,Sábado,1,Nublado,Festival,Menu del Dia,2,1
+2024-02-18,Sajta de Pollo,40,19,Domingo,1,Nublado,Ninguno,Ninguna,2,1
+2024-02-19,Sajta de Pollo,23,19,Lunes,0,Nublado,Ninguno,Ninguna,2,1
+2024-02-20,Sajta de Pollo,29,20,Martes,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-21,Sajta de Pollo,40,16,Miércoles,0,Lluvioso,Ninguno,Ninguna,2,1
+2024-02-22,Sajta de Pollo,27,15,Jueves,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-23,Sajta de Pollo,41,17,Viernes,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-24,Sajta de Pollo,35,19,Sábado,1,Nublado,Ninguno,Ninguna,2,1
+2024-02-25,Sajta de Pollo,49,19,Domingo,1,Soleado,Fiesta,Ninguna,2,1
+2024-02-26,Sajta de Pollo,29,15,Lunes,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-27,Sajta de Pollo,27,21,Martes,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-28,Sajta de Pollo,50,17,Miércoles,0,Soleado,Feriado,Menu del Dia,2,1
+2024-02-29,Sajta de Pollo,29,20,Jueves,0,Soleado,Ninguno,Ninguna,2,1
+2024-03-01,Sajta de Pollo,41,23,Viernes,1,Nublado,Ninguno,Ninguna,3,1
+2024-03-02,Sajta de Pollo,67,17,Sábado,1,Nublado,Feriado,Descuento,3,1
+2024-03-03,Sajta de Pollo,45,17,Domingo,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-04,Sajta de Pollo,41,19,Lunes,0,Soleado,Ninguno,Descuento,3,1
+2024-03-05,Sajta de Pollo,24,19,Martes,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-06,Sajta de Pollo,38,17,Miércoles,0,Soleado,Ninguno,Menu del Dia,3,1
+2024-03-07,Sajta de Pollo,53,20,Jueves,0,Lluvioso,Fiesta,2x1,3,1
+2024-03-08,Sajta de Pollo,46,20,Viernes,1,Soleado,Ninguno,Menu del Dia,3,1
+2024-03-09,Sajta de Pollo,45,19,Sábado,1,Nublado,Ninguno,Ninguna,3,1
+2024-03-10,Sajta de Pollo,41,20,Domingo,1,Nublado,Ninguno,Ninguna,3,1
+2024-03-11,Sajta de Pollo,31,19,Lunes,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-12,Sajta de Pollo,32,20,Martes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-13,Sajta de Pollo,29,17,Miércoles,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-14,Sajta de Pollo,27,20,Jueves,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-15,Sajta de Pollo,50,17,Viernes,1,Soleado,Fiesta,Ninguna,3,1
+2024-03-16,Sajta de Pollo,48,17,Sábado,1,Nublado,Ninguno,Ninguna,3,1
+2024-03-17,Sajta de Pollo,49,23,Domingo,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-18,Sajta de Pollo,37,17,Lunes,0,Soleado,Ninguno,Descuento,3,1
+2024-03-19,Sajta de Pollo,25,18,Martes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-20,Sajta de Pollo,34,20,Miércoles,0,Lluvioso,Ninguno,Ninguna,3,1
+2024-03-21,Sajta de Pollo,25,23,Jueves,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-22,Sajta de Pollo,38,19,Viernes,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-23,Sajta de Pollo,43,19,Sábado,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-24,Sajta de Pollo,42,18,Domingo,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-25,Sajta de Pollo,30,19,Lunes,0,Lluvioso,Ninguno,Ninguna,3,1
+2024-03-26,Sajta de Pollo,18,0,Martes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-27,Sajta de Pollo,26,20,Miércoles,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-28,Sajta de Pollo,39,17,Jueves,0,Soleado,Ninguno,2x1,3,1
+2024-03-29,Sajta de Pollo,43,19,Viernes,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-30,Sajta de Pollo,43,19,Sábado,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-31,Sajta de Pollo,41,19,Domingo,1,Soleado,Ninguno,Ninguna,3,1
+2024-04-01,Sajta de Pollo,26,19,Lunes,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-02,Sajta de Pollo,20,22,Martes,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-03,Sajta de Pollo,19,20,Miércoles,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-04,Sajta de Pollo,21,0,Jueves,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-05,Sajta de Pollo,51,19,Viernes,1,Soleado,Festival,Ninguna,4,2
+2024-04-06,Sajta de Pollo,56,20,Sábado,1,Nublado,Ninguno,Descuento,4,2
+2024-04-07,Sajta de Pollo,57,18,Domingo,1,Nublado,Ninguno,Descuento,4,2
+2024-04-08,Sajta de Pollo,28,0,Lunes,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-09,Sajta de Pollo,39,17,Martes,0,Soleado,Ninguno,Descuento,4,2
+2024-04-10,Sajta de Pollo,29,20,Miércoles,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-11,Sajta de Pollo,34,20,Jueves,0,Nublado,Ninguno,2x1,4,2
+2024-04-12,Sajta de Pollo,46,20,Viernes,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-13,Sajta de Pollo,46,16,Sábado,1,Soleado,Ninguno,Menu del Dia,4,2
+2024-04-14,Sajta de Pollo,43,16,Domingo,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-15,Sajta de Pollo,24,21,Lunes,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-16,Sajta de Pollo,29,18,Martes,0,Lluvioso,Ninguno,Ninguna,4,2
+2024-04-17,Sajta de Pollo,27,19,Miércoles,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-18,Sajta de Pollo,28,19,Jueves,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-19,Sajta de Pollo,43,18,Viernes,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-20,Sajta de Pollo,41,19,Sábado,1,Nublado,Ninguno,Ninguna,4,2
+2024-04-21,Sajta de Pollo,43,18,Domingo,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-22,Sajta de Pollo,31,18,Lunes,0,Soleado,Ninguno,2x1,4,2
+2024-04-23,Sajta de Pollo,36,21,Martes,0,Soleado,Ninguno,Descuento,4,2
+2024-04-24,Sajta de Pollo,27,18,Miércoles,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-25,Sajta de Pollo,25,20,Jueves,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-26,Sajta de Pollo,46,19,Viernes,1,Nublado,Ninguno,Ninguna,4,2
+2024-04-27,Sajta de Pollo,73,20,Sábado,1,Lluvioso,Fiesta,2x1,4,2
+2024-04-28,Sajta de Pollo,38,20,Domingo,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-29,Sajta de Pollo,28,17,Lunes,0,Lluvioso,Ninguno,Ninguna,4,2
+2024-04-30,Sajta de Pollo,41,19,Martes,0,Nublado,Ninguno,2x1,4,2
+2024-05-01,Sajta de Pollo,43,20,Miércoles,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-02,Sajta de Pollo,39,19,Jueves,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-03,Sajta de Pollo,59,20,Viernes,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-04,Sajta de Pollo,70,17,Sábado,1,Nublado,Ninguno,2x1,5,2
+2024-05-05,Sajta de Pollo,54,20,Domingo,1,Nublado,Ninguno,Ninguna,5,2
+2024-05-06,Sajta de Pollo,48,19,Lunes,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-07,Sajta de Pollo,45,15,Martes,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-08,Sajta de Pollo,51,19,Miércoles,0,Soleado,Ninguno,Descuento,5,2
+2024-05-09,Sajta de Pollo,42,19,Jueves,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-10,Sajta de Pollo,63,18,Viernes,1,Lluvioso,Ninguno,Ninguna,5,2
+2024-05-11,Sajta de Pollo,57,18,Sábado,1,Nublado,Ninguno,Ninguna,5,2
+2024-05-12,Sajta de Pollo,59,19,Domingo,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-13,Sajta de Pollo,55,21,Lunes,0,Soleado,Ninguno,Menu del Dia,5,2
+2024-05-14,Sajta de Pollo,49,20,Martes,0,Nublado,Ninguno,Ninguna,5,2
+2024-05-15,Sajta de Pollo,43,22,Miércoles,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-16,Sajta de Pollo,55,19,Jueves,0,Nublado,Ninguno,Descuento,5,2
+2024-05-17,Sajta de Pollo,68,19,Viernes,1,Lluvioso,Ninguno,Ninguna,5,2
+2024-05-18,Sajta de Pollo,63,20,Sábado,1,Nublado,Ninguno,Ninguna,5,2
+2024-05-19,Sajta de Pollo,61,17,Domingo,1,Nublado,Ninguno,Ninguna,5,2
+2024-05-20,Sajta de Pollo,42,18,Lunes,0,Nublado,Ninguno,Ninguna,5,2
+2024-05-21,Sajta de Pollo,49,23,Martes,0,Nublado,Ninguno,Descuento,5,2
+2024-05-22,Sajta de Pollo,42,20,Miércoles,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-23,Sajta de Pollo,50,19,Jueves,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-24,Sajta de Pollo,51,18,Viernes,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-25,Sajta de Pollo,60,18,Sábado,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-26,Sajta de Pollo,65,0,Domingo,1,Lluvioso,Ninguno,Ninguna,5,2
+2024-05-27,Sajta de Pollo,41,19,Lunes,0,Nublado,Ninguno,Ninguna,5,2
+2024-05-28,Sajta de Pollo,37,17,Martes,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-29,Sajta de Pollo,42,23,Miércoles,0,Nublado,Ninguno,Ninguna,5,2
+2024-05-30,Sajta de Pollo,44,20,Jueves,0,Nublado,Ninguno,Ninguna,5,2
+2024-05-31,Sajta de Pollo,59,20,Viernes,1,Soleado,Ninguno,Ninguna,5,2
+2024-06-01,Sajta de Pollo,63,19,Sábado,1,Soleado,Fiesta,Ninguna,6,2
+2024-06-02,Sajta de Pollo,72,20,Domingo,1,Soleado,Ninguno,Descuento,6,2
+2024-06-03,Sajta de Pollo,51,21,Lunes,0,Soleado,Ninguno,Menu del Dia,6,2
+2024-06-04,Sajta de Pollo,55,19,Martes,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-05,Sajta de Pollo,46,23,Miércoles,0,Nublado,Fiesta,Ninguna,6,2
+2024-06-06,Sajta de Pollo,44,19,Jueves,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-07,Sajta de Pollo,53,22,Viernes,1,Nublado,Ninguno,Ninguna,6,2
+2024-06-08,Sajta de Pollo,59,18,Sábado,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-09,Sajta de Pollo,63,19,Domingo,1,Lluvioso,Ninguno,Ninguna,6,2
+2024-06-10,Sajta de Pollo,45,22,Lunes,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-11,Sajta de Pollo,41,19,Martes,0,Nublado,Ninguno,Ninguna,6,2
+2024-06-12,Sajta de Pollo,41,21,Miércoles,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-13,Sajta de Pollo,48,19,Jueves,0,Soleado,Fiesta,Ninguna,6,2
+2024-06-14,Sajta de Pollo,63,20,Viernes,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-15,Sajta de Pollo,54,19,Sábado,1,Nublado,Ninguno,Ninguna,6,2
+2024-06-16,Sajta de Pollo,75,19,Domingo,1,Soleado,Ninguno,Descuento,6,2
+2024-06-17,Sajta de Pollo,51,18,Lunes,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-18,Sajta de Pollo,55,20,Martes,0,Soleado,Feriado,Ninguna,6,2
+2024-06-19,Sajta de Pollo,39,21,Miércoles,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-20,Sajta de Pollo,41,0,Jueves,0,Nublado,Ninguno,Ninguna,6,2
+2024-06-21,Sajta de Pollo,55,19,Viernes,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-22,Sajta de Pollo,59,18,Sábado,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-23,Sajta de Pollo,52,22,Domingo,1,Nublado,Ninguno,Ninguna,6,2
+2024-06-24,Sajta de Pollo,45,17,Lunes,0,Nublado,Ninguno,Ninguna,6,2
+2024-06-25,Sajta de Pollo,51,17,Martes,0,Lluvioso,Ninguno,Ninguna,6,2
+2024-06-26,Sajta de Pollo,55,18,Miércoles,0,Soleado,Ninguno,Descuento,6,2
+2024-06-27,Sajta de Pollo,44,18,Jueves,0,Nublado,Ninguno,Ninguna,6,2
+2024-06-28,Sajta de Pollo,65,22,Viernes,1,Lluvioso,Ninguno,Ninguna,6,2
+2024-06-29,Sajta de Pollo,64,20,Sábado,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-30,Sajta de Pollo,69,18,Domingo,1,Nublado,Ninguno,Menu del Dia,6,2
+2024-07-01,Sajta de Pollo,44,23,Lunes,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-02,Sajta de Pollo,42,21,Martes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-03,Sajta de Pollo,54,21,Miércoles,0,Soleado,Ninguno,Descuento,7,3
+2024-07-04,Sajta de Pollo,43,16,Jueves,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-05,Sajta de Pollo,63,0,Viernes,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-06,Sajta de Pollo,54,19,Sábado,1,Nublado,Ninguno,Ninguna,7,3
+2024-07-07,Sajta de Pollo,62,20,Domingo,1,Lluvioso,Ninguno,Ninguna,7,3
+2024-07-08,Sajta de Pollo,49,16,Lunes,0,Soleado,Ninguno,2x1,7,3
+2024-07-09,Sajta de Pollo,47,20,Martes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-10,Sajta de Pollo,41,18,Miércoles,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-11,Sajta de Pollo,44,16,Jueves,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-12,Sajta de Pollo,58,20,Viernes,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-13,Sajta de Pollo,55,19,Sábado,1,Nublado,Ninguno,Ninguna,7,3
+2024-07-14,Sajta de Pollo,55,20,Domingo,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-15,Sajta de Pollo,55,22,Lunes,0,Lluvioso,Ninguno,2x1,7,3
+2024-07-16,Sajta de Pollo,40,19,Martes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-17,Sajta de Pollo,42,19,Miércoles,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-18,Sajta de Pollo,37,15,Jueves,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-19,Sajta de Pollo,59,20,Viernes,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-20,Sajta de Pollo,64,16,Sábado,1,Soleado,Ninguno,Descuento,7,3
+2024-07-21,Sajta de Pollo,64,19,Domingo,1,Nublado,Ninguno,Ninguna,7,3
+2024-07-22,Sajta de Pollo,53,18,Lunes,0,Lluvioso,Ninguno,Ninguna,7,3
+2024-07-23,Sajta de Pollo,45,18,Martes,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-24,Sajta de Pollo,50,20,Miércoles,0,Nublado,Festival,Ninguna,7,3
+2024-07-25,Sajta de Pollo,37,20,Jueves,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-26,Sajta de Pollo,66,18,Viernes,1,Soleado,Ninguno,2x1,7,3
+2024-07-27,Sajta de Pollo,52,18,Sábado,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-28,Sajta de Pollo,62,19,Domingo,1,Nublado,Ninguno,Ninguna,7,3
+2024-07-29,Sajta de Pollo,40,18,Lunes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-30,Sajta de Pollo,41,21,Martes,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-31,Sajta de Pollo,62,19,Miércoles,0,Lluvioso,Ninguno,Menu del Dia,7,3
+2024-08-01,Sajta de Pollo,37,20,Jueves,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-02,Sajta de Pollo,66,20,Viernes,1,Lluvioso,Fiesta,Ninguna,8,3
+2024-08-03,Sajta de Pollo,56,15,Sábado,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-04,Sajta de Pollo,50,15,Domingo,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-05,Sajta de Pollo,56,21,Lunes,0,Soleado,Ninguno,2x1,8,3
+2024-08-06,Sajta de Pollo,44,18,Martes,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-07,Sajta de Pollo,38,21,Miércoles,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-08,Sajta de Pollo,38,23,Jueves,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-09,Sajta de Pollo,58,19,Viernes,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-10,Sajta de Pollo,56,20,Sábado,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-11,Sajta de Pollo,66,17,Domingo,1,Nublado,Ninguno,Ninguna,8,3
+2024-08-12,Sajta de Pollo,39,18,Lunes,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-13,Sajta de Pollo,59,18,Martes,0,Soleado,Ninguno,Descuento,8,3
+2024-08-14,Sajta de Pollo,44,20,Miércoles,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-15,Sajta de Pollo,40,18,Jueves,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-16,Sajta de Pollo,60,18,Viernes,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-17,Sajta de Pollo,59,20,Sábado,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-18,Sajta de Pollo,60,20,Domingo,1,Nublado,Ninguno,Ninguna,8,3
+2024-08-19,Sajta de Pollo,42,22,Lunes,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-20,Sajta de Pollo,43,19,Martes,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-21,Sajta de Pollo,58,19,Miércoles,0,Lluvioso,Ninguno,Descuento,8,3
+2024-08-22,Sajta de Pollo,53,20,Jueves,0,Soleado,Festival,Ninguna,8,3
+2024-08-23,Sajta de Pollo,61,20,Viernes,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-24,Sajta de Pollo,60,21,Sábado,1,Nublado,Ninguno,Ninguna,8,3
+2024-08-25,Sajta de Pollo,63,21,Domingo,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-26,Sajta de Pollo,65,19,Lunes,0,Soleado,Ninguno,Descuento,8,3
+2024-08-27,Sajta de Pollo,46,23,Martes,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-28,Sajta de Pollo,46,19,Miércoles,0,Soleado,Ninguno,Descuento,8,3
+2024-08-29,Sajta de Pollo,48,16,Jueves,0,Lluvioso,Ninguno,Ninguna,8,3
+2024-08-30,Sajta de Pollo,57,19,Viernes,1,Nublado,Ninguno,Ninguna,8,3
+2024-08-31,Sajta de Pollo,67,15,Sábado,1,Soleado,Feriado,Ninguna,8,3
+2024-09-01,Sajta de Pollo,66,16,Domingo,1,Nublado,Ninguno,Ninguna,9,3
+2024-09-02,Sajta de Pollo,46,19,Lunes,0,Nublado,Ninguno,Ninguna,9,3
+2024-09-03,Sajta de Pollo,45,20,Martes,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-04,Sajta de Pollo,45,20,Miércoles,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-05,Sajta de Pollo,44,19,Jueves,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-06,Sajta de Pollo,56,18,Viernes,1,Nublado,Ninguno,Ninguna,9,3
+2024-09-07,Sajta de Pollo,62,19,Sábado,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-08,Sajta de Pollo,65,19,Domingo,1,Lluvioso,Ninguno,Ninguna,9,3
+2024-09-09,Sajta de Pollo,42,18,Lunes,0,Nublado,Ninguno,Ninguna,9,3
+2024-09-10,Sajta de Pollo,38,18,Martes,0,Nublado,Ninguno,Ninguna,9,3
+2024-09-11,Sajta de Pollo,47,19,Miércoles,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-12,Sajta de Pollo,46,17,Jueves,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-13,Sajta de Pollo,62,19,Viernes,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-14,Sajta de Pollo,73,20,Sábado,1,Soleado,Ninguno,2x1,9,3
+2024-09-15,Sajta de Pollo,60,20,Domingo,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-16,Sajta de Pollo,56,23,Lunes,0,Soleado,Ninguno,Menu del Dia,9,3
+2024-09-17,Sajta de Pollo,47,21,Martes,0,Nublado,Ninguno,Ninguna,9,3
+2024-09-18,Sajta de Pollo,52,17,Miércoles,0,Nublado,Feriado,Ninguna,9,3
+2024-09-19,Sajta de Pollo,42,19,Jueves,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-20,Sajta de Pollo,64,15,Viernes,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-21,Sajta de Pollo,61,20,Sábado,1,Nublado,Ninguno,Ninguna,9,3
+2024-09-22,Sajta de Pollo,65,19,Domingo,1,Nublado,Ninguno,Ninguna,9,3
+2024-09-23,Sajta de Pollo,42,22,Lunes,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-24,Sajta de Pollo,47,20,Martes,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-25,Sajta de Pollo,54,19,Miércoles,0,Soleado,Feriado,Ninguna,9,3
+2024-09-26,Sajta de Pollo,42,20,Jueves,0,Nublado,Ninguno,Ninguna,9,3
+2024-09-27,Sajta de Pollo,74,20,Viernes,1,Lluvioso,Fiesta,Ninguna,9,3
+2024-09-28,Sajta de Pollo,66,21,Sábado,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-29,Sajta de Pollo,66,20,Domingo,1,Soleado,Festival,Ninguna,9,3
+2024-09-30,Sajta de Pollo,40,19,Lunes,0,Nublado,Ninguno,Ninguna,9,3
+2024-10-01,Sajta de Pollo,54,22,Martes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-02,Sajta de Pollo,41,20,Miércoles,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-03,Sajta de Pollo,43,18,Jueves,0,Nublado,Ninguno,Ninguna,10,4
+2024-10-04,Sajta de Pollo,56,21,Viernes,1,Nublado,Ninguno,Ninguna,10,4
+2024-10-05,Sajta de Pollo,77,20,Sábado,1,Lluvioso,Fiesta,Ninguna,10,4
+2024-10-06,Sajta de Pollo,58,19,Domingo,1,Nublado,Ninguno,Ninguna,10,4
+2024-10-07,Sajta de Pollo,41,18,Lunes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-08,Sajta de Pollo,43,16,Martes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-09,Sajta de Pollo,64,0,Miércoles,0,Lluvioso,Feriado,Menu del Dia,10,4
+2024-10-10,Sajta de Pollo,52,18,Jueves,0,Soleado,Ninguno,Menu del Dia,10,4
+2024-10-11,Sajta de Pollo,63,19,Viernes,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-12,Sajta de Pollo,69,16,Sábado,1,Nublado,Festival,Ninguna,10,4
+2024-10-13,Sajta de Pollo,76,18,Domingo,1,Lluvioso,Ninguno,Menu del Dia,10,4
+2024-10-14,Sajta de Pollo,52,18,Lunes,0,Soleado,Ninguno,Descuento,10,4
+2024-10-15,Sajta de Pollo,47,19,Martes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-16,Sajta de Pollo,46,17,Miércoles,0,Lluvioso,Ninguno,Ninguna,10,4
+2024-10-17,Sajta de Pollo,39,20,Jueves,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-18,Sajta de Pollo,64,19,Viernes,1,Soleado,Feriado,Ninguna,10,4
+2024-10-19,Sajta de Pollo,58,21,Sábado,1,Nublado,Ninguno,Ninguna,10,4
+2024-10-20,Sajta de Pollo,58,20,Domingo,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-21,Sajta de Pollo,37,17,Lunes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-22,Sajta de Pollo,39,19,Martes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-23,Sajta de Pollo,57,21,Miércoles,0,Soleado,Ninguno,Descuento,10,4
+2024-10-24,Sajta de Pollo,47,20,Jueves,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-25,Sajta de Pollo,59,20,Viernes,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-26,Sajta de Pollo,64,19,Sábado,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-27,Sajta de Pollo,67,18,Domingo,1,Soleado,Ninguno,Menu del Dia,10,4
+2024-10-28,Sajta de Pollo,46,20,Lunes,0,Nublado,Ninguno,Ninguna,10,4
+2024-10-29,Sajta de Pollo,48,16,Martes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-30,Sajta de Pollo,57,20,Miércoles,0,Soleado,Ninguno,Descuento,10,4
+2024-10-31,Sajta de Pollo,53,20,Jueves,0,Soleado,Festival,Ninguna,10,4
+2024-11-01,Sajta de Pollo,44,20,Viernes,1,Nublado,Ninguno,Ninguna,11,4
+2024-11-02,Sajta de Pollo,47,15,Sábado,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-03,Sajta de Pollo,50,17,Domingo,1,Nublado,Ninguno,Ninguna,11,4
+2024-11-04,Sajta de Pollo,28,22,Lunes,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-05,Sajta de Pollo,32,19,Martes,0,Lluvioso,Ninguno,Ninguna,11,4
+2024-11-06,Sajta de Pollo,25,22,Miércoles,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-07,Sajta de Pollo,29,20,Jueves,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-08,Sajta de Pollo,42,21,Viernes,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-09,Sajta de Pollo,48,16,Sábado,1,Lluvioso,Ninguno,Ninguna,11,4
+2024-11-10,Sajta de Pollo,50,18,Domingo,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-11,Sajta de Pollo,43,18,Lunes,0,Soleado,Feriado,Ninguna,11,4
+2024-11-12,Sajta de Pollo,32,20,Martes,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-13,Sajta de Pollo,32,0,Miércoles,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-14,Sajta de Pollo,45,21,Jueves,0,Soleado,Ninguno,Menu del Dia,11,4
+2024-11-15,Sajta de Pollo,40,17,Viernes,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-16,Sajta de Pollo,44,18,Sábado,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-17,Sajta de Pollo,46,18,Domingo,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-18,Sajta de Pollo,42,16,Lunes,0,Soleado,Ninguno,Menu del Dia,11,4
+2024-11-19,Sajta de Pollo,23,21,Martes,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-20,Sajta de Pollo,24,20,Miércoles,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-21,Sajta de Pollo,26,21,Jueves,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-22,Sajta de Pollo,38,18,Viernes,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-23,Sajta de Pollo,41,17,Sábado,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-24,Sajta de Pollo,44,20,Domingo,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-25,Sajta de Pollo,36,21,Lunes,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-26,Sajta de Pollo,42,18,Martes,0,Soleado,Ninguno,Menu del Dia,11,4
+2024-11-27,Sajta de Pollo,43,15,Miércoles,0,Nublado,Festival,Ninguna,11,4
+2024-11-28,Sajta de Pollo,42,20,Jueves,0,Nublado,Ninguno,Descuento,11,4
+2024-11-29,Sajta de Pollo,50,15,Viernes,1,Nublado,Ninguno,Ninguna,11,4
+2024-11-30,Sajta de Pollo,54,16,Sábado,1,Nublado,Ninguno,Menu del Dia,11,4
+2024-12-01,Sajta de Pollo,40,19,Domingo,1,Nublado,Ninguno,Ninguna,12,4
+2024-12-02,Sajta de Pollo,31,19,Lunes,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-03,Sajta de Pollo,25,16,Martes,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-04,Sajta de Pollo,27,18,Miércoles,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-05,Sajta de Pollo,26,18,Jueves,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-06,Sajta de Pollo,42,20,Viernes,1,Lluvioso,Ninguno,Ninguna,12,4
+2024-12-07,Sajta de Pollo,56,20,Sábado,1,Soleado,Festival,Ninguna,12,4
+2024-12-08,Sajta de Pollo,41,18,Domingo,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-09,Sajta de Pollo,29,20,Lunes,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-10,Sajta de Pollo,29,15,Martes,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-11,Sajta de Pollo,29,20,Miércoles,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-12,Sajta de Pollo,31,18,Jueves,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-13,Sajta de Pollo,54,19,Viernes,1,Soleado,Ninguno,Descuento,12,4
+2024-12-14,Sajta de Pollo,52,23,Sábado,1,Nublado,Feriado,Ninguna,12,4
+2024-12-15,Sajta de Pollo,46,20,Domingo,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-16,Sajta de Pollo,32,20,Lunes,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-17,Sajta de Pollo,30,19,Martes,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-18,Sajta de Pollo,28,22,Miércoles,0,Nublado,Ninguno,Ninguna,12,4
+2024-12-19,Sajta de Pollo,22,19,Jueves,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-20,Sajta de Pollo,54,20,Viernes,1,Soleado,Feriado,Ninguna,12,4
+2024-12-21,Sajta de Pollo,47,21,Sábado,1,Nublado,Ninguno,Ninguna,12,4
+2024-12-22,Sajta de Pollo,44,20,Domingo,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-23,Sajta de Pollo,29,19,Lunes,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-24,Sajta de Pollo,35,18,Martes,0,Soleado,Ninguno,2x1,12,4
+2024-12-25,Sajta de Pollo,28,19,Miércoles,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-26,Sajta de Pollo,39,18,Jueves,0,Nublado,Ninguno,Descuento,12,4
+2024-12-27,Sajta de Pollo,52,15,Viernes,1,Nublado,Feriado,Ninguna,12,4
+2024-12-28,Sajta de Pollo,53,21,Sábado,1,Nublado,Ninguno,Descuento,12,4
+2024-12-29,Sajta de Pollo,60,21,Domingo,1,Lluvioso,Ninguno,Menu del Dia,12,4
+2024-12-30,Sajta de Pollo,29,18,Lunes,0,Nublado,Ninguno,Ninguna,12,4
+2024-01-01,Chancho a la Cruz,20,16,Lunes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-02,Chancho a la Cruz,21,17,Martes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-03,Chancho a la Cruz,30,18,Miércoles,0,Soleado,Ninguno,2x1,1,1
+2024-01-04,Chancho a la Cruz,22,16,Jueves,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-05,Chancho a la Cruz,25,18,Viernes,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-06,Chancho a la Cruz,32,19,Sábado,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-07,Chancho a la Cruz,32,19,Domingo,1,Nublado,Ninguno,Ninguna,1,1
+2024-01-08,Chancho a la Cruz,27,19,Lunes,0,Soleado,Ninguno,Descuento,1,1
+2024-01-09,Chancho a la Cruz,22,21,Martes,0,Nublado,Ninguno,Ninguna,1,1
+2024-01-10,Chancho a la Cruz,20,18,Miércoles,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-11,Chancho a la Cruz,20,17,Jueves,0,Nublado,Ninguno,Ninguna,1,1
+2024-01-12,Chancho a la Cruz,37,18,Viernes,1,Nublado,Ninguno,Ninguna,1,1
+2024-01-13,Chancho a la Cruz,35,19,Sábado,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-14,Chancho a la Cruz,36,20,Domingo,1,Nublado,Ninguno,Ninguna,1,1
+2024-01-15,Chancho a la Cruz,24,18,Lunes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-16,Chancho a la Cruz,21,19,Martes,0,Lluvioso,Ninguno,Ninguna,1,1
+2024-01-17,Chancho a la Cruz,25,17,Miércoles,0,Nublado,Fiesta,Ninguna,1,1
+2024-01-18,Chancho a la Cruz,12,20,Jueves,0,Nublado,Ninguno,Ninguna,1,1
+2024-01-19,Chancho a la Cruz,43,18,Viernes,1,Soleado,Feriado,Ninguna,1,1
+2024-01-20,Chancho a la Cruz,35,20,Sábado,1,Nublado,Ninguno,Ninguna,1,1
+2024-01-21,Chancho a la Cruz,31,20,Domingo,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-22,Chancho a la Cruz,23,18,Lunes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-23,Chancho a la Cruz,18,19,Martes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-24,Chancho a la Cruz,24,15,Miércoles,0,Lluvioso,Ninguno,Ninguna,1,1
+2024-01-25,Chancho a la Cruz,33,17,Jueves,0,Soleado,Ninguno,Descuento,1,1
+2024-01-26,Chancho a la Cruz,27,16,Viernes,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-27,Chancho a la Cruz,31,16,Sábado,1,Nublado,Ninguno,Ninguna,1,1
+2024-01-28,Chancho a la Cruz,33,19,Domingo,1,Nublado,Ninguno,Ninguna,1,1
+2024-01-29,Chancho a la Cruz,26,22,Lunes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-30,Chancho a la Cruz,21,22,Martes,0,Nublado,Ninguno,Ninguna,1,1
+2024-01-31,Chancho a la Cruz,40,19,Miércoles,0,Soleado,Feriado,2x1,1,1
+2024-02-01,Chancho a la Cruz,25,20,Jueves,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-02,Chancho a la Cruz,40,19,Viernes,1,Soleado,Ninguno,2x1,2,1
+2024-02-03,Chancho a la Cruz,43,15,Sábado,1,Nublado,Ninguno,2x1,2,1
+2024-02-04,Chancho a la Cruz,45,23,Domingo,1,Soleado,Ninguno,Descuento,2,1
+2024-02-05,Chancho a la Cruz,30,19,Lunes,0,Soleado,Ninguno,2x1,2,1
+2024-02-06,Chancho a la Cruz,20,17,Martes,0,Nublado,Ninguno,Ninguna,2,1
+2024-02-07,Chancho a la Cruz,14,19,Miércoles,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-08,Chancho a la Cruz,27,18,Jueves,0,Soleado,Fiesta,Ninguna,2,1
+2024-02-09,Chancho a la Cruz,28,20,Viernes,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-10,Chancho a la Cruz,34,18,Sábado,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-11,Chancho a la Cruz,31,16,Domingo,1,Nublado,Ninguno,Ninguna,2,1
+2024-02-12,Chancho a la Cruz,21,20,Lunes,0,Nublado,Ninguno,Ninguna,2,1
+2024-02-13,Chancho a la Cruz,15,19,Martes,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-14,Chancho a la Cruz,23,21,Miércoles,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-15,Chancho a la Cruz,33,20,Jueves,0,Lluvioso,Ninguno,Menu del Dia,2,1
+2024-02-16,Chancho a la Cruz,45,20,Viernes,1,Nublado,Feriado,Ninguna,2,1
+2024-02-17,Chancho a la Cruz,29,17,Sábado,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-18,Chancho a la Cruz,42,19,Domingo,1,Nublado,Feriado,Ninguna,2,1
+2024-02-19,Chancho a la Cruz,27,23,Lunes,0,Soleado,Ninguno,2x1,2,1
+2024-02-20,Chancho a la Cruz,23,20,Martes,0,Nublado,Ninguno,Ninguna,2,1
+2024-02-21,Chancho a la Cruz,22,20,Miércoles,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-22,Chancho a la Cruz,21,16,Jueves,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-23,Chancho a la Cruz,53,19,Viernes,1,Soleado,Festival,Descuento,2,1
+2024-02-24,Chancho a la Cruz,29,20,Sábado,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-25,Chancho a la Cruz,38,19,Domingo,1,Soleado,Ninguno,Menu del Dia,2,1
+2024-02-26,Chancho a la Cruz,19,19,Lunes,0,Nublado,Ninguno,Ninguna,2,1
+2024-02-27,Chancho a la Cruz,19,17,Martes,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-28,Chancho a la Cruz,26,17,Miércoles,0,Nublado,Feriado,Ninguna,2,1
+2024-02-29,Chancho a la Cruz,20,20,Jueves,0,Soleado,Ninguno,Ninguna,2,1
+2024-03-01,Chancho a la Cruz,34,21,Viernes,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-02,Chancho a la Cruz,37,18,Sábado,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-03,Chancho a la Cruz,37,22,Domingo,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-04,Chancho a la Cruz,19,20,Lunes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-05,Chancho a la Cruz,25,21,Martes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-06,Chancho a la Cruz,17,15,Miércoles,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-07,Chancho a la Cruz,17,21,Jueves,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-08,Chancho a la Cruz,37,19,Viernes,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-09,Chancho a la Cruz,49,18,Sábado,1,Nublado,Fiesta,Menu del Dia,3,1
+2024-03-10,Chancho a la Cruz,43,17,Domingo,1,Soleado,Fiesta,Ninguna,3,1
+2024-03-11,Chancho a la Cruz,31,20,Lunes,0,Soleado,Ninguno,Descuento,3,1
+2024-03-12,Chancho a la Cruz,24,19,Martes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-13,Chancho a la Cruz,18,16,Miércoles,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-14,Chancho a la Cruz,22,18,Jueves,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-15,Chancho a la Cruz,48,19,Viernes,1,Nublado,Festival,Menu del Dia,3,1
+2024-03-16,Chancho a la Cruz,32,19,Sábado,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-17,Chancho a la Cruz,47,21,Domingo,1,Soleado,Ninguno,Menu del Dia,3,1
+2024-03-18,Chancho a la Cruz,35,20,Lunes,0,Soleado,Ninguno,Menu del Dia,3,1
+2024-03-19,Chancho a la Cruz,16,19,Martes,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-20,Chancho a la Cruz,20,0,Miércoles,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-21,Chancho a la Cruz,24,15,Jueves,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-22,Chancho a la Cruz,43,17,Viernes,1,Lluvioso,Fiesta,Ninguna,3,1
+2024-03-23,Chancho a la Cruz,39,19,Sábado,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-24,Chancho a la Cruz,40,19,Domingo,1,Soleado,Ninguno,Descuento,3,1
+2024-03-25,Chancho a la Cruz,20,17,Lunes,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-26,Chancho a la Cruz,21,19,Martes,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-27,Chancho a la Cruz,31,18,Miércoles,0,Lluvioso,Fiesta,Ninguna,3,1
+2024-03-28,Chancho a la Cruz,23,19,Jueves,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-29,Chancho a la Cruz,32,20,Viernes,1,Nublado,Ninguno,Ninguna,3,1
+2024-03-30,Chancho a la Cruz,45,16,Sábado,1,Soleado,Ninguno,Descuento,3,1
+2024-03-31,Chancho a la Cruz,28,19,Domingo,1,Nublado,Ninguno,Ninguna,3,1
+2024-04-01,Chancho a la Cruz,25,19,Lunes,0,Lluvioso,Ninguno,Ninguna,4,2
+2024-04-02,Chancho a la Cruz,25,19,Martes,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-03,Chancho a la Cruz,18,19,Miércoles,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-04,Chancho a la Cruz,18,20,Jueves,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-05,Chancho a la Cruz,35,19,Viernes,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-06,Chancho a la Cruz,36,20,Sábado,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-07,Chancho a la Cruz,36,19,Domingo,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-08,Chancho a la Cruz,21,18,Lunes,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-09,Chancho a la Cruz,36,17,Martes,0,Nublado,Fiesta,Menu del Dia,4,2
+2024-04-10,Chancho a la Cruz,26,18,Miércoles,0,Soleado,Fiesta,Ninguna,4,2
+2024-04-11,Chancho a la Cruz,21,17,Jueves,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-12,Chancho a la Cruz,35,18,Viernes,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-13,Chancho a la Cruz,38,17,Sábado,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-14,Chancho a la Cruz,39,16,Domingo,1,Nublado,Ninguno,Ninguna,4,2
+2024-04-15,Chancho a la Cruz,26,20,Lunes,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-16,Chancho a la Cruz,34,20,Martes,0,Nublado,Ninguno,2x1,4,2
+2024-04-17,Chancho a la Cruz,32,20,Miércoles,0,Lluvioso,Feriado,Ninguna,4,2
+2024-04-18,Chancho a la Cruz,19,17,Jueves,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-19,Chancho a la Cruz,44,18,Viernes,1,Nublado,Ninguno,Descuento,4,2
+2024-04-20,Chancho a la Cruz,40,18,Sábado,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-21,Chancho a la Cruz,34,19,Domingo,1,Nublado,Ninguno,Ninguna,4,2
+2024-04-22,Chancho a la Cruz,21,20,Lunes,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-23,Chancho a la Cruz,23,19,Martes,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-24,Chancho a la Cruz,18,19,Miércoles,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-25,Chancho a la Cruz,23,20,Jueves,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-26,Chancho a la Cruz,36,22,Viernes,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-27,Chancho a la Cruz,32,21,Sábado,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-28,Chancho a la Cruz,33,19,Domingo,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-29,Chancho a la Cruz,21,21,Lunes,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-30,Chancho a la Cruz,23,17,Martes,0,Nublado,Ninguno,Ninguna,4,2
+2024-05-01,Chancho a la Cruz,35,18,Miércoles,0,Nublado,Ninguno,Ninguna,5,2
+2024-05-02,Chancho a la Cruz,33,21,Jueves,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-03,Chancho a la Cruz,44,18,Viernes,1,Nublado,Ninguno,Ninguna,5,2
+2024-05-04,Chancho a la Cruz,46,21,Sábado,1,Nublado,Ninguno,Ninguna,5,2
+2024-05-05,Chancho a la Cruz,47,20,Domingo,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-06,Chancho a la Cruz,34,19,Lunes,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-07,Chancho a la Cruz,33,21,Martes,0,Nublado,Ninguno,Ninguna,5,2
+2024-05-08,Chancho a la Cruz,41,19,Miércoles,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-09,Chancho a la Cruz,35,17,Jueves,0,Nublado,Ninguno,Ninguna,5,2
+2024-05-10,Chancho a la Cruz,49,20,Viernes,1,Nublado,Ninguno,Ninguna,5,2
+2024-05-11,Chancho a la Cruz,46,15,Sábado,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-12,Chancho a la Cruz,44,22,Domingo,1,Lluvioso,Ninguno,Ninguna,5,2
+2024-05-13,Chancho a la Cruz,32,17,Lunes,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-14,Chancho a la Cruz,30,18,Martes,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-15,Chancho a la Cruz,30,19,Miércoles,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-16,Chancho a la Cruz,33,20,Jueves,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-17,Chancho a la Cruz,46,20,Viernes,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-18,Chancho a la Cruz,43,18,Sábado,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-19,Chancho a la Cruz,40,19,Domingo,1,Nublado,Ninguno,Ninguna,5,2
+2024-05-20,Chancho a la Cruz,33,18,Lunes,0,Lluvioso,Ninguno,Ninguna,5,2
+2024-05-21,Chancho a la Cruz,42,21,Martes,0,Soleado,Ninguno,Descuento,5,2
+2024-05-22,Chancho a la Cruz,43,18,Miércoles,0,Nublado,Ninguno,Descuento,5,2
+2024-05-23,Chancho a la Cruz,36,16,Jueves,0,Nublado,Ninguno,Ninguna,5,2
+2024-05-24,Chancho a la Cruz,47,17,Viernes,1,Nublado,Ninguno,Ninguna,5,2
+2024-05-25,Chancho a la Cruz,47,20,Sábado,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-26,Chancho a la Cruz,49,21,Domingo,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-27,Chancho a la Cruz,44,19,Lunes,0,Nublado,Ninguno,Descuento,5,2
+2024-05-28,Chancho a la Cruz,32,19,Martes,0,Lluvioso,Ninguno,Ninguna,5,2
+2024-05-29,Chancho a la Cruz,45,19,Miércoles,0,Lluvioso,Ninguno,2x1,5,2
+2024-05-30,Chancho a la Cruz,34,17,Jueves,0,Nublado,Ninguno,Ninguna,5,2
+2024-05-31,Chancho a la Cruz,51,19,Viernes,1,Soleado,Feriado,Ninguna,5,2
+2024-06-01,Chancho a la Cruz,50,18,Sábado,1,Lluvioso,Ninguno,Ninguna,6,2
+2024-06-02,Chancho a la Cruz,47,20,Domingo,1,Nublado,Ninguno,Ninguna,6,2
+2024-06-03,Chancho a la Cruz,31,15,Lunes,0,Nublado,Ninguno,Ninguna,6,2
+2024-06-04,Chancho a la Cruz,38,16,Martes,0,Nublado,Festival,Ninguna,6,2
+2024-06-05,Chancho a la Cruz,35,15,Miércoles,0,Lluvioso,Ninguno,Ninguna,6,2
+2024-06-06,Chancho a la Cruz,33,22,Jueves,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-07,Chancho a la Cruz,44,19,Viernes,1,Nublado,Ninguno,Ninguna,6,2
+2024-06-08,Chancho a la Cruz,44,20,Sábado,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-09,Chancho a la Cruz,49,20,Domingo,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-10,Chancho a la Cruz,45,18,Lunes,0,Soleado,Ninguno,Descuento,6,2
+2024-06-11,Chancho a la Cruz,37,21,Martes,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-12,Chancho a la Cruz,37,21,Miércoles,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-13,Chancho a la Cruz,39,20,Jueves,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-14,Chancho a la Cruz,46,20,Viernes,1,Nublado,Ninguno,Ninguna,6,2
+2024-06-15,Chancho a la Cruz,47,20,Sábado,1,Nublado,Ninguno,Ninguna,6,2
+2024-06-16,Chancho a la Cruz,50,20,Domingo,1,Lluvioso,Ninguno,Ninguna,6,2
+2024-06-17,Chancho a la Cruz,34,19,Lunes,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-18,Chancho a la Cruz,35,20,Martes,0,Lluvioso,Ninguno,Ninguna,6,2
+2024-06-19,Chancho a la Cruz,28,19,Miércoles,0,Nublado,Ninguno,Ninguna,6,2
+2024-06-20,Chancho a la Cruz,33,16,Jueves,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-21,Chancho a la Cruz,45,18,Viernes,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-22,Chancho a la Cruz,46,18,Sábado,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-23,Chancho a la Cruz,45,17,Domingo,1,Nublado,Ninguno,Ninguna,6,2
+2024-06-24,Chancho a la Cruz,37,18,Lunes,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-25,Chancho a la Cruz,41,22,Martes,0,Soleado,Ninguno,2x1,6,2
+2024-06-26,Chancho a la Cruz,33,18,Miércoles,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-27,Chancho a la Cruz,34,18,Jueves,0,Lluvioso,Ninguno,Ninguna,6,2
+2024-06-28,Chancho a la Cruz,42,18,Viernes,1,Nublado,Ninguno,Ninguna,6,2
+2024-06-29,Chancho a la Cruz,49,19,Sábado,1,Lluvioso,Ninguno,Ninguna,6,2
+2024-06-30,Chancho a la Cruz,46,19,Domingo,1,Nublado,Ninguno,Ninguna,6,2
+2024-07-01,Chancho a la Cruz,35,20,Lunes,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-02,Chancho a la Cruz,36,16,Martes,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-03,Chancho a la Cruz,32,20,Miércoles,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-04,Chancho a la Cruz,38,18,Jueves,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-05,Chancho a la Cruz,45,21,Viernes,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-06,Chancho a la Cruz,40,19,Sábado,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-07,Chancho a la Cruz,55,18,Domingo,1,Soleado,Ninguno,Descuento,7,3
+2024-07-08,Chancho a la Cruz,34,21,Lunes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-09,Chancho a la Cruz,34,18,Martes,0,Lluvioso,Ninguno,Ninguna,7,3
+2024-07-10,Chancho a la Cruz,38,17,Miércoles,0,Lluvioso,Ninguno,Ninguna,7,3
+2024-07-11,Chancho a la Cruz,32,19,Jueves,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-12,Chancho a la Cruz,45,16,Viernes,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-13,Chancho a la Cruz,49,20,Sábado,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-14,Chancho a la Cruz,49,19,Domingo,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-15,Chancho a la Cruz,35,18,Lunes,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-16,Chancho a la Cruz,35,16,Martes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-17,Chancho a la Cruz,44,19,Miércoles,0,Soleado,Ninguno,Menu del Dia,7,3
+2024-07-18,Chancho a la Cruz,29,20,Jueves,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-19,Chancho a la Cruz,49,17,Viernes,1,Lluvioso,Ninguno,Ninguna,7,3
+2024-07-20,Chancho a la Cruz,51,19,Sábado,1,Nublado,Ninguno,Ninguna,7,3
+2024-07-21,Chancho a la Cruz,49,17,Domingo,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-22,Chancho a la Cruz,33,19,Lunes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-23,Chancho a la Cruz,29,20,Martes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-24,Chancho a la Cruz,35,22,Miércoles,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-25,Chancho a la Cruz,32,23,Jueves,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-26,Chancho a la Cruz,47,19,Viernes,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-27,Chancho a la Cruz,56,19,Sábado,1,Soleado,Festival,Ninguna,7,3
+2024-07-28,Chancho a la Cruz,46,19,Domingo,1,Lluvioso,Ninguno,Ninguna,7,3
+2024-07-29,Chancho a la Cruz,37,18,Lunes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-30,Chancho a la Cruz,35,21,Martes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-31,Chancho a la Cruz,37,18,Miércoles,0,Soleado,Ninguno,Ninguna,7,3
+2024-08-01,Chancho a la Cruz,35,19,Jueves,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-02,Chancho a la Cruz,49,18,Viernes,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-03,Chancho a la Cruz,50,16,Sábado,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-04,Chancho a la Cruz,44,16,Domingo,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-05,Chancho a la Cruz,35,17,Lunes,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-06,Chancho a la Cruz,38,20,Martes,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-07,Chancho a la Cruz,35,18,Miércoles,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-08,Chancho a la Cruz,35,17,Jueves,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-09,Chancho a la Cruz,44,21,Viernes,1,Nublado,Ninguno,Ninguna,8,3
+2024-08-10,Chancho a la Cruz,50,17,Sábado,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-11,Chancho a la Cruz,43,22,Domingo,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-12,Chancho a la Cruz,38,18,Lunes,0,Lluvioso,Ninguno,Ninguna,8,3
+2024-08-13,Chancho a la Cruz,34,21,Martes,0,Lluvioso,Ninguno,Ninguna,8,3
+2024-08-14,Chancho a la Cruz,43,16,Miércoles,0,Nublado,Ninguno,Descuento,8,3
+2024-08-15,Chancho a la Cruz,35,21,Jueves,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-16,Chancho a la Cruz,48,19,Viernes,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-17,Chancho a la Cruz,49,20,Sábado,1,Lluvioso,Ninguno,Ninguna,8,3
+2024-08-18,Chancho a la Cruz,49,16,Domingo,1,Nublado,Ninguno,Ninguna,8,3
+2024-08-19,Chancho a la Cruz,37,0,Lunes,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-20,Chancho a la Cruz,38,19,Martes,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-21,Chancho a la Cruz,33,18,Miércoles,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-22,Chancho a la Cruz,32,20,Jueves,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-23,Chancho a la Cruz,60,19,Viernes,1,Soleado,Festival,Ninguna,8,3
+2024-08-24,Chancho a la Cruz,48,20,Sábado,1,Nublado,Ninguno,Ninguna,8,3
+2024-08-25,Chancho a la Cruz,50,16,Domingo,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-26,Chancho a la Cruz,35,20,Lunes,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-27,Chancho a la Cruz,39,19,Martes,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-28,Chancho a la Cruz,37,18,Miércoles,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-29,Chancho a la Cruz,35,21,Jueves,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-30,Chancho a la Cruz,59,18,Viernes,1,Lluvioso,Ninguno,2x1,8,3
+2024-08-31,Chancho a la Cruz,55,19,Sábado,1,Nublado,Ninguno,2x1,8,3
+2024-09-01,Chancho a la Cruz,44,19,Domingo,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-02,Chancho a la Cruz,36,15,Lunes,0,Nublado,Ninguno,Ninguna,9,3
+2024-09-03,Chancho a la Cruz,35,18,Martes,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-04,Chancho a la Cruz,34,19,Miércoles,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-05,Chancho a la Cruz,41,15,Jueves,0,Nublado,Ninguno,2x1,9,3
+2024-09-06,Chancho a la Cruz,54,19,Viernes,1,Soleado,Ninguno,Menu del Dia,9,3
+2024-09-07,Chancho a la Cruz,45,20,Sábado,1,Lluvioso,Ninguno,Ninguna,9,3
+2024-09-08,Chancho a la Cruz,48,18,Domingo,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-09,Chancho a la Cruz,37,16,Lunes,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-10,Chancho a la Cruz,42,23,Martes,0,Lluvioso,Fiesta,Ninguna,9,3
+2024-09-11,Chancho a la Cruz,33,0,Miércoles,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-12,Chancho a la Cruz,39,20,Jueves,0,Soleado,Ninguno,Menu del Dia,9,3
+2024-09-13,Chancho a la Cruz,60,19,Viernes,1,Soleado,Festival,Ninguna,9,3
+2024-09-14,Chancho a la Cruz,47,20,Sábado,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-15,Chancho a la Cruz,49,20,Domingo,1,Lluvioso,Ninguno,Ninguna,9,3
+2024-09-16,Chancho a la Cruz,36,20,Lunes,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-17,Chancho a la Cruz,36,16,Martes,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-18,Chancho a la Cruz,43,18,Miércoles,0,Soleado,Ninguno,2x1,9,3
+2024-09-19,Chancho a la Cruz,39,17,Jueves,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-20,Chancho a la Cruz,46,20,Viernes,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-21,Chancho a la Cruz,51,18,Sábado,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-22,Chancho a la Cruz,46,15,Domingo,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-23,Chancho a la Cruz,35,21,Lunes,0,Nublado,Ninguno,Ninguna,9,3
+2024-09-24,Chancho a la Cruz,37,19,Martes,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-25,Chancho a la Cruz,45,20,Miércoles,0,Nublado,Ninguno,Descuento,9,3
+2024-09-26,Chancho a la Cruz,31,19,Jueves,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-27,Chancho a la Cruz,46,17,Viernes,1,Nublado,Ninguno,Ninguna,9,3
+2024-09-28,Chancho a la Cruz,46,17,Sábado,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-29,Chancho a la Cruz,53,23,Domingo,1,Nublado,Fiesta,Ninguna,9,3
+2024-09-30,Chancho a la Cruz,33,0,Lunes,0,Soleado,Ninguno,Ninguna,9,3
+2024-10-01,Chancho a la Cruz,33,20,Martes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-02,Chancho a la Cruz,36,18,Miércoles,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-03,Chancho a la Cruz,43,20,Jueves,0,Nublado,Fiesta,Ninguna,10,4
+2024-10-04,Chancho a la Cruz,54,20,Viernes,1,Soleado,Festival,Ninguna,10,4
+2024-10-05,Chancho a la Cruz,46,19,Sábado,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-06,Chancho a la Cruz,46,19,Domingo,1,Nublado,Ninguno,Ninguna,10,4
+2024-10-07,Chancho a la Cruz,32,19,Lunes,0,Lluvioso,Ninguno,Ninguna,10,4
+2024-10-08,Chancho a la Cruz,33,19,Martes,0,Nublado,Ninguno,Ninguna,10,4
+2024-10-09,Chancho a la Cruz,42,21,Miércoles,0,Nublado,Ninguno,2x1,10,4
+2024-10-10,Chancho a la Cruz,34,21,Jueves,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-11,Chancho a la Cruz,51,19,Viernes,1,Lluvioso,Ninguno,Ninguna,10,4
+2024-10-12,Chancho a la Cruz,55,15,Sábado,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-13,Chancho a la Cruz,49,20,Domingo,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-14,Chancho a la Cruz,39,18,Lunes,0,Soleado,Festival,Ninguna,10,4
+2024-10-15,Chancho a la Cruz,35,17,Martes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-16,Chancho a la Cruz,31,17,Miércoles,0,Lluvioso,Ninguno,Ninguna,10,4
+2024-10-17,Chancho a la Cruz,36,21,Jueves,0,Nublado,Ninguno,Ninguna,10,4
+2024-10-18,Chancho a la Cruz,46,19,Viernes,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-19,Chancho a la Cruz,51,18,Sábado,1,Soleado,Ninguno,Descuento,10,4
+2024-10-20,Chancho a la Cruz,48,17,Domingo,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-21,Chancho a la Cruz,32,22,Lunes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-22,Chancho a la Cruz,38,20,Martes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-23,Chancho a la Cruz,38,17,Miércoles,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-24,Chancho a la Cruz,35,19,Jueves,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-25,Chancho a la Cruz,47,19,Viernes,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-26,Chancho a la Cruz,49,20,Sábado,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-27,Chancho a la Cruz,59,17,Domingo,1,Lluvioso,Festival,Ninguna,10,4
+2024-10-28,Chancho a la Cruz,39,19,Lunes,0,Nublado,Ninguno,Ninguna,10,4
+2024-10-29,Chancho a la Cruz,35,16,Martes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-30,Chancho a la Cruz,41,20,Miércoles,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-31,Chancho a la Cruz,47,20,Jueves,0,Soleado,Ninguno,Descuento,10,4
+2024-11-01,Chancho a la Cruz,46,17,Viernes,1,Nublado,Ninguno,2x1,11,4
+2024-11-02,Chancho a la Cruz,51,19,Sábado,1,Nublado,Festival,Menu del Dia,11,4
+2024-11-03,Chancho a la Cruz,39,18,Domingo,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-04,Chancho a la Cruz,24,17,Lunes,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-05,Chancho a la Cruz,19,20,Martes,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-06,Chancho a la Cruz,25,16,Miércoles,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-07,Chancho a la Cruz,18,17,Jueves,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-08,Chancho a la Cruz,43,17,Viernes,1,Soleado,Feriado,Ninguna,11,4
+2024-11-09,Chancho a la Cruz,33,18,Sábado,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-10,Chancho a la Cruz,38,20,Domingo,1,Lluvioso,Ninguno,Ninguna,11,4
+2024-11-11,Chancho a la Cruz,22,18,Lunes,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-12,Chancho a la Cruz,22,19,Martes,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-13,Chancho a la Cruz,24,18,Miércoles,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-14,Chancho a la Cruz,29,20,Jueves,0,Nublado,Fiesta,Ninguna,11,4
+2024-11-15,Chancho a la Cruz,47,18,Viernes,1,Soleado,Ninguno,Descuento,11,4
+2024-11-16,Chancho a la Cruz,35,19,Sábado,1,Nublado,Ninguno,Ninguna,11,4
+2024-11-17,Chancho a la Cruz,37,18,Domingo,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-18,Chancho a la Cruz,24,19,Lunes,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-19,Chancho a la Cruz,26,22,Martes,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-20,Chancho a la Cruz,33,18,Miércoles,0,Soleado,Fiesta,Ninguna,11,4
+2024-11-21,Chancho a la Cruz,18,17,Jueves,0,Lluvioso,Ninguno,Ninguna,11,4
+2024-11-22,Chancho a la Cruz,36,22,Viernes,1,Nublado,Ninguno,Ninguna,11,4
+2024-11-23,Chancho a la Cruz,38,18,Sábado,1,Nublado,Ninguno,Ninguna,11,4
+2024-11-24,Chancho a la Cruz,42,19,Domingo,1,Soleado,Ninguno,Descuento,11,4
+2024-11-25,Chancho a la Cruz,24,19,Lunes,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-26,Chancho a la Cruz,23,18,Martes,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-27,Chancho a la Cruz,28,15,Miércoles,0,Soleado,Feriado,Ninguna,11,4
+2024-11-28,Chancho a la Cruz,25,20,Jueves,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-29,Chancho a la Cruz,34,18,Viernes,1,Lluvioso,Ninguno,Ninguna,11,4
+2024-11-30,Chancho a la Cruz,36,20,Sábado,1,Nublado,Ninguno,Ninguna,11,4
+2024-12-01,Chancho a la Cruz,39,20,Domingo,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-02,Chancho a la Cruz,25,18,Lunes,0,Lluvioso,Ninguno,Ninguna,12,4
+2024-12-03,Chancho a la Cruz,26,20,Martes,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-04,Chancho a la Cruz,24,20,Miércoles,0,Nublado,Ninguno,Ninguna,12,4
+2024-12-05,Chancho a la Cruz,23,20,Jueves,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-06,Chancho a la Cruz,47,17,Viernes,1,Soleado,Ninguno,2x1,12,4
+2024-12-07,Chancho a la Cruz,45,20,Sábado,1,Soleado,Ninguno,Menu del Dia,12,4
+2024-12-08,Chancho a la Cruz,35,23,Domingo,1,Lluvioso,Ninguno,Ninguna,12,4
+2024-12-09,Chancho a la Cruz,25,17,Lunes,0,Lluvioso,Ninguno,Ninguna,12,4
+2024-12-10,Chancho a la Cruz,23,0,Martes,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-11,Chancho a la Cruz,22,0,Miércoles,0,Nublado,Ninguno,Ninguna,12,4
+2024-12-12,Chancho a la Cruz,36,20,Jueves,0,Nublado,Ninguno,2x1,12,4
+2024-12-13,Chancho a la Cruz,39,16,Viernes,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-14,Chancho a la Cruz,37,17,Sábado,1,Nublado,Ninguno,Ninguna,12,4
+2024-12-15,Chancho a la Cruz,50,21,Domingo,1,Soleado,Ninguno,2x1,12,4
+2024-12-16,Chancho a la Cruz,23,20,Lunes,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-17,Chancho a la Cruz,35,20,Martes,0,Nublado,Ninguno,Descuento,12,4
+2024-12-18,Chancho a la Cruz,25,21,Miércoles,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-19,Chancho a la Cruz,21,20,Jueves,0,Lluvioso,Ninguno,Ninguna,12,4
+2024-12-20,Chancho a la Cruz,55,17,Viernes,1,Soleado,Feriado,Descuento,12,4
+2024-12-21,Chancho a la Cruz,38,20,Sábado,1,Nublado,Ninguno,2x1,12,4
+2024-12-22,Chancho a la Cruz,35,20,Domingo,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-23,Chancho a la Cruz,22,21,Lunes,0,Nublado,Ninguno,Ninguna,12,4
+2024-12-24,Chancho a la Cruz,26,19,Martes,0,Nublado,Ninguno,Ninguna,12,4
+2024-12-25,Chancho a la Cruz,21,19,Miércoles,0,Lluvioso,Ninguno,Ninguna,12,4
+2024-12-26,Chancho a la Cruz,26,19,Jueves,0,Lluvioso,Ninguno,Ninguna,12,4
+2024-12-27,Chancho a la Cruz,41,22,Viernes,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-28,Chancho a la Cruz,39,17,Sábado,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-29,Chancho a la Cruz,50,17,Domingo,1,Soleado,Festival,Ninguna,12,4
+2024-12-30,Chancho a la Cruz,30,15,Lunes,0,Soleado,Fiesta,Ninguna,12,4
+2024-01-01,Picante de Lengua,11,20,Lunes,0,Nublado,Ninguno,Ninguna,1,1
+2024-01-02,Picante de Lengua,14,15,Martes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-03,Picante de Lengua,13,15,Miércoles,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-04,Picante de Lengua,14,15,Jueves,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-05,Picante de Lengua,23,17,Viernes,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-06,Picante de Lengua,22,20,Sábado,1,Nublado,Ninguno,Ninguna,1,1
+2024-01-07,Picante de Lengua,26,18,Domingo,1,Nublado,Festival,Ninguna,1,1
+2024-01-08,Picante de Lengua,14,19,Lunes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-09,Picante de Lengua,13,22,Martes,0,Nublado,Ninguno,Ninguna,1,1
+2024-01-10,Picante de Lengua,12,21,Miércoles,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-11,Picante de Lengua,14,15,Jueves,0,Nublado,Ninguno,Ninguna,1,1
+2024-01-12,Picante de Lengua,23,20,Viernes,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-13,Picante de Lengua,26,20,Sábado,1,Nublado,Festival,Ninguna,1,1
+2024-01-14,Picante de Lengua,26,17,Domingo,1,Nublado,Ninguno,2x1,1,1
+2024-01-15,Picante de Lengua,16,20,Lunes,0,Nublado,Ninguno,Ninguna,1,1
+2024-01-16,Picante de Lengua,13,18,Martes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-17,Picante de Lengua,12,19,Miércoles,0,Nublado,Ninguno,Ninguna,1,1
+2024-01-18,Picante de Lengua,20,18,Jueves,0,Soleado,Ninguno,Descuento,1,1
+2024-01-19,Picante de Lengua,32,18,Viernes,1,Soleado,Festival,Descuento,1,1
+2024-01-20,Picante de Lengua,22,19,Sábado,1,Nublado,Ninguno,Ninguna,1,1
+2024-01-21,Picante de Lengua,20,18,Domingo,1,Nublado,Ninguno,Ninguna,1,1
+2024-01-22,Picante de Lengua,18,18,Lunes,0,Nublado,Ninguno,Menu del Dia,1,1
+2024-01-23,Picante de Lengua,13,21,Martes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-24,Picante de Lengua,19,19,Miércoles,0,Soleado,Festival,Ninguna,1,1
+2024-01-25,Picante de Lengua,13,19,Jueves,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-26,Picante de Lengua,18,19,Viernes,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-27,Picante de Lengua,20,19,Sábado,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-28,Picante de Lengua,21,17,Domingo,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-29,Picante de Lengua,19,19,Lunes,0,Soleado,Ninguno,Menu del Dia,1,1
+2024-01-30,Picante de Lengua,13,18,Martes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-31,Picante de Lengua,14,18,Miércoles,0,Soleado,Ninguno,Ninguna,1,1
+2024-02-01,Picante de Lengua,20,22,Jueves,0,Nublado,Feriado,Ninguna,2,1
+2024-02-02,Picante de Lengua,20,21,Viernes,1,Lluvioso,Ninguno,Ninguna,2,1
+2024-02-03,Picante de Lengua,19,18,Sábado,1,Nublado,Ninguno,Ninguna,2,1
+2024-02-04,Picante de Lengua,21,17,Domingo,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-05,Picante de Lengua,13,17,Lunes,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-06,Picante de Lengua,13,15,Martes,0,Lluvioso,Ninguno,Ninguna,2,1
+2024-02-07,Picante de Lengua,13,21,Miércoles,0,Nublado,Ninguno,Ninguna,2,1
+2024-02-08,Picante de Lengua,12,17,Jueves,0,Nublado,Ninguno,Ninguna,2,1
+2024-02-09,Picante de Lengua,21,18,Viernes,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-10,Picante de Lengua,22,17,Sábado,1,Nublado,Ninguno,Ninguna,2,1
+2024-02-11,Picante de Lengua,22,16,Domingo,1,Nublado,Ninguno,Ninguna,2,1
+2024-02-12,Picante de Lengua,13,17,Lunes,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-13,Picante de Lengua,17,18,Martes,0,Nublado,Ninguno,Ninguna,2,1
+2024-02-14,Picante de Lengua,14,19,Miércoles,0,Nublado,Ninguno,Ninguna,2,1
+2024-02-15,Picante de Lengua,18,19,Jueves,0,Lluvioso,Feriado,Ninguna,2,1
+2024-02-16,Picante de Lengua,23,19,Viernes,1,Lluvioso,Fiesta,Ninguna,2,1
+2024-02-17,Picante de Lengua,22,18,Sábado,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-18,Picante de Lengua,23,17,Domingo,1,Nublado,Ninguno,Ninguna,2,1
+2024-02-19,Picante de Lengua,18,17,Lunes,0,Soleado,Ninguno,Descuento,2,1
+2024-02-20,Picante de Lengua,13,22,Martes,0,Nublado,Ninguno,Ninguna,2,1
+2024-02-21,Picante de Lengua,13,16,Miércoles,0,Nublado,Ninguno,Ninguna,2,1
+2024-02-22,Picante de Lengua,14,20,Jueves,0,Nublado,Ninguno,Ninguna,2,1
+2024-02-23,Picante de Lengua,20,16,Viernes,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-24,Picante de Lengua,19,19,Sábado,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-25,Picante de Lengua,19,17,Domingo,1,Nublado,Ninguno,Ninguna,2,1
+2024-02-26,Picante de Lengua,11,19,Lunes,0,Nublado,Ninguno,Ninguna,2,1
+2024-02-27,Picante de Lengua,18,19,Martes,0,Soleado,Ninguno,Descuento,2,1
+2024-02-28,Picante de Lengua,16,19,Miércoles,0,Lluvioso,Ninguno,Ninguna,2,1
+2024-02-29,Picante de Lengua,17,20,Jueves,0,Nublado,Ninguno,Ninguna,2,1
+2024-03-01,Picante de Lengua,22,20,Viernes,1,Nublado,Ninguno,Ninguna,3,1
+2024-03-02,Picante de Lengua,24,20,Sábado,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-03,Picante de Lengua,18,17,Domingo,1,Nublado,Ninguno,Ninguna,3,1
+2024-03-04,Picante de Lengua,14,0,Lunes,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-05,Picante de Lengua,16,19,Martes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-06,Picante de Lengua,21,21,Miércoles,0,Lluvioso,Festival,Ninguna,3,1
+2024-03-07,Picante de Lengua,17,16,Jueves,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-08,Picante de Lengua,28,19,Viernes,1,Soleado,Ninguno,2x1,3,1
+2024-03-09,Picante de Lengua,22,18,Sábado,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-10,Picante de Lengua,22,18,Domingo,1,Nublado,Ninguno,Ninguna,3,1
+2024-03-11,Picante de Lengua,13,20,Lunes,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-12,Picante de Lengua,15,21,Martes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-13,Picante de Lengua,10,18,Miércoles,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-14,Picante de Lengua,17,15,Jueves,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-15,Picante de Lengua,24,19,Viernes,1,Nublado,Ninguno,Ninguna,3,1
+2024-03-16,Picante de Lengua,20,16,Sábado,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-17,Picante de Lengua,18,19,Domingo,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-18,Picante de Lengua,13,18,Lunes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-19,Picante de Lengua,11,21,Martes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-20,Picante de Lengua,16,0,Miércoles,0,Soleado,Fiesta,Ninguna,3,1
+2024-03-21,Picante de Lengua,20,22,Jueves,0,Soleado,Feriado,Ninguna,3,1
+2024-03-22,Picante de Lengua,22,16,Viernes,1,Lluvioso,Ninguno,Ninguna,3,1
+2024-03-23,Picante de Lengua,23,19,Sábado,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-24,Picante de Lengua,24,20,Domingo,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-25,Picante de Lengua,14,18,Lunes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-26,Picante de Lengua,15,15,Martes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-27,Picante de Lengua,18,19,Miércoles,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-28,Picante de Lengua,14,20,Jueves,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-29,Picante de Lengua,21,19,Viernes,1,Nublado,Ninguno,Ninguna,3,1
+2024-03-30,Picante de Lengua,23,18,Sábado,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-31,Picante de Lengua,27,15,Domingo,1,Nublado,Feriado,Ninguna,3,1
+2024-04-01,Picante de Lengua,13,17,Lunes,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-02,Picante de Lengua,13,20,Martes,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-03,Picante de Lengua,16,17,Miércoles,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-04,Picante de Lengua,11,19,Jueves,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-05,Picante de Lengua,21,20,Viernes,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-06,Picante de Lengua,22,21,Sábado,1,Nublado,Ninguno,Ninguna,4,2
+2024-04-07,Picante de Lengua,20,17,Domingo,1,Nublado,Ninguno,Ninguna,4,2
+2024-04-08,Picante de Lengua,15,18,Lunes,0,Lluvioso,Ninguno,Ninguna,4,2
+2024-04-09,Picante de Lengua,20,17,Martes,0,Nublado,Fiesta,Ninguna,4,2
+2024-04-10,Picante de Lengua,19,0,Miércoles,0,Nublado,Ninguno,Descuento,4,2
+2024-04-11,Picante de Lengua,17,21,Jueves,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-12,Picante de Lengua,22,20,Viernes,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-13,Picante de Lengua,26,20,Sábado,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-14,Picante de Lengua,23,20,Domingo,1,Nublado,Ninguno,Ninguna,4,2
+2024-04-15,Picante de Lengua,14,21,Lunes,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-16,Picante de Lengua,16,19,Martes,0,Soleado,Ninguno,Menu del Dia,4,2
+2024-04-17,Picante de Lengua,18,16,Miércoles,0,Soleado,Ninguno,Menu del Dia,4,2
+2024-04-18,Picante de Lengua,20,20,Jueves,0,Soleado,Feriado,Ninguna,4,2
+2024-04-19,Picante de Lengua,23,19,Viernes,1,Lluvioso,Ninguno,Ninguna,4,2
+2024-04-20,Picante de Lengua,23,0,Sábado,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-21,Picante de Lengua,21,16,Domingo,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-22,Picante de Lengua,25,21,Lunes,0,Lluvioso,Feriado,2x1,4,2
+2024-04-23,Picante de Lengua,14,16,Martes,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-24,Picante de Lengua,16,19,Miércoles,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-25,Picante de Lengua,16,18,Jueves,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-26,Picante de Lengua,24,19,Viernes,1,Nublado,Ninguno,Ninguna,4,2
+2024-04-27,Picante de Lengua,27,20,Sábado,1,Soleado,Ninguno,Menu del Dia,4,2
+2024-04-28,Picante de Lengua,22,17,Domingo,1,Lluvioso,Ninguno,Ninguna,4,2
+2024-04-29,Picante de Lengua,15,19,Lunes,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-30,Picante de Lengua,23,17,Martes,0,Soleado,Ninguno,Descuento,4,2
+2024-05-01,Picante de Lengua,22,22,Miércoles,0,Nublado,Ninguno,Ninguna,5,2
+2024-05-02,Picante de Lengua,21,21,Jueves,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-03,Picante de Lengua,28,18,Viernes,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-04,Picante de Lengua,32,20,Sábado,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-05,Picante de Lengua,30,19,Domingo,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-06,Picante de Lengua,24,19,Lunes,0,Lluvioso,Ninguno,Ninguna,5,2
+2024-05-07,Picante de Lengua,21,16,Martes,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-08,Picante de Lengua,33,20,Miércoles,0,Nublado,Festival,Descuento,5,2
+2024-05-09,Picante de Lengua,22,20,Jueves,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-10,Picante de Lengua,27,18,Viernes,1,Nublado,Ninguno,Ninguna,5,2
+2024-05-11,Picante de Lengua,32,19,Sábado,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-12,Picante de Lengua,35,22,Domingo,1,Lluvioso,Ninguno,2x1,5,2
+2024-05-13,Picante de Lengua,27,21,Lunes,0,Soleado,Fiesta,Ninguna,5,2
+2024-05-14,Picante de Lengua,25,21,Martes,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-15,Picante de Lengua,24,19,Miércoles,0,Nublado,Ninguno,Descuento,5,2
+2024-05-16,Picante de Lengua,25,17,Jueves,0,Soleado,Ninguno,Descuento,5,2
+2024-05-17,Picante de Lengua,32,21,Viernes,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-18,Picante de Lengua,29,17,Sábado,1,Nublado,Ninguno,Ninguna,5,2
+2024-05-19,Picante de Lengua,28,19,Domingo,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-20,Picante de Lengua,23,21,Lunes,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-21,Picante de Lengua,29,18,Martes,0,Soleado,Ninguno,Menu del Dia,5,2
+2024-05-22,Picante de Lengua,20,18,Miércoles,0,Nublado,Ninguno,Ninguna,5,2
+2024-05-23,Picante de Lengua,24,19,Jueves,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-24,Picante de Lengua,32,18,Viernes,1,Soleado,Feriado,Ninguna,5,2
+2024-05-25,Picante de Lengua,34,22,Sábado,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-26,Picante de Lengua,31,21,Domingo,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-27,Picante de Lengua,27,19,Lunes,0,Nublado,Ninguno,Descuento,5,2
+2024-05-28,Picante de Lengua,19,15,Martes,0,Nublado,Ninguno,Ninguna,5,2
+2024-05-29,Picante de Lengua,25,22,Miércoles,0,Soleado,Ninguno,2x1,5,2
+2024-05-30,Picante de Lengua,22,22,Jueves,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-31,Picante de Lengua,32,19,Viernes,1,Soleado,Ninguno,Ninguna,5,2
+2024-06-01,Picante de Lengua,36,0,Sábado,1,Lluvioso,Ninguno,Menu del Dia,6,2
+2024-06-02,Picante de Lengua,28,23,Domingo,1,Nublado,Ninguno,Ninguna,6,2
+2024-06-03,Picante de Lengua,23,19,Lunes,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-04,Picante de Lengua,26,19,Martes,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-05,Picante de Lengua,25,19,Miércoles,0,Nublado,Ninguno,Ninguna,6,2
+2024-06-06,Picante de Lengua,26,0,Jueves,0,Nublado,Feriado,Ninguna,6,2
+2024-06-07,Picante de Lengua,33,19,Viernes,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-08,Picante de Lengua,31,21,Sábado,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-09,Picante de Lengua,33,19,Domingo,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-10,Picante de Lengua,22,16,Lunes,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-11,Picante de Lengua,21,19,Martes,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-12,Picante de Lengua,20,20,Miércoles,0,Nublado,Ninguno,Ninguna,6,2
+2024-06-13,Picante de Lengua,25,16,Jueves,0,Soleado,Festival,Ninguna,6,2
+2024-06-14,Picante de Lengua,31,22,Viernes,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-15,Picante de Lengua,31,16,Sábado,1,Nublado,Ninguno,Ninguna,6,2
+2024-06-16,Picante de Lengua,32,19,Domingo,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-17,Picante de Lengua,22,19,Lunes,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-18,Picante de Lengua,26,20,Martes,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-19,Picante de Lengua,25,21,Miércoles,0,Nublado,Ninguno,Ninguna,6,2
+2024-06-20,Picante de Lengua,22,19,Jueves,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-21,Picante de Lengua,38,20,Viernes,1,Nublado,Ninguno,2x1,6,2
+2024-06-22,Picante de Lengua,27,19,Sábado,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-23,Picante de Lengua,31,19,Domingo,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-24,Picante de Lengua,22,17,Lunes,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-25,Picante de Lengua,25,20,Martes,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-26,Picante de Lengua,21,17,Miércoles,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-27,Picante de Lengua,20,22,Jueves,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-28,Picante de Lengua,29,18,Viernes,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-29,Picante de Lengua,32,20,Sábado,1,Soleado,Feriado,Ninguna,6,2
+2024-06-30,Picante de Lengua,32,16,Domingo,1,Soleado,Ninguno,Ninguna,6,2
+2024-07-01,Picante de Lengua,22,19,Lunes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-02,Picante de Lengua,22,21,Martes,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-03,Picante de Lengua,23,19,Miércoles,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-04,Picante de Lengua,23,17,Jueves,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-05,Picante de Lengua,40,19,Viernes,1,Soleado,Ninguno,2x1,7,3
+2024-07-06,Picante de Lengua,30,16,Sábado,1,Nublado,Ninguno,Ninguna,7,3
+2024-07-07,Picante de Lengua,36,21,Domingo,1,Soleado,Ninguno,Descuento,7,3
+2024-07-08,Picante de Lengua,22,21,Lunes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-09,Picante de Lengua,23,20,Martes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-10,Picante de Lengua,23,18,Miércoles,0,Lluvioso,Ninguno,Ninguna,7,3
+2024-07-11,Picante de Lengua,23,20,Jueves,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-12,Picante de Lengua,31,19,Viernes,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-13,Picante de Lengua,30,20,Sábado,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-14,Picante de Lengua,30,19,Domingo,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-15,Picante de Lengua,30,18,Lunes,0,Soleado,Ninguno,2x1,7,3
+2024-07-16,Picante de Lengua,25,20,Martes,0,Soleado,Fiesta,Ninguna,7,3
+2024-07-17,Picante de Lengua,19,19,Miércoles,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-18,Picante de Lengua,25,17,Jueves,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-19,Picante de Lengua,35,18,Viernes,1,Nublado,Ninguno,2x1,7,3
+2024-07-20,Picante de Lengua,31,19,Sábado,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-21,Picante de Lengua,31,23,Domingo,1,Nublado,Ninguno,Ninguna,7,3
+2024-07-22,Picante de Lengua,21,20,Lunes,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-23,Picante de Lengua,22,19,Martes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-24,Picante de Lengua,26,20,Miércoles,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-25,Picante de Lengua,24,22,Jueves,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-26,Picante de Lengua,36,21,Viernes,1,Soleado,Ninguno,2x1,7,3
+2024-07-27,Picante de Lengua,29,19,Sábado,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-28,Picante de Lengua,29,15,Domingo,1,Nublado,Ninguno,Ninguna,7,3
+2024-07-29,Picante de Lengua,19,19,Lunes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-30,Picante de Lengua,23,15,Martes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-31,Picante de Lengua,24,21,Miércoles,0,Soleado,Ninguno,Ninguna,7,3
+2024-08-01,Picante de Lengua,23,18,Jueves,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-02,Picante de Lengua,31,15,Viernes,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-03,Picante de Lengua,34,19,Sábado,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-04,Picante de Lengua,31,21,Domingo,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-05,Picante de Lengua,23,20,Lunes,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-06,Picante de Lengua,19,18,Martes,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-07,Picante de Lengua,22,18,Miércoles,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-08,Picante de Lengua,30,17,Jueves,0,Soleado,Ninguno,2x1,8,3
+2024-08-09,Picante de Lengua,30,18,Viernes,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-10,Picante de Lengua,31,19,Sábado,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-11,Picante de Lengua,32,20,Domingo,1,Nublado,Ninguno,Ninguna,8,3
+2024-08-12,Picante de Lengua,24,17,Lunes,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-13,Picante de Lengua,25,18,Martes,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-14,Picante de Lengua,24,17,Miércoles,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-15,Picante de Lengua,23,19,Jueves,0,Lluvioso,Ninguno,Ninguna,8,3
+2024-08-16,Picante de Lengua,33,19,Viernes,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-17,Picante de Lengua,28,18,Sábado,1,Nublado,Ninguno,Ninguna,8,3
+2024-08-18,Picante de Lengua,31,20,Domingo,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-19,Picante de Lengua,22,19,Lunes,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-20,Picante de Lengua,24,20,Martes,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-21,Picante de Lengua,23,20,Miércoles,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-22,Picante de Lengua,19,17,Jueves,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-23,Picante de Lengua,34,20,Viernes,1,Nublado,Ninguno,Menu del Dia,8,3
+2024-08-24,Picante de Lengua,36,22,Sábado,1,Nublado,Ninguno,2x1,8,3
+2024-08-25,Picante de Lengua,33,19,Domingo,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-26,Picante de Lengua,22,17,Lunes,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-27,Picante de Lengua,22,21,Martes,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-28,Picante de Lengua,27,18,Miércoles,0,Lluvioso,Ninguno,Descuento,8,3
+2024-08-29,Picante de Lengua,33,17,Jueves,0,Soleado,Feriado,2x1,8,3
+2024-08-30,Picante de Lengua,33,23,Viernes,1,Nublado,Ninguno,Ninguna,8,3
+2024-08-31,Picante de Lengua,41,17,Sábado,1,Nublado,Fiesta,Ninguna,8,3
+2024-09-01,Picante de Lengua,28,22,Domingo,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-02,Picante de Lengua,25,19,Lunes,0,Nublado,Ninguno,Ninguna,9,3
+2024-09-03,Picante de Lengua,28,19,Martes,0,Soleado,Ninguno,Menu del Dia,9,3
+2024-09-04,Picante de Lengua,23,15,Miércoles,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-05,Picante de Lengua,24,16,Jueves,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-06,Picante de Lengua,29,19,Viernes,1,Nublado,Ninguno,Ninguna,9,3
+2024-09-07,Picante de Lengua,32,21,Sábado,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-08,Picante de Lengua,41,19,Domingo,1,Nublado,Festival,2x1,9,3
+2024-09-09,Picante de Lengua,21,18,Lunes,0,Nublado,Ninguno,Ninguna,9,3
+2024-09-10,Picante de Lengua,30,15,Martes,0,Nublado,Fiesta,Ninguna,9,3
+2024-09-11,Picante de Lengua,22,19,Miércoles,0,Lluvioso,Ninguno,Ninguna,9,3
+2024-09-12,Picante de Lengua,28,21,Jueves,0,Soleado,Ninguno,Descuento,9,3
+2024-09-13,Picante de Lengua,30,18,Viernes,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-14,Picante de Lengua,31,19,Sábado,1,Nublado,Ninguno,Ninguna,9,3
+2024-09-15,Picante de Lengua,36,19,Domingo,1,Soleado,Ninguno,2x1,9,3
+2024-09-16,Picante de Lengua,30,18,Lunes,0,Soleado,Feriado,Ninguna,9,3
+2024-09-17,Picante de Lengua,29,19,Martes,0,Soleado,Ninguno,Descuento,9,3
+2024-09-18,Picante de Lengua,23,19,Miércoles,0,Nublado,Ninguno,Ninguna,9,3
+2024-09-19,Picante de Lengua,22,22,Jueves,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-20,Picante de Lengua,35,21,Viernes,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-21,Picante de Lengua,28,19,Sábado,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-22,Picante de Lengua,30,20,Domingo,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-23,Picante de Lengua,28,18,Lunes,0,Soleado,Feriado,Ninguna,9,3
+2024-09-24,Picante de Lengua,24,19,Martes,0,Nublado,Ninguno,Ninguna,9,3
+2024-09-25,Picante de Lengua,24,15,Miércoles,0,Nublado,Ninguno,Ninguna,9,3
+2024-09-26,Picante de Lengua,31,20,Jueves,0,Soleado,Ninguno,Descuento,9,3
+2024-09-27,Picante de Lengua,41,18,Viernes,1,Nublado,Ninguno,Menu del Dia,9,3
+2024-09-28,Picante de Lengua,28,18,Sábado,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-29,Picante de Lengua,29,19,Domingo,1,Nublado,Ninguno,Ninguna,9,3
+2024-09-30,Picante de Lengua,23,19,Lunes,0,Soleado,Ninguno,Ninguna,9,3
+2024-10-01,Picante de Lengua,31,20,Martes,0,Soleado,Ninguno,Descuento,10,4
+2024-10-02,Picante de Lengua,24,19,Miércoles,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-03,Picante de Lengua,26,18,Jueves,0,Nublado,Fiesta,Ninguna,10,4
+2024-10-04,Picante de Lengua,30,18,Viernes,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-05,Picante de Lengua,36,20,Sábado,1,Soleado,Ninguno,Descuento,10,4
+2024-10-06,Picante de Lengua,30,21,Domingo,1,Lluvioso,Ninguno,Ninguna,10,4
+2024-10-07,Picante de Lengua,24,20,Lunes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-08,Picante de Lengua,26,18,Martes,0,Soleado,Feriado,Ninguna,10,4
+2024-10-09,Picante de Lengua,23,19,Miércoles,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-10,Picante de Lengua,26,18,Jueves,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-11,Picante de Lengua,39,19,Viernes,1,Nublado,Feriado,Ninguna,10,4
+2024-10-12,Picante de Lengua,37,16,Sábado,1,Soleado,Ninguno,Menu del Dia,10,4
+2024-10-13,Picante de Lengua,32,21,Domingo,1,Nublado,Ninguno,Ninguna,10,4
+2024-10-14,Picante de Lengua,24,17,Lunes,0,Lluvioso,Ninguno,Ninguna,10,4
+2024-10-15,Picante de Lengua,25,19,Martes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-16,Picante de Lengua,25,18,Miércoles,0,Nublado,Ninguno,Ninguna,10,4
+2024-10-17,Picante de Lengua,24,18,Jueves,0,Nublado,Ninguno,Ninguna,10,4
+2024-10-18,Picante de Lengua,32,23,Viernes,1,Nublado,Ninguno,Ninguna,10,4
+2024-10-19,Picante de Lengua,29,19,Sábado,1,Nublado,Ninguno,Ninguna,10,4
+2024-10-20,Picante de Lengua,33,23,Domingo,1,Nublado,Ninguno,Ninguna,10,4
+2024-10-21,Picante de Lengua,26,18,Lunes,0,Lluvioso,Ninguno,Ninguna,10,4
+2024-10-22,Picante de Lengua,26,17,Martes,0,Nublado,Ninguno,Ninguna,10,4
+2024-10-23,Picante de Lengua,28,21,Miércoles,0,Soleado,Ninguno,Descuento,10,4
+2024-10-24,Picante de Lengua,26,23,Jueves,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-25,Picante de Lengua,31,20,Viernes,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-26,Picante de Lengua,32,18,Sábado,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-27,Picante de Lengua,34,19,Domingo,1,Nublado,Ninguno,Ninguna,10,4
+2024-10-28,Picante de Lengua,32,18,Lunes,0,Nublado,Festival,2x1,10,4
+2024-10-29,Picante de Lengua,21,16,Martes,0,Nublado,Ninguno,Ninguna,10,4
+2024-10-30,Picante de Lengua,22,18,Miércoles,0,Lluvioso,Ninguno,Ninguna,10,4
+2024-10-31,Picante de Lengua,21,20,Jueves,0,Lluvioso,Ninguno,Ninguna,10,4
+2024-11-01,Picante de Lengua,24,19,Viernes,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-02,Picante de Lengua,28,19,Sábado,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-03,Picante de Lengua,29,19,Domingo,1,Lluvioso,Fiesta,Ninguna,11,4
+2024-11-04,Picante de Lengua,16,17,Lunes,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-05,Picante de Lengua,17,20,Martes,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-06,Picante de Lengua,17,18,Miércoles,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-07,Picante de Lengua,16,16,Jueves,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-08,Picante de Lengua,24,20,Viernes,1,Lluvioso,Ninguno,Ninguna,11,4
+2024-11-09,Picante de Lengua,22,17,Sábado,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-10,Picante de Lengua,27,15,Domingo,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-11,Picante de Lengua,18,23,Lunes,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-12,Picante de Lengua,16,20,Martes,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-13,Picante de Lengua,18,15,Miércoles,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-14,Picante de Lengua,17,21,Jueves,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-15,Picante de Lengua,25,20,Viernes,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-16,Picante de Lengua,24,20,Sábado,1,Nublado,Ninguno,Ninguna,11,4
+2024-11-17,Picante de Lengua,27,17,Domingo,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-18,Picante de Lengua,15,19,Lunes,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-19,Picante de Lengua,17,17,Martes,0,Lluvioso,Ninguno,Ninguna,11,4
+2024-11-20,Picante de Lengua,16,19,Miércoles,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-21,Picante de Lengua,17,20,Jueves,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-22,Picante de Lengua,27,17,Viernes,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-23,Picante de Lengua,26,16,Sábado,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-24,Picante de Lengua,23,20,Domingo,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-25,Picante de Lengua,18,19,Lunes,0,Soleado,Fiesta,Ninguna,11,4
+2024-11-26,Picante de Lengua,15,22,Martes,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-27,Picante de Lengua,17,17,Miércoles,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-28,Picante de Lengua,17,19,Jueves,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-29,Picante de Lengua,31,19,Viernes,1,Soleado,Ninguno,Descuento,11,4
+2024-11-30,Picante de Lengua,24,17,Sábado,1,Soleado,Ninguno,Ninguna,11,4
+2024-12-01,Picante de Lengua,23,15,Domingo,1,Nublado,Ninguno,Ninguna,12,4
+2024-12-02,Picante de Lengua,16,21,Lunes,0,Lluvioso,Ninguno,Ninguna,12,4
+2024-12-03,Picante de Lengua,17,20,Martes,0,Nublado,Ninguno,Ninguna,12,4
+2024-12-04,Picante de Lengua,21,20,Miércoles,0,Soleado,Festival,Ninguna,12,4
+2024-12-05,Picante de Lengua,15,20,Jueves,0,Nublado,Ninguno,Ninguna,12,4
+2024-12-06,Picante de Lengua,24,18,Viernes,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-07,Picante de Lengua,28,22,Sábado,1,Soleado,Feriado,Ninguna,12,4
+2024-12-08,Picante de Lengua,27,18,Domingo,1,Nublado,Ninguno,Ninguna,12,4
+2024-12-09,Picante de Lengua,20,19,Lunes,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-10,Picante de Lengua,16,22,Martes,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-11,Picante de Lengua,15,18,Miércoles,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-12,Picante de Lengua,17,18,Jueves,0,Nublado,Ninguno,Ninguna,12,4
+2024-12-13,Picante de Lengua,27,18,Viernes,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-14,Picante de Lengua,25,19,Sábado,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-15,Picante de Lengua,24,20,Domingo,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-16,Picante de Lengua,17,19,Lunes,0,Lluvioso,Ninguno,Ninguna,12,4
+2024-12-17,Picante de Lengua,13,19,Martes,0,Nublado,Ninguno,Ninguna,12,4
+2024-12-18,Picante de Lengua,20,17,Miércoles,0,Soleado,Ninguno,2x1,12,4
+2024-12-19,Picante de Lengua,18,19,Jueves,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-20,Picante de Lengua,29,21,Viernes,1,Soleado,Fiesta,Ninguna,12,4
+2024-12-21,Picante de Lengua,32,18,Sábado,1,Soleado,Ninguno,2x1,12,4
+2024-12-22,Picante de Lengua,26,18,Domingo,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-23,Picante de Lengua,21,19,Lunes,0,Soleado,Ninguno,Descuento,12,4
+2024-12-24,Picante de Lengua,20,18,Martes,0,Soleado,Ninguno,2x1,12,4
+2024-12-25,Picante de Lengua,21,16,Miércoles,0,Nublado,Ninguno,Descuento,12,4
+2024-12-26,Picante de Lengua,17,17,Jueves,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-27,Picante de Lengua,23,17,Viernes,1,Nublado,Ninguno,Ninguna,12,4
+2024-12-28,Picante de Lengua,22,19,Sábado,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-29,Picante de Lengua,26,19,Domingo,1,Nublado,Ninguno,Ninguna,12,4
+2024-12-30,Picante de Lengua,16,15,Lunes,0,Soleado,Ninguno,Ninguna,12,4
+2024-01-01,Chicharrón de Cerdo,10,21,Lunes,0,Lluvioso,Ninguno,Ninguna,1,1
+2024-01-02,Chicharrón de Cerdo,12,20,Martes,0,Soleado,Ninguno,2x1,1,1
+2024-01-03,Chicharrón de Cerdo,10,19,Miércoles,0,Nublado,Ninguno,Ninguna,1,1
+2024-01-04,Chicharrón de Cerdo,15,18,Jueves,0,Lluvioso,Feriado,Ninguna,1,1
+2024-01-05,Chicharrón de Cerdo,18,20,Viernes,1,Nublado,Ninguno,Ninguna,1,1
+2024-01-06,Chicharrón de Cerdo,17,17,Sábado,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-07,Chicharrón de Cerdo,14,20,Domingo,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-08,Chicharrón de Cerdo,10,17,Lunes,0,Lluvioso,Ninguno,Ninguna,1,1
+2024-01-09,Chicharrón de Cerdo,11,16,Martes,0,Nublado,Ninguno,Ninguna,1,1
+2024-01-10,Chicharrón de Cerdo,10,21,Miércoles,0,Nublado,Ninguno,Ninguna,1,1
+2024-01-11,Chicharrón de Cerdo,16,18,Jueves,0,Soleado,Feriado,Ninguna,1,1
+2024-01-12,Chicharrón de Cerdo,22,19,Viernes,1,Soleado,Ninguno,Descuento,1,1
+2024-01-13,Chicharrón de Cerdo,19,18,Sábado,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-14,Chicharrón de Cerdo,19,19,Domingo,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-15,Chicharrón de Cerdo,12,20,Lunes,0,Nublado,Ninguno,Ninguna,1,1
+2024-01-16,Chicharrón de Cerdo,12,17,Martes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-17,Chicharrón de Cerdo,12,16,Miércoles,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-18,Chicharrón de Cerdo,13,20,Jueves,0,Lluvioso,Ninguno,Ninguna,1,1
+2024-01-19,Chicharrón de Cerdo,24,19,Viernes,1,Soleado,Ninguno,2x1,1,1
+2024-01-20,Chicharrón de Cerdo,18,21,Sábado,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-21,Chicharrón de Cerdo,17,19,Domingo,1,Soleado,Ninguno,Ninguna,1,1
+2024-01-22,Chicharrón de Cerdo,9,15,Lunes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-23,Chicharrón de Cerdo,17,21,Martes,0,Nublado,Ninguno,Descuento,1,1
+2024-01-24,Chicharrón de Cerdo,10,21,Miércoles,0,Nublado,Ninguno,Ninguna,1,1
+2024-01-25,Chicharrón de Cerdo,13,20,Jueves,0,Soleado,Festival,Ninguna,1,1
+2024-01-26,Chicharrón de Cerdo,22,17,Viernes,1,Soleado,Ninguno,2x1,1,1
+2024-01-27,Chicharrón de Cerdo,17,17,Sábado,1,Nublado,Ninguno,Ninguna,1,1
+2024-01-28,Chicharrón de Cerdo,20,17,Domingo,1,Nublado,Ninguno,Ninguna,1,1
+2024-01-29,Chicharrón de Cerdo,12,18,Lunes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-30,Chicharrón de Cerdo,10,16,Martes,0,Soleado,Ninguno,Ninguna,1,1
+2024-01-31,Chicharrón de Cerdo,11,22,Miércoles,0,Soleado,Ninguno,Ninguna,1,1
+2024-02-01,Chicharrón de Cerdo,14,20,Jueves,0,Lluvioso,Ninguno,Ninguna,2,1
+2024-02-02,Chicharrón de Cerdo,19,18,Viernes,1,Nublado,Ninguno,Ninguna,2,1
+2024-02-03,Chicharrón de Cerdo,17,19,Sábado,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-04,Chicharrón de Cerdo,20,17,Domingo,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-05,Chicharrón de Cerdo,10,19,Lunes,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-06,Chicharrón de Cerdo,9,20,Martes,0,Lluvioso,Ninguno,Ninguna,2,1
+2024-02-07,Chicharrón de Cerdo,11,15,Miércoles,0,Nublado,Ninguno,Ninguna,2,1
+2024-02-08,Chicharrón de Cerdo,13,19,Jueves,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-09,Chicharrón de Cerdo,17,0,Viernes,1,Nublado,Ninguno,Ninguna,2,1
+2024-02-10,Chicharrón de Cerdo,24,20,Sábado,1,Soleado,Ninguno,Menu del Dia,2,1
+2024-02-11,Chicharrón de Cerdo,17,16,Domingo,1,Lluvioso,Ninguno,Ninguna,2,1
+2024-02-12,Chicharrón de Cerdo,10,20,Lunes,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-13,Chicharrón de Cerdo,11,15,Martes,0,Nublado,Ninguno,Ninguna,2,1
+2024-02-14,Chicharrón de Cerdo,12,21,Miércoles,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-15,Chicharrón de Cerdo,9,17,Jueves,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-16,Chicharrón de Cerdo,18,19,Viernes,1,Nublado,Ninguno,Ninguna,2,1
+2024-02-17,Chicharrón de Cerdo,21,17,Sábado,1,Soleado,Ninguno,Menu del Dia,2,1
+2024-02-18,Chicharrón de Cerdo,17,20,Domingo,1,Lluvioso,Ninguno,Ninguna,2,1
+2024-02-19,Chicharrón de Cerdo,10,17,Lunes,0,Lluvioso,Ninguno,Ninguna,2,1
+2024-02-20,Chicharrón de Cerdo,9,18,Martes,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-21,Chicharrón de Cerdo,15,18,Miércoles,0,Soleado,Fiesta,Ninguna,2,1
+2024-02-22,Chicharrón de Cerdo,9,19,Jueves,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-23,Chicharrón de Cerdo,20,22,Viernes,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-24,Chicharrón de Cerdo,17,17,Sábado,1,Soleado,Ninguno,Ninguna,2,1
+2024-02-25,Chicharrón de Cerdo,21,17,Domingo,1,Nublado,Festival,Ninguna,2,1
+2024-02-26,Chicharrón de Cerdo,11,18,Lunes,0,Nublado,Ninguno,Ninguna,2,1
+2024-02-27,Chicharrón de Cerdo,10,20,Martes,0,Soleado,Ninguno,Ninguna,2,1
+2024-02-28,Chicharrón de Cerdo,14,19,Miércoles,0,Soleado,Festival,Ninguna,2,1
+2024-02-29,Chicharrón de Cerdo,15,17,Jueves,0,Soleado,Ninguno,Descuento,2,1
+2024-03-01,Chicharrón de Cerdo,25,19,Viernes,1,Nublado,Ninguno,2x1,3,1
+2024-03-02,Chicharrón de Cerdo,21,22,Sábado,1,Nublado,Feriado,Ninguna,3,1
+2024-03-03,Chicharrón de Cerdo,21,18,Domingo,1,Lluvioso,Festival,Ninguna,3,1
+2024-03-04,Chicharrón de Cerdo,10,15,Lunes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-05,Chicharrón de Cerdo,13,16,Martes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-06,Chicharrón de Cerdo,16,19,Miércoles,0,Nublado,Ninguno,2x1,3,1
+2024-03-07,Chicharrón de Cerdo,11,18,Jueves,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-08,Chicharrón de Cerdo,18,19,Viernes,1,Lluvioso,Ninguno,Ninguna,3,1
+2024-03-09,Chicharrón de Cerdo,22,19,Sábado,1,Nublado,Ninguno,2x1,3,1
+2024-03-10,Chicharrón de Cerdo,23,21,Domingo,1,Nublado,Festival,Ninguna,3,1
+2024-03-11,Chicharrón de Cerdo,16,19,Lunes,0,Nublado,Ninguno,2x1,3,1
+2024-03-12,Chicharrón de Cerdo,11,20,Martes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-13,Chicharrón de Cerdo,12,20,Miércoles,0,Lluvioso,Ninguno,Ninguna,3,1
+2024-03-14,Chicharrón de Cerdo,11,19,Jueves,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-15,Chicharrón de Cerdo,22,19,Viernes,1,Soleado,Ninguno,Menu del Dia,3,1
+2024-03-16,Chicharrón de Cerdo,17,20,Sábado,1,Nublado,Ninguno,Ninguna,3,1
+2024-03-17,Chicharrón de Cerdo,25,19,Domingo,1,Soleado,Ninguno,Descuento,3,1
+2024-03-18,Chicharrón de Cerdo,12,19,Lunes,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-19,Chicharrón de Cerdo,10,19,Martes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-20,Chicharrón de Cerdo,12,15,Miércoles,0,Lluvioso,Ninguno,Ninguna,3,1
+2024-03-21,Chicharrón de Cerdo,9,18,Jueves,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-22,Chicharrón de Cerdo,23,0,Viernes,1,Soleado,Ninguno,2x1,3,1
+2024-03-23,Chicharrón de Cerdo,25,19,Sábado,1,Nublado,Ninguno,2x1,3,1
+2024-03-24,Chicharrón de Cerdo,23,19,Domingo,1,Nublado,Ninguno,2x1,3,1
+2024-03-25,Chicharrón de Cerdo,9,18,Lunes,0,Nublado,Ninguno,Ninguna,3,1
+2024-03-26,Chicharrón de Cerdo,11,18,Martes,0,Soleado,Ninguno,Ninguna,3,1
+2024-03-27,Chicharrón de Cerdo,16,18,Miércoles,0,Soleado,Festival,Ninguna,3,1
+2024-03-28,Chicharrón de Cerdo,15,23,Jueves,0,Soleado,Feriado,Ninguna,3,1
+2024-03-29,Chicharrón de Cerdo,21,21,Viernes,1,Nublado,Ninguno,Descuento,3,1
+2024-03-30,Chicharrón de Cerdo,17,21,Sábado,1,Soleado,Ninguno,Ninguna,3,1
+2024-03-31,Chicharrón de Cerdo,17,15,Domingo,1,Soleado,Ninguno,Ninguna,3,1
+2024-04-01,Chicharrón de Cerdo,11,20,Lunes,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-02,Chicharrón de Cerdo,10,20,Martes,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-03,Chicharrón de Cerdo,11,22,Miércoles,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-04,Chicharrón de Cerdo,12,19,Jueves,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-05,Chicharrón de Cerdo,16,20,Viernes,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-06,Chicharrón de Cerdo,24,18,Sábado,1,Soleado,Ninguno,2x1,4,2
+2024-04-07,Chicharrón de Cerdo,16,18,Domingo,1,Lluvioso,Ninguno,Ninguna,4,2
+2024-04-08,Chicharrón de Cerdo,11,21,Lunes,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-09,Chicharrón de Cerdo,13,20,Martes,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-10,Chicharrón de Cerdo,11,20,Miércoles,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-11,Chicharrón de Cerdo,19,22,Jueves,0,Lluvioso,Fiesta,2x1,4,2
+2024-04-12,Chicharrón de Cerdo,18,19,Viernes,1,Nublado,Ninguno,Ninguna,4,2
+2024-04-13,Chicharrón de Cerdo,19,18,Sábado,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-14,Chicharrón de Cerdo,18,18,Domingo,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-15,Chicharrón de Cerdo,17,19,Lunes,0,Soleado,Ninguno,Menu del Dia,4,2
+2024-04-16,Chicharrón de Cerdo,13,15,Martes,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-17,Chicharrón de Cerdo,11,17,Miércoles,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-18,Chicharrón de Cerdo,10,23,Jueves,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-19,Chicharrón de Cerdo,17,19,Viernes,1,Lluvioso,Ninguno,Ninguna,4,2
+2024-04-20,Chicharrón de Cerdo,18,19,Sábado,1,Soleado,Ninguno,Ninguna,4,2
+2024-04-21,Chicharrón de Cerdo,19,22,Domingo,1,Nublado,Ninguno,Ninguna,4,2
+2024-04-22,Chicharrón de Cerdo,9,17,Lunes,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-23,Chicharrón de Cerdo,13,19,Martes,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-24,Chicharrón de Cerdo,12,21,Miércoles,0,Nublado,Ninguno,Ninguna,4,2
+2024-04-25,Chicharrón de Cerdo,13,23,Jueves,0,Soleado,Ninguno,Menu del Dia,4,2
+2024-04-26,Chicharrón de Cerdo,22,19,Viernes,1,Soleado,Feriado,Ninguna,4,2
+2024-04-27,Chicharrón de Cerdo,19,21,Sábado,1,Nublado,Ninguno,Ninguna,4,2
+2024-04-28,Chicharrón de Cerdo,20,21,Domingo,1,Nublado,Ninguno,Ninguna,4,2
+2024-04-29,Chicharrón de Cerdo,12,19,Lunes,0,Soleado,Ninguno,Ninguna,4,2
+2024-04-30,Chicharrón de Cerdo,12,17,Martes,0,Soleado,Ninguno,Ninguna,4,2
+2024-05-01,Chicharrón de Cerdo,21,18,Miércoles,0,Soleado,Fiesta,Ninguna,5,2
+2024-05-02,Chicharrón de Cerdo,23,19,Jueves,0,Soleado,Festival,Ninguna,5,2
+2024-05-03,Chicharrón de Cerdo,30,20,Viernes,1,Nublado,Ninguno,Menu del Dia,5,2
+2024-05-04,Chicharrón de Cerdo,33,19,Sábado,1,Soleado,Ninguno,2x1,5,2
+2024-05-05,Chicharrón de Cerdo,26,19,Domingo,1,Nublado,Ninguno,Ninguna,5,2
+2024-05-06,Chicharrón de Cerdo,20,19,Lunes,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-07,Chicharrón de Cerdo,23,19,Martes,0,Lluvioso,Ninguno,Descuento,5,2
+2024-05-08,Chicharrón de Cerdo,17,21,Miércoles,0,Lluvioso,Ninguno,Ninguna,5,2
+2024-05-09,Chicharrón de Cerdo,19,21,Jueves,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-10,Chicharrón de Cerdo,23,18,Viernes,1,Nublado,Ninguno,Ninguna,5,2
+2024-05-11,Chicharrón de Cerdo,22,21,Sábado,1,Nublado,Ninguno,Ninguna,5,2
+2024-05-12,Chicharrón de Cerdo,25,19,Domingo,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-13,Chicharrón de Cerdo,20,19,Lunes,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-14,Chicharrón de Cerdo,21,20,Martes,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-15,Chicharrón de Cerdo,21,19,Miércoles,0,Lluvioso,Ninguno,2x1,5,2
+2024-05-16,Chicharrón de Cerdo,18,19,Jueves,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-17,Chicharrón de Cerdo,27,19,Viernes,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-18,Chicharrón de Cerdo,25,18,Sábado,1,Nublado,Ninguno,Ninguna,5,2
+2024-05-19,Chicharrón de Cerdo,28,19,Domingo,1,Soleado,Ninguno,2x1,5,2
+2024-05-20,Chicharrón de Cerdo,22,20,Lunes,0,Soleado,Festival,Ninguna,5,2
+2024-05-21,Chicharrón de Cerdo,20,20,Martes,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-22,Chicharrón de Cerdo,22,20,Miércoles,0,Soleado,Festival,Ninguna,5,2
+2024-05-23,Chicharrón de Cerdo,18,19,Jueves,0,Lluvioso,Ninguno,Ninguna,5,2
+2024-05-24,Chicharrón de Cerdo,24,19,Viernes,1,Lluvioso,Ninguno,Ninguna,5,2
+2024-05-25,Chicharrón de Cerdo,29,21,Sábado,1,Nublado,Ninguno,2x1,5,2
+2024-05-26,Chicharrón de Cerdo,28,21,Domingo,1,Soleado,Ninguno,Ninguna,5,2
+2024-05-27,Chicharrón de Cerdo,19,18,Lunes,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-28,Chicharrón de Cerdo,17,19,Martes,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-29,Chicharrón de Cerdo,18,18,Miércoles,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-30,Chicharrón de Cerdo,18,16,Jueves,0,Soleado,Ninguno,Ninguna,5,2
+2024-05-31,Chicharrón de Cerdo,25,19,Viernes,1,Soleado,Ninguno,Ninguna,5,2
+2024-06-01,Chicharrón de Cerdo,24,18,Sábado,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-02,Chicharrón de Cerdo,26,18,Domingo,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-03,Chicharrón de Cerdo,20,17,Lunes,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-04,Chicharrón de Cerdo,23,19,Martes,0,Nublado,Ninguno,Descuento,6,2
+2024-06-05,Chicharrón de Cerdo,19,20,Miércoles,0,Lluvioso,Ninguno,Ninguna,6,2
+2024-06-06,Chicharrón de Cerdo,18,20,Jueves,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-07,Chicharrón de Cerdo,25,19,Viernes,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-08,Chicharrón de Cerdo,24,17,Sábado,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-09,Chicharrón de Cerdo,23,18,Domingo,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-10,Chicharrón de Cerdo,21,17,Lunes,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-11,Chicharrón de Cerdo,19,20,Martes,0,Nublado,Ninguno,Ninguna,6,2
+2024-06-12,Chicharrón de Cerdo,17,17,Miércoles,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-13,Chicharrón de Cerdo,25,20,Jueves,0,Nublado,Ninguno,Descuento,6,2
+2024-06-14,Chicharrón de Cerdo,24,18,Viernes,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-15,Chicharrón de Cerdo,30,20,Sábado,1,Soleado,Ninguno,Menu del Dia,6,2
+2024-06-16,Chicharrón de Cerdo,27,18,Domingo,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-17,Chicharrón de Cerdo,23,22,Lunes,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-18,Chicharrón de Cerdo,19,18,Martes,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-19,Chicharrón de Cerdo,23,20,Miércoles,0,Nublado,Fiesta,Ninguna,6,2
+2024-06-20,Chicharrón de Cerdo,19,17,Jueves,0,Soleado,Ninguno,Ninguna,6,2
+2024-06-21,Chicharrón de Cerdo,28,17,Viernes,1,Lluvioso,Ninguno,Ninguna,6,2
+2024-06-22,Chicharrón de Cerdo,24,20,Sábado,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-23,Chicharrón de Cerdo,25,20,Domingo,1,Nublado,Ninguno,Ninguna,6,2
+2024-06-24,Chicharrón de Cerdo,17,16,Lunes,0,Nublado,Ninguno,Ninguna,6,2
+2024-06-25,Chicharrón de Cerdo,20,22,Martes,0,Lluvioso,Ninguno,Ninguna,6,2
+2024-06-26,Chicharrón de Cerdo,18,19,Miércoles,0,Lluvioso,Ninguno,Ninguna,6,2
+2024-06-27,Chicharrón de Cerdo,22,21,Jueves,0,Soleado,Festival,Ninguna,6,2
+2024-06-28,Chicharrón de Cerdo,29,19,Viernes,1,Lluvioso,Ninguno,2x1,6,2
+2024-06-29,Chicharrón de Cerdo,24,18,Sábado,1,Soleado,Ninguno,Ninguna,6,2
+2024-06-30,Chicharrón de Cerdo,25,21,Domingo,1,Soleado,Ninguno,Ninguna,6,2
+2024-07-01,Chicharrón de Cerdo,25,21,Lunes,0,Nublado,Ninguno,Descuento,7,3
+2024-07-02,Chicharrón de Cerdo,28,21,Martes,0,Soleado,Feriado,2x1,7,3
+2024-07-03,Chicharrón de Cerdo,19,21,Miércoles,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-04,Chicharrón de Cerdo,18,17,Jueves,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-05,Chicharrón de Cerdo,25,20,Viernes,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-06,Chicharrón de Cerdo,30,20,Sábado,1,Nublado,Ninguno,2x1,7,3
+2024-07-07,Chicharrón de Cerdo,25,21,Domingo,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-08,Chicharrón de Cerdo,18,0,Lunes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-09,Chicharrón de Cerdo,20,20,Martes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-10,Chicharrón de Cerdo,22,20,Miércoles,0,Nublado,Fiesta,Ninguna,7,3
+2024-07-11,Chicharrón de Cerdo,19,19,Jueves,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-12,Chicharrón de Cerdo,26,19,Viernes,1,Nublado,Ninguno,Ninguna,7,3
+2024-07-13,Chicharrón de Cerdo,25,19,Sábado,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-14,Chicharrón de Cerdo,26,20,Domingo,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-15,Chicharrón de Cerdo,20,15,Lunes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-16,Chicharrón de Cerdo,22,21,Martes,0,Nublado,Ninguno,Ninguna,7,3
+2024-07-17,Chicharrón de Cerdo,19,18,Miércoles,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-18,Chicharrón de Cerdo,16,17,Jueves,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-19,Chicharrón de Cerdo,25,20,Viernes,1,Lluvioso,Ninguno,Ninguna,7,3
+2024-07-20,Chicharrón de Cerdo,28,19,Sábado,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-21,Chicharrón de Cerdo,26,17,Domingo,1,Soleado,Ninguno,Ninguna,7,3
+2024-07-22,Chicharrón de Cerdo,23,20,Lunes,0,Nublado,Feriado,Ninguna,7,3
+2024-07-23,Chicharrón de Cerdo,25,17,Martes,0,Soleado,Ninguno,Menu del Dia,7,3
+2024-07-24,Chicharrón de Cerdo,16,20,Miércoles,0,Lluvioso,Ninguno,Ninguna,7,3
+2024-07-25,Chicharrón de Cerdo,18,21,Jueves,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-26,Chicharrón de Cerdo,31,23,Viernes,1,Nublado,Ninguno,2x1,7,3
+2024-07-27,Chicharrón de Cerdo,26,0,Sábado,1,Soleado,Ninguno,Descuento,7,3
+2024-07-28,Chicharrón de Cerdo,32,18,Domingo,1,Lluvioso,Ninguno,Descuento,7,3
+2024-07-29,Chicharrón de Cerdo,18,18,Lunes,0,Soleado,Ninguno,Ninguna,7,3
+2024-07-30,Chicharrón de Cerdo,18,19,Martes,0,Lluvioso,Ninguno,Ninguna,7,3
+2024-07-31,Chicharrón de Cerdo,19,17,Miércoles,0,Soleado,Ninguno,Ninguna,7,3
+2024-08-01,Chicharrón de Cerdo,19,19,Jueves,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-02,Chicharrón de Cerdo,27,18,Viernes,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-03,Chicharrón de Cerdo,27,20,Sábado,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-04,Chicharrón de Cerdo,24,16,Domingo,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-05,Chicharrón de Cerdo,22,21,Lunes,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-06,Chicharrón de Cerdo,23,17,Martes,0,Soleado,Feriado,Ninguna,8,3
+2024-08-07,Chicharrón de Cerdo,22,22,Miércoles,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-08,Chicharrón de Cerdo,21,21,Jueves,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-09,Chicharrón de Cerdo,28,20,Viernes,1,Soleado,Feriado,Ninguna,8,3
+2024-08-10,Chicharrón de Cerdo,26,20,Sábado,1,Lluvioso,Ninguno,Ninguna,8,3
+2024-08-11,Chicharrón de Cerdo,28,19,Domingo,1,Nublado,Ninguno,Ninguna,8,3
+2024-08-12,Chicharrón de Cerdo,21,19,Lunes,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-13,Chicharrón de Cerdo,18,20,Martes,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-14,Chicharrón de Cerdo,18,23,Miércoles,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-15,Chicharrón de Cerdo,19,19,Jueves,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-16,Chicharrón de Cerdo,26,17,Viernes,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-17,Chicharrón de Cerdo,35,18,Sábado,1,Soleado,Ninguno,Descuento,8,3
+2024-08-18,Chicharrón de Cerdo,25,19,Domingo,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-19,Chicharrón de Cerdo,19,17,Lunes,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-20,Chicharrón de Cerdo,24,17,Martes,0,Soleado,Ninguno,Descuento,8,3
+2024-08-21,Chicharrón de Cerdo,19,15,Miércoles,0,Soleado,Ninguno,Ninguna,8,3
+2024-08-22,Chicharrón de Cerdo,23,0,Jueves,0,Soleado,Ninguno,2x1,8,3
+2024-08-23,Chicharrón de Cerdo,29,21,Viernes,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-24,Chicharrón de Cerdo,24,21,Sábado,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-25,Chicharrón de Cerdo,26,19,Domingo,1,Soleado,Ninguno,Ninguna,8,3
+2024-08-26,Chicharrón de Cerdo,16,17,Lunes,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-27,Chicharrón de Cerdo,20,18,Martes,0,Nublado,Ninguno,Ninguna,8,3
+2024-08-28,Chicharrón de Cerdo,25,21,Miércoles,0,Soleado,Ninguno,Menu del Dia,8,3
+2024-08-29,Chicharrón de Cerdo,23,18,Jueves,0,Soleado,Feriado,Ninguna,8,3
+2024-08-30,Chicharrón de Cerdo,22,18,Viernes,1,Nublado,Ninguno,Ninguna,8,3
+2024-08-31,Chicharrón de Cerdo,32,20,Sábado,1,Soleado,Feriado,Ninguna,8,3
+2024-09-01,Chicharrón de Cerdo,30,15,Domingo,1,Soleado,Feriado,Ninguna,9,3
+2024-09-02,Chicharrón de Cerdo,23,22,Lunes,0,Nublado,Ninguno,Descuento,9,3
+2024-09-03,Chicharrón de Cerdo,19,20,Martes,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-04,Chicharrón de Cerdo,20,18,Miércoles,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-05,Chicharrón de Cerdo,19,19,Jueves,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-06,Chicharrón de Cerdo,25,15,Viernes,1,Nublado,Ninguno,Ninguna,9,3
+2024-09-07,Chicharrón de Cerdo,32,20,Sábado,1,Soleado,Ninguno,Descuento,9,3
+2024-09-08,Chicharrón de Cerdo,29,20,Domingo,1,Soleado,Festival,Ninguna,9,3
+2024-09-09,Chicharrón de Cerdo,22,21,Lunes,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-10,Chicharrón de Cerdo,20,20,Martes,0,Lluvioso,Ninguno,Ninguna,9,3
+2024-09-11,Chicharrón de Cerdo,20,19,Miércoles,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-12,Chicharrón de Cerdo,20,15,Jueves,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-13,Chicharrón de Cerdo,32,19,Viernes,1,Soleado,Festival,Ninguna,9,3
+2024-09-14,Chicharrón de Cerdo,26,20,Sábado,1,Nublado,Ninguno,Ninguna,9,3
+2024-09-15,Chicharrón de Cerdo,29,19,Domingo,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-16,Chicharrón de Cerdo,22,20,Lunes,0,Soleado,Feriado,Ninguna,9,3
+2024-09-17,Chicharrón de Cerdo,18,17,Martes,0,Nublado,Ninguno,Ninguna,9,3
+2024-09-18,Chicharrón de Cerdo,23,18,Miércoles,0,Lluvioso,Ninguno,Ninguna,9,3
+2024-09-19,Chicharrón de Cerdo,22,19,Jueves,0,Nublado,Ninguno,Ninguna,9,3
+2024-09-20,Chicharrón de Cerdo,26,18,Viernes,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-21,Chicharrón de Cerdo,27,16,Sábado,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-22,Chicharrón de Cerdo,28,20,Domingo,1,Lluvioso,Ninguno,Ninguna,9,3
+2024-09-23,Chicharrón de Cerdo,19,16,Lunes,0,Nublado,Ninguno,Ninguna,9,3
+2024-09-24,Chicharrón de Cerdo,20,21,Martes,0,Nublado,Ninguno,Ninguna,9,3
+2024-09-25,Chicharrón de Cerdo,18,18,Miércoles,0,Nublado,Ninguno,Ninguna,9,3
+2024-09-26,Chicharrón de Cerdo,19,20,Jueves,0,Soleado,Ninguno,Ninguna,9,3
+2024-09-27,Chicharrón de Cerdo,26,20,Viernes,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-28,Chicharrón de Cerdo,26,15,Sábado,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-29,Chicharrón de Cerdo,28,22,Domingo,1,Soleado,Ninguno,Ninguna,9,3
+2024-09-30,Chicharrón de Cerdo,20,22,Lunes,0,Soleado,Ninguno,Ninguna,9,3
+2024-10-01,Chicharrón de Cerdo,20,19,Martes,0,Lluvioso,Ninguno,Ninguna,10,4
+2024-10-02,Chicharrón de Cerdo,20,19,Miércoles,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-03,Chicharrón de Cerdo,20,17,Jueves,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-04,Chicharrón de Cerdo,24,20,Viernes,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-05,Chicharrón de Cerdo,30,21,Sábado,1,Soleado,Ninguno,Menu del Dia,10,4
+2024-10-06,Chicharrón de Cerdo,27,19,Domingo,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-07,Chicharrón de Cerdo,23,18,Lunes,0,Lluvioso,Feriado,Ninguna,10,4
+2024-10-08,Chicharrón de Cerdo,20,0,Martes,0,Lluvioso,Ninguno,Ninguna,10,4
+2024-10-09,Chicharrón de Cerdo,20,19,Miércoles,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-10,Chicharrón de Cerdo,24,19,Jueves,0,Soleado,Ninguno,Descuento,10,4
+2024-10-11,Chicharrón de Cerdo,25,19,Viernes,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-12,Chicharrón de Cerdo,25,21,Sábado,1,Nublado,Ninguno,Ninguna,10,4
+2024-10-13,Chicharrón de Cerdo,25,20,Domingo,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-14,Chicharrón de Cerdo,22,21,Lunes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-15,Chicharrón de Cerdo,17,19,Martes,0,Lluvioso,Ninguno,Ninguna,10,4
+2024-10-16,Chicharrón de Cerdo,20,22,Miércoles,0,Nublado,Ninguno,Ninguna,10,4
+2024-10-17,Chicharrón de Cerdo,19,17,Jueves,0,Nublado,Ninguno,Ninguna,10,4
+2024-10-18,Chicharrón de Cerdo,26,21,Viernes,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-19,Chicharrón de Cerdo,34,18,Sábado,1,Nublado,Feriado,Ninguna,10,4
+2024-10-20,Chicharrón de Cerdo,27,19,Domingo,1,Nublado,Ninguno,Ninguna,10,4
+2024-10-21,Chicharrón de Cerdo,25,20,Lunes,0,Soleado,Ninguno,Descuento,10,4
+2024-10-22,Chicharrón de Cerdo,18,19,Martes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-23,Chicharrón de Cerdo,20,19,Miércoles,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-24,Chicharrón de Cerdo,18,17,Jueves,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-25,Chicharrón de Cerdo,24,20,Viernes,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-26,Chicharrón de Cerdo,30,21,Sábado,1,Lluvioso,Ninguno,2x1,10,4
+2024-10-27,Chicharrón de Cerdo,28,19,Domingo,1,Soleado,Ninguno,Ninguna,10,4
+2024-10-28,Chicharrón de Cerdo,20,15,Lunes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-29,Chicharrón de Cerdo,20,18,Martes,0,Soleado,Ninguno,Ninguna,10,4
+2024-10-30,Chicharrón de Cerdo,22,21,Miércoles,0,Soleado,Ninguno,Descuento,10,4
+2024-10-31,Chicharrón de Cerdo,21,18,Jueves,0,Soleado,Ninguno,Ninguna,10,4
+2024-11-01,Chicharrón de Cerdo,20,20,Viernes,1,Nublado,Ninguno,Ninguna,11,4
+2024-11-02,Chicharrón de Cerdo,22,20,Sábado,1,Nublado,Ninguno,Ninguna,11,4
+2024-11-03,Chicharrón de Cerdo,19,19,Domingo,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-04,Chicharrón de Cerdo,15,19,Lunes,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-05,Chicharrón de Cerdo,12,17,Martes,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-06,Chicharrón de Cerdo,13,19,Miércoles,0,Lluvioso,Ninguno,Ninguna,11,4
+2024-11-07,Chicharrón de Cerdo,14,19,Jueves,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-08,Chicharrón de Cerdo,23,18,Viernes,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-09,Chicharrón de Cerdo,21,15,Sábado,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-10,Chicharrón de Cerdo,17,19,Domingo,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-11,Chicharrón de Cerdo,13,18,Lunes,0,Lluvioso,Ninguno,Ninguna,11,4
+2024-11-12,Chicharrón de Cerdo,14,22,Martes,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-13,Chicharrón de Cerdo,11,19,Miércoles,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-14,Chicharrón de Cerdo,15,18,Jueves,0,Soleado,Ninguno,Ninguna,11,4
+2024-11-15,Chicharrón de Cerdo,22,22,Viernes,1,Lluvioso,Ninguno,Ninguna,11,4
+2024-11-16,Chicharrón de Cerdo,22,16,Sábado,1,Nublado,Ninguno,Ninguna,11,4
+2024-11-17,Chicharrón de Cerdo,19,21,Domingo,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-18,Chicharrón de Cerdo,15,19,Lunes,0,Lluvioso,Ninguno,Ninguna,11,4
+2024-11-19,Chicharrón de Cerdo,14,22,Martes,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-20,Chicharrón de Cerdo,15,19,Miércoles,0,Lluvioso,Ninguno,Ninguna,11,4
+2024-11-21,Chicharrón de Cerdo,18,19,Jueves,0,Nublado,Ninguno,Menu del Dia,11,4
+2024-11-22,Chicharrón de Cerdo,22,19,Viernes,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-23,Chicharrón de Cerdo,23,19,Sábado,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-24,Chicharrón de Cerdo,17,18,Domingo,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-25,Chicharrón de Cerdo,17,19,Lunes,0,Soleado,Ninguno,Menu del Dia,11,4
+2024-11-26,Chicharrón de Cerdo,15,19,Martes,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-27,Chicharrón de Cerdo,13,20,Miércoles,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-28,Chicharrón de Cerdo,14,19,Jueves,0,Nublado,Ninguno,Ninguna,11,4
+2024-11-29,Chicharrón de Cerdo,21,18,Viernes,1,Soleado,Ninguno,Ninguna,11,4
+2024-11-30,Chicharrón de Cerdo,20,17,Sábado,1,Soleado,Ninguno,Ninguna,11,4
+2024-12-01,Chicharrón de Cerdo,20,20,Domingo,1,Nublado,Ninguno,Ninguna,12,4
+2024-12-02,Chicharrón de Cerdo,13,17,Lunes,0,Nublado,Ninguno,Ninguna,12,4
+2024-12-03,Chicharrón de Cerdo,15,19,Martes,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-04,Chicharrón de Cerdo,16,15,Miércoles,0,Nublado,Ninguno,Ninguna,12,4
+2024-12-05,Chicharrón de Cerdo,12,18,Jueves,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-06,Chicharrón de Cerdo,20,19,Viernes,1,Nublado,Ninguno,Ninguna,12,4
+2024-12-07,Chicharrón de Cerdo,20,18,Sábado,1,Nublado,Ninguno,Ninguna,12,4
+2024-12-08,Chicharrón de Cerdo,21,20,Domingo,1,Lluvioso,Ninguno,Ninguna,12,4
+2024-12-09,Chicharrón de Cerdo,15,20,Lunes,0,Nublado,Ninguno,Ninguna,12,4
+2024-12-10,Chicharrón de Cerdo,14,19,Martes,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-11,Chicharrón de Cerdo,16,19,Miércoles,0,Lluvioso,Ninguno,Ninguna,12,4
+2024-12-12,Chicharrón de Cerdo,17,16,Jueves,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-13,Chicharrón de Cerdo,26,20,Viernes,1,Soleado,Ninguno,2x1,12,4
+2024-12-14,Chicharrón de Cerdo,26,20,Sábado,1,Soleado,Festival,Ninguna,12,4
+2024-12-15,Chicharrón de Cerdo,21,18,Domingo,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-16,Chicharrón de Cerdo,15,20,Lunes,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-17,Chicharrón de Cerdo,20,15,Martes,0,Lluvioso,Ninguno,Descuento,12,4
+2024-12-18,Chicharrón de Cerdo,12,20,Miércoles,0,Soleado,Ninguno,Ninguna,12,4
+2024-12-19,Chicharrón de Cerdo,14,0,Jueves,0,Nublado,Ninguno,Ninguna,12,4
+2024-12-20,Chicharrón de Cerdo,19,15,Viernes,1,Lluvioso,Ninguno,Ninguna,12,4
+2024-12-21,Chicharrón de Cerdo,19,22,Sábado,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-22,Chicharrón de Cerdo,20,0,Domingo,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-23,Chicharrón de Cerdo,14,20,Lunes,0,Nublado,Ninguno,Ninguna,12,4
+2024-12-24,Chicharrón de Cerdo,19,20,Martes,0,Nublado,Ninguno,Menu del Dia,12,4
+2024-12-25,Chicharrón de Cerdo,22,22,Miércoles,0,Lluvioso,Feriado,Ninguna,12,4
+2024-12-26,Chicharrón de Cerdo,14,19,Jueves,0,Nublado,Ninguno,Ninguna,12,4
+2024-12-27,Chicharrón de Cerdo,19,20,Viernes,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-28,Chicharrón de Cerdo,25,19,Sábado,1,Nublado,Ninguno,2x1,12,4
+2024-12-29,Chicharrón de Cerdo,20,16,Domingo,1,Soleado,Ninguno,Ninguna,12,4
+2024-12-30,Chicharrón de Cerdo,11,19,Lunes,0,Soleado,Ninguno,Ninguna,12,4
