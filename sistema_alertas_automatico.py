@@ -29,7 +29,7 @@ CONFIGURACION = {
         'Picante de Lengua': 20,
         'Chicharrón de Cerdo': 18
     },
-    'clima_pronostico': None,    # Se puede integrar con API del clima
+    'clima_pronostico': 'https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m',    # Se puede integrar con API del clima
     'eventos_calendario': {       # Eventos conocidos
         '2025-08-15': 'Festival',
         '2025-12-25': 'Feriado',
@@ -106,7 +106,7 @@ def predecir_demanda(modelo_pkg, plato, fecha, hora=19):
                   'Viernes', 'Sábado', 'Domingo'][fecha_dt.weekday()]
     
     # Obtener clima y eventos
-    clima = CONFIGURACION['clima_pronostico'] or 'Soleado'
+    clima = CONFIGURACION['clima_pronostico'] or 'Soleado'  
     evento = CONFIGURACION['eventos_calendario'].get(fecha.strftime('%Y-%m-%d'), 'Ninguno')
     
     input_data = {

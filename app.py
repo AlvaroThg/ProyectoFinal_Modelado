@@ -151,6 +151,7 @@ def home():
 def predict():
     """Endpoint principal de predicción"""
     
+
     try:
         data = request.get_json()
         
@@ -573,6 +574,7 @@ def generar_alertas_manual():
             'success': False,
             'error': str(e)
         }), 500
+
 
 
 # Manejo de errores
